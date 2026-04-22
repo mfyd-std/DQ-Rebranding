@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pondok Pesantren Daar el-Qolam — Tempat Terbaik Membangun Generasi Berilmu & Berakhlak</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dq: {
+              green:      '#006C55',
+              'green-dk': '#00523F',
+              'green-lt': '#E6F2EF',
+              gold:       '#C9A227',
+              'gold-lt':  '#FBF4E0',
+              ivory:      '#FAFAF8',
+              charcoal:   '#333333',
+              'warm-gray':'#6B6B6B',
+            }
+          },
+          fontFamily: {
+            serif:  ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans:   ['Plus Jakarta Sans', 'sans-serif'],
+            arabic: ['Amiri', 'serif'],
+          },
+          boxShadow: {
+            'card':     '0 4px 24px rgba(0,108,85,0.10)',
+            'card-lg':  '0 8px 40px rgba(0,108,85,0.14)',
+            'float':    '0 8px 32px rgba(0,0,0,0.12)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ─── Arabesque SVG pattern ─── */
+    .arabesque-bg {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='0.6' opacity='0.18'%3E%3Cpath d='M40 4 Q52 16 40 28 Q28 16 40 4Z'/%3E%3Cpath d='M40 52 Q52 64 40 76 Q28 64 40 52Z'/%3E%3Cpath d='M4 40 Q16 52 28 40 Q16 28 4 40Z'/%3E%3Cpath d='M52 40 Q64 52 76 40 Q64 28 52 40Z'/%3E%3Ccircle cx='40' cy='40' r='10'/%3E%3Ccircle cx='40' cy='40' r='4'/%3E%3Cpath d='M40 30 L50 40 L40 50 L30 40Z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* ─── Arabesque corner ornament ─── */
+    .ornament-tl {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23C9A227' stroke-width='1' opacity='0.5'%3E%3Cpath d='M10 10 Q40 10 40 40 Q40 10 70 10'/%3E%3Cpath d='M10 10 Q10 40 40 40 Q10 40 10 70'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3Cpath d='M10 25 Q25 25 25 40 Q25 25 40 25'/%3E%3Cpath d='M25 10 Q25 25 40 25 Q25 25 25 40'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+    }
+    .ornament-br {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23C9A227' stroke-width='1' opacity='0.5' transform='rotate(180 60 60)'%3E%3Cpath d='M10 10 Q40 10 40 40 Q40 10 70 10'/%3E%3Cpath d='M10 10 Q10 40 40 40 Q10 40 10 70'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+    }
+
+    /* ─── Keyframes ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes scrollBounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(6px); }
+    }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(1.4); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50%       { transform: translateY(-6px); }
+    }
+
+    .animate-fade-up   { animation: fadeUp 0.7s ease-out both; }
+    .animate-fade-in   { animation: fadeIn 0.6s ease-out both; }
+    .animate-bounce-scroll { animation: scrollBounce 1.6s ease-in-out infinite; }
+    .animate-float     { animation: float 4s ease-in-out infinite; }
+
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    .delay-600 { animation-delay: 0.6s; }
+
+    /* ─── Scroll-reveal (JS adds this class) ─── */
+    .reveal        { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── Gold divider line ─── */
+    .gold-line::before {
+      content: '';
+      display: inline-block;
+      width: 48px;
+      height: 2px;
+      background: #C9A227;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+
+    /* ─── Photo collage ─── */
+    .photo-placeholder {
+      background: linear-gradient(135deg, #006C55 0%, #00523F 60%, #004030 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-dq-ivory font-sans text-dq-charcoal antialiased">
+
+  <!-- ══════════════════════════════════════
+       STICKY NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-dq-ivory/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-18">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 flex-shrink-0">
+          <img src="Logo Darqo.png" alt="Logo Daar el-Qolam" class="w-9 h-9 object-contain" />
+          <div class="hidden sm:block">
+            <p class="text-[10px] text-dq-warm-gray tracking-wide uppercase">Pondok Pesantren</p>
+            <p class="font-serif text-sm font-semibold text-dq-green leading-tight">Daar el-Qolam</p>
+          </div>
+        </a>
+
+        <!-- Nav Links (desktop) -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#program" class="text-sm font-medium text-dq-charcoal hover:text-dq-green transition-colors">Program</a>
+          <a href="#tentang"  class="text-sm font-medium text-dq-charcoal hover:text-dq-green transition-colors">Tentang DQ</a>
+          <a href="#fasilitas" class="text-sm font-medium text-dq-charcoal hover:text-dq-green transition-colors">Fasilitas</a>
+          <a href="#alumni"   class="text-sm font-medium text-dq-charcoal hover:text-dq-green transition-colors">Alumni</a>
+          <a href="#kontak"   class="text-sm font-medium text-dq-charcoal hover:text-dq-green transition-colors">Kontak</a>
+        </div>
+
+        <!-- Right side -->
+        <div class="flex items-center gap-3">
+          <!-- Urgency badge -->
+          <div class="hidden md:flex items-center gap-1.5 bg-dq-gold-lt border border-dq-gold/30 text-dq-gold rounded-full px-3 py-1 text-xs font-semibold">
+            <span class="w-1.5 h-1.5 rounded-full bg-dq-gold" style="animation: pulseDot 1.4s ease-in-out infinite;"></span>
+            Pendaftaran 2025/2026 Dibuka
+          </div>
+          <!-- CTA -->
+          <a href="https://wa.me/6285176991968?text=Assalamu'alaikum%2C%20saya%20ingin%20informasi%20pendaftaran%20Daar%20el-Qolam"
+             target="_blank"
+             class="bg-dq-green hover:bg-dq-green-dk text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-card whitespace-nowrap">
+            Daftar Sekarang
+          </a>
+          <!-- Mobile hamburger -->
+          <button class="lg:hidden p-2 rounded-md text-dq-charcoal hover:bg-dq-green-lt transition-colors" aria-label="Menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <!-- Bottom border that appears on scroll -->
+    <div id="nav-border" class="h-px bg-dq-green/10 opacity-0 transition-opacity duration-300"></div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════ -->
+  <section class="relative min-h-screen pt-16 lg:pt-18 flex items-center overflow-hidden bg-dq-ivory ornament-tl ornament-br">
+
+    <!-- Subtle background texture -->
+    <div class="absolute inset-0 opacity-[0.015]" style="background-image:url('data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23006C55\' fill-opacity=\'1\'%3E%3Ccircle cx=\'20\' cy=\'20\' r=\'1\'/%3E%3C/g%3E%3C/svg%3E');"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full py-16 lg:py-24">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        <!-- ── Left: Text Content ── -->
+        <div class="relative z-10">
+
+          <!-- Eyebrow badge -->
+          <div class="inline-flex items-center gap-2 bg-dq-green-lt border border-dq-green/20 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
+            <span class="w-1.5 h-1.5 rounded-full bg-dq-green"></span>
+            <span class="text-xs font-semibold text-dq-green tracking-wide uppercase">Est. 1968 · Tangerang, Banten</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[56px] font-semibold leading-[1.1] text-dq-charcoal mb-6 animate-fade-up delay-100">
+            Tempat Terbaik<br/>
+            <span class="text-dq-green italic">Membangun Generasi</span><br/>
+            Berilmu &amp; Berakhlak
+          </h1>
+
+          <!-- Arabic subtitle -->
+          <p class="font-arabic text-xl text-dq-green/80 mb-4 animate-fade-up delay-200 text-right" dir="rtl">
+            اَلْعِلْمُ بِلَا عَمَلٍ كَالشَّجَرِ بِلَا ثَمَرٍ
+          </p>
+          <p class="text-xs text-dq-warm-gray mb-6 animate-fade-up delay-200 italic">
+            "Ilmu tanpa amal seperti pohon tanpa buah"
+          </p>
+
+          <!-- Subheadline -->
+          <p class="text-base lg:text-lg text-dq-warm-gray leading-relaxed mb-8 max-w-lg animate-fade-up delay-300">
+            Sejak 1968, Pondok Pesantren Daar el-Qolam mendidik ribuan santri menjadi generasi yang
+            unggul dalam ilmu agama, sains, dan teknologi — dengan akhlak mulia sebagai fondasi utama.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 mb-8 animate-fade-up delay-400">
+            <a href="https://wa.me/6285176991968?text=Assalamu'alaikum%2C%20saya%20ingin%20informasi%20pendaftaran%20Daar%20el-Qolam"
+               target="_blank"
+               class="inline-flex items-center justify-center gap-2 bg-dq-green hover:bg-dq-green-dk text-white font-semibold text-sm px-6 py-3.5 rounded-lg transition-all duration-200 hover:shadow-card-lg hover:-translate-y-0.5 group">
+              <!-- WhatsApp icon -->
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Daftar Sekarang
+            </a>
+            <a href="#program"
+               class="inline-flex items-center justify-center gap-2 border-2 border-dq-green text-dq-green hover:bg-dq-green hover:text-white font-semibold text-sm px-6 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-0.5">
+              Pelajari Program
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust pills -->
+          <div class="flex flex-wrap gap-2 mb-8 animate-fade-up delay-500">
+            <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-3 py-1 text-xs text-dq-charcoal shadow-sm">
+              <svg class="w-3.5 h-3.5 text-dq-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Terakreditasi A
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-3 py-1 text-xs text-dq-charcoal shadow-sm">
+              <svg class="w-3.5 h-3.5 text-dq-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Beasiswa Tersedia
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-3 py-1 text-xs text-dq-charcoal shadow-sm">
+              <svg class="w-3.5 h-3.5 text-dq-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Asrama Modern
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-3 py-1 text-xs text-dq-charcoal shadow-sm">
+              <svg class="w-3.5 h-3.5 text-dq-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Kurikulum Terpadu
+            </span>
+          </div>
+
+          <!-- Stats row -->
+          <div class="flex gap-6 animate-fade-up delay-600">
+            <div>
+              <p class="font-serif text-2xl font-bold text-dq-green">5.000+</p>
+              <p class="text-xs text-dq-warm-gray mt-0.5">Santri Aktif</p>
+            </div>
+            <div class="w-px bg-dq-green/15"></div>
+            <div>
+              <p class="font-serif text-2xl font-bold text-dq-green">56 Tahun</p>
+              <p class="text-xs text-dq-warm-gray mt-0.5">Berpengalaman</p>
+            </div>
+            <div class="w-px bg-dq-green/15"></div>
+            <div>
+              <p class="font-serif text-2xl font-bold text-dq-green">30.000+</p>
+              <p class="text-xs text-dq-warm-gray mt-0.5">Alumni Nasional</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── Right: Photo Collage ── -->
+        <div class="relative animate-fade-in delay-300">
+
+          <!-- Gold accent line top-right -->
+          <div class="absolute -top-4 -right-4 w-32 h-32 border-t-2 border-r-2 border-dq-gold/40 rounded-tr-2xl pointer-events-none"></div>
+          <!-- Gold accent line bottom-left -->
+          <div class="absolute -bottom-4 -left-4 w-32 h-32 border-b-2 border-l-2 border-dq-gold/40 rounded-bl-2xl pointer-events-none"></div>
+
+          <!-- Collage grid -->
+          <div class="grid grid-cols-5 grid-rows-3 gap-3 h-[420px] lg:h-[520px]">
+
+            <!-- Large top-left photo -->
+            <div class="col-span-3 row-span-2 rounded-2xl overflow-hidden shadow-card-lg">
+              <img src="BP3A8852.jpg" alt="Kegiatan Santri Daar el-Qolam" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- Top-right photo -->
+            <div class="col-span-2 row-span-1 rounded-xl overflow-hidden shadow-card-lg">
+              <img src="DJI_0849.jpg" alt="Fasilitas Pondok" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- Middle-right photo -->
+            <div class="col-span-2 row-span-1 rounded-xl overflow-hidden shadow-card-lg">
+              <img src="upacaradq2.jpg" alt="Ruang Kelas" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- Bottom full-width photo -->
+            <div class="col-span-5 row-span-1 rounded-xl overflow-hidden shadow-card-lg">
+              <img src="DJI_0866 (2)-2.jpg" alt="Panorama View" class="w-full h-full object-cover" />
+            </div>
+
+          </div>
+
+          <!-- Floating card: Enrollment -->
+          <div class="absolute -left-6 top-1/3 bg-white rounded-xl shadow-float p-4 w-52 animate-float z-20">
+            <div class="flex items-start gap-3">
+              <div class="w-9 h-9 rounded-lg bg-dq-green-lt flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-dq-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-dq-charcoal">Pendaftaran Dibuka</p>
+                <p class="text-[11px] text-dq-warm-gray mt-0.5">TP 2025/2026</p>
+                <div class="mt-2 w-full bg-gray-100 rounded-full h-1.5">
+                  <div class="bg-dq-green h-1.5 rounded-full" style="width: 72%"></div>
+                </div>
+                <p class="text-[10px] text-dq-warm-gray mt-1">72% kuota terisi</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating card: Rating -->
+          <div class="absolute -right-4 bottom-24 bg-white rounded-xl shadow-float px-4 py-3 w-44 z-20">
+            <div class="flex items-center gap-2 mb-1">
+              <div class="flex">
+                <svg class="w-3.5 h-3.5 text-dq-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-3.5 h-3.5 text-dq-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-3.5 h-3.5 text-dq-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-3.5 h-3.5 text-dq-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-3.5 h-3.5 text-dq-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <span class="text-sm font-bold text-dq-charcoal">4.9</span>
+            </div>
+            <p class="text-[11px] text-dq-warm-gray">Dari 1.200+ ulasan wali santri</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-scroll opacity-60">
+      <p class="text-[10px] text-dq-warm-gray tracking-widest uppercase">Scroll</p>
+      <svg class="w-4 h-4 text-dq-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       BRAND MOTO BANNER
+  ═══════════════════════════════════════ -->
+  <section class="bg-dq-green arabesque-bg py-10 reveal">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <!-- Gold ornament line -->
+      <div class="flex items-center gap-4 mb-6">
+        <div class="flex-1 h-px bg-dq-gold/40"></div>
+        <svg class="w-6 h-6 text-dq-gold opacity-80" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/>
+        </svg>
+        <div class="flex-1 h-px bg-dq-gold/40"></div>
+      </div>
+
+      <!-- Arabic Calligraphy -->
+      <p class="font-arabic text-3xl lg:text-4xl text-white mb-3 leading-relaxed" dir="rtl">
+        وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ
+      </p>
+      <p class="text-white/60 text-sm italic mb-6">
+        "Dan Aku tidak menciptakan jin dan manusia melainkan supaya mereka beribadah kepada-Ku." — QS. Adz-Dzariyat: 56
+      </p>
+
+      <!-- Moto tagline -->
+      <p class="text-dq-gold font-serif text-xl lg:text-2xl font-medium tracking-wide">
+        Mendidik dengan Hati · Membentuk dengan Ilmu · Mengukir dengan Akhlak
+      </p>
+
+      <!-- Bottom ornament line -->
+      <div class="flex items-center gap-4 mt-6">
+        <div class="flex-1 h-px bg-dq-gold/40"></div>
+        <svg class="w-6 h-6 text-dq-gold opacity-80" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/>
+        </svg>
+        <div class="flex-1 h-px bg-dq-gold/40"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PROGRAMS SECTION
+  ═══════════════════════════════════════ -->
+  <section id="program" class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="text-center mb-12 reveal">
+        <span class="gold-line text-xs font-semibold text-dq-gold tracking-widest uppercase">Program Pendidikan</span>
+        <h2 class="font-serif text-3xl lg:text-4xl font-semibold text-dq-charcoal mt-3 mb-4">
+          Pilih Jalur Pendidikan<br/><span class="text-dq-green italic">yang Tepat untuk Putra-Putri Anda</span>
+        </h2>
+        <p class="text-dq-warm-gray max-w-xl mx-auto text-base">
+          Empat program unggulan yang dirancang untuk membekali santri dengan ilmu agama, akademik, dan keterampilan abad ke-21.
+        </p>
+      </div>
+
+      <!-- Program cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+        <!-- Card 1: DQ Pusat -->
+        <div class="reveal bg-dq-ivory border border-dq-green/10 rounded-2xl p-6 hover:shadow-card-lg hover:-translate-y-1 transition-all duration-200 group">
+          <div class="w-11 h-11 rounded-xl bg-dq-green-lt flex items-center justify-center mb-4 group-hover:bg-dq-green transition-colors duration-200">
+            <svg class="w-6 h-6 text-dq-green group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+          </div>
+          <p class="text-[10px] text-dq-gold font-semibold tracking-widest uppercase mb-1">DQ Pusat</p>
+          <h3 class="font-serif text-lg font-semibold text-dq-charcoal mb-2">Program 6 Tahun</h3>
+          <p class="text-sm text-dq-warm-gray leading-relaxed mb-4">Program terpadu MTs & MA. Ilmu agama, sains, dan bahasa Arab–Inggris dalam satu jalur.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-[10px] bg-dq-green-lt text-dq-green rounded-full px-2 py-0.5">6 Tahun</span>
+            <span class="text-[10px] bg-dq-green-lt text-dq-green rounded-full px-2 py-0.5">MTs + MA</span>
+            <span class="text-[10px] bg-dq-green-lt text-dq-green rounded-full px-2 py-0.5">Asrama</span>
+          </div>
+        </div>
+
+        <!-- Card 2: DQ 2 Excellent Class -->
+        <div class="reveal bg-dq-ivory border border-dq-green/10 rounded-2xl p-6 hover:shadow-card-lg hover:-translate-y-1 transition-all duration-200 group" style="transition-delay: 0.1s;">
+          <div class="w-11 h-11 rounded-xl bg-dq-green-lt flex items-center justify-center mb-4 group-hover:bg-dq-green transition-colors duration-200">
+            <svg class="w-6 h-6 text-dq-green group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <p class="text-[10px] text-dq-gold font-semibold tracking-widest uppercase mb-1">DQ 2</p>
+          <h3 class="font-serif text-lg font-semibold text-dq-charcoal mb-2">Excellent Class</h3>
+          <p class="text-sm text-dq-warm-gray leading-relaxed mb-4">Program SMP & SMA unggulan dengan penekanan pada ilmu pengetahuan umum dan teknologi.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-[10px] bg-dq-green-lt text-dq-green rounded-full px-2 py-0.5">SMP / SMA</span>
+            <span class="text-[10px] bg-dq-green-lt text-dq-green rounded-full px-2 py-0.5">Asrama</span>
+          </div>
+        </div>
+
+        <!-- Card 3: DQ 3 Internasional -->
+        <div class="reveal bg-dq-green border border-dq-green rounded-2xl p-6 hover:shadow-card-lg hover:-translate-y-1 transition-all duration-200 group relative overflow-hidden" style="transition-delay: 0.2s;">
+          <div class="absolute top-3 right-3 bg-dq-gold text-white text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">Unggulan</div>
+          <div class="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <p class="text-[10px] text-dq-gold font-semibold tracking-widest uppercase mb-1">DQ 3 · Kampus Dza'Izza</p>
+          <h3 class="font-serif text-lg font-semibold text-white mb-2">Kelas Internasional</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-4">Kelas Extension 3 tahun & Kelas Internasional. Bahasa Arab dan Inggris sebagai bahasa pengantar.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-[10px] bg-white/20 text-white rounded-full px-2 py-0.5">3 Tahun</span>
+            <span class="text-[10px] bg-white/20 text-white rounded-full px-2 py-0.5">Bilingual</span>
+            <span class="text-[10px] bg-white/20 text-white rounded-full px-2 py-0.5">Internasional</span>
+          </div>
+        </div>
+
+        <!-- Card 4: DQ 4 Dirasah Islamiyyah -->
+        <div class="reveal bg-dq-ivory border border-dq-green/10 rounded-2xl p-6 hover:shadow-card-lg hover:-translate-y-1 transition-all duration-200 group" style="transition-delay: 0.3s;">
+          <div class="w-11 h-11 rounded-xl bg-dq-green-lt flex items-center justify-center mb-4 group-hover:bg-dq-green transition-colors duration-200">
+            <svg class="w-6 h-6 text-dq-green group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <p class="text-[10px] text-dq-gold font-semibold tracking-widest uppercase mb-1">DQ 4</p>
+          <h3 class="font-serif text-lg font-semibold text-dq-charcoal mb-2">Dirasah Islamiyyah</h3>
+          <p class="text-sm text-dq-warm-gray leading-relaxed mb-4">Fokus pendalaman ilmu-ilmu Islam (MTs/MA). Kitab kuning, tahfidz, dan fiqih mendalam.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-[10px] bg-dq-green-lt text-dq-green rounded-full px-2 py-0.5">MTs / MA</span>
+            <span class="text-[10px] bg-dq-green-lt text-dq-green rounded-full px-2 py-0.5">Kitab Kuning</span>
+            <span class="text-[10px] bg-dq-green-lt text-dq-green rounded-full px-2 py-0.5">Tahfidz</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Enrollment CTA banner -->
+      <div class="reveal bg-dq-green rounded-2xl arabesque-bg p-8 lg:p-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div>
+          <p class="text-dq-gold text-xs font-semibold tracking-widest uppercase mb-1">Tahun Pelajaran 2026/2027</p>
+          <h3 class="font-serif text-2xl lg:text-3xl font-semibold text-white mb-2">Segera Daftarkan Putra-Putri Anda</h3>
+          <p class="text-white/70 text-sm">Kuota terbatas · Jayanti, Kab. Tangerang, Banten · Telp. +62 21 5957 6882</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+          <a href="https://daftar.daarelqolam.ac.id/"
+             target="_blank"
+             class="inline-flex items-center gap-2 bg-dq-gold hover:bg-yellow-600 text-white font-semibold text-sm px-6 py-3 rounded-lg transition-colors duration-200 whitespace-nowrap">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Hubungi via WhatsApp
+          </a>
+          <a href="#" class="inline-flex items-center gap-2 border-2 border-white/40 text-white hover:border-white/80 font-semibold text-sm px-6 py-3 rounded-lg transition-colors duration-200 whitespace-nowrap">
+            Unduh Brosur PDF
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FLOATING WHATSAPP BUTTON
+  ═══════════════════════════════════════ -->
+  <a href="https://wa.me/6285176991968?text=Assalamu'alaikum%2C%20saya%20ingin%20informasi%20tentang%20Pondok%20Pesantren%20Daar%20el-Qolam"
+     target="_blank"
+     class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] hover:bg-[#20BE5C] text-white font-semibold text-sm px-4 py-3 rounded-full shadow-float hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 group"
+     aria-label="Chat WhatsApp Daar el-Qolam">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="hidden sm:inline">Chat Sekarang</span>
+  </a>
+
+
+  <!-- ══════════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════════ -->
+  <script>
+    // Nav: add shadow + border on scroll
+    const navbar    = document.getElementById('navbar');
+    const navBorder = document.getElementById('nav-border');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('shadow-md');
+        navBorder.classList.remove('opacity-0');
+        navBorder.classList.add('opacity-100');
+      } else {
+        navbar.classList.remove('shadow-md');
+        navBorder.classList.add('opacity-0');
+        navBorder.classList.remove('opacity-100');
+      }
+    });
+
+    // Scroll-reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer  = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

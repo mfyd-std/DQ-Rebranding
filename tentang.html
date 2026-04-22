@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Daar el-Qolam — Profil, Sejarah, Visi & Misi</title>
+  <meta name="description" content="Mengenal Pondok Pesantren Daar el-Qolam sejak 1968 — profil, sejarah, visi misi, dan para pimpinan pesantren."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dq: {
+              green:'#006C55','green-dk':'#00523F','green-lt':'#E6F2EF',
+              gold:'#C9A227','gold-lt':'#FBF4E0',ivory:'#FAFAF8',
+              charcoal:'#333333','warm-gray':'#6B6B6B',
+            }
+          },
+          fontFamily: {
+            serif:['Cormorant Garamond','Georgia','serif'],
+            sans:['Plus Jakarta Sans','sans-serif'],
+            arabic:['Amiri','serif'],
+          },
+          boxShadow: {
+            'card':'0 4px 24px rgba(0,108,85,0.10)',
+            'card-lg':'0 8px 40px rgba(0,108,85,0.14)',
+            'float':'0 8px 32px rgba(0,0,0,0.12)',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="bg-dq-ivory font-sans text-dq-charcoal antialiased">
+
+  <!-- ═══ NAVBAR ═══ -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/40 z-40 hidden"></div>
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-dq-ivory/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-18">
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+          <img src="Logo Darqo.png" alt="Logo Daar el-Qolam" class="w-9 h-9 object-contain"/>
+          <div class="hidden sm:block">
+            <p class="text-[10px] text-dq-warm-gray tracking-wide uppercase">Pondok Pesantren</p>
+            <p class="font-serif text-sm font-semibold text-dq-green leading-tight">Daar el-Qolam</p>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <div class="nav-item relative group">
+            <a href="tentang.html" class="flex items-center gap-1 text-sm font-medium text-dq-green px-3 py-2 transition-colors">Tentang DQ <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a>
+            <div class="nav-dropdown absolute top-full left-0 bg-white rounded-xl shadow-card-lg border border-gray-100 py-2 w-52">
+              <a href="#profil" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Profil Pesantren</a>
+              <a href="#visi" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Visi &amp; Misi</a>
+              <a href="#pimpinan" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Pimpinan</a>
+              <a href="#sejarah" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Sejarah</a>
+            </div>
+          </div>
+          <div class="nav-item relative group">
+            <a href="program.html" class="flex items-center gap-1 text-sm font-medium text-dq-charcoal hover:text-dq-green px-3 py-2 transition-colors">Program <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a>
+            <div class="nav-dropdown absolute top-full left-0 bg-white rounded-xl shadow-card-lg border border-gray-100 py-2 w-56">
+              <a href="program.html#reguler" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Program Reguler (DQ Pusat)</a>
+              <a href="program.html#excellent" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Excellent Class (DQ 2)</a>
+              <a href="dq3.html" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">International (DQ 3)</a>
+              <a href="program.html#dirasah" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Dirasah Islamiyyah (DQ 4)</a>
+            </div>
+          </div>
+          <div class="nav-item relative group">
+            <a href="jelajahi.html" class="flex items-center gap-1 text-sm font-medium text-dq-charcoal hover:text-dq-green px-3 py-2 transition-colors">Jelajahi <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a>
+            <div class="nav-dropdown absolute top-full left-0 bg-white rounded-xl shadow-card-lg border border-gray-100 py-2 w-48">
+              <a href="jelajahi.html#fasilitas" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Fasilitas</a>
+              <a href="jelajahi.html#kehidupan" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Kehidupan Islami</a>
+              <a href="jelajahi.html#ekskul" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Ekstrakurikuler</a>
+              <a href="jelajahi.html#asrama" class="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-lt hover:text-dq-green transition-colors">Kehidupan Asrama</a>
+            </div>
+          </div>
+          <a href="berita.html" class="text-sm font-medium text-dq-charcoal hover:text-dq-green px-3 py-2 transition-colors">Berita</a>
+          <a href="kontak.html" class="text-sm font-medium text-dq-charcoal hover:text-dq-green px-3 py-2 transition-colors">Kontak</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="https://daftar.daarelqolam.ac.id/" target="_blank" class="bg-dq-green hover:bg-dq-green-dk text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-card whitespace-nowrap">Daftar Sekarang</a>
+          <button id="hamburger-btn" class="lg:hidden p-2 rounded-md text-dq-charcoal hover:bg-dq-green-lt transition-colors" aria-label="Menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="nav-border" class="h-px bg-dq-green/10 opacity-0 transition-opacity duration-300"></div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-white z-50 shadow-2xl overflow-y-auto">
+    <div class="flex items-center justify-between p-5 border-b border-gray-100">
+      <p class="font-serif text-lg font-semibold text-dq-green">Menu</p>
+      <button id="mobile-close-btn" class="p-2 rounded-md hover:bg-gray-100"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <div class="p-4 space-y-1">
+      <button class="mobile-sub-toggle w-full flex items-center justify-between py-3 px-3 text-sm font-medium text-dq-green hover:bg-dq-green-lt rounded-lg"><span>Tentang DQ</span><svg class="mobile-arrow w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+      <div class="mobile-submenu pl-4 space-y-1">
+        <a href="#profil" class="block py-2 px-3 text-sm text-dq-warm-gray hover:text-dq-green">Profil Pesantren</a>
+        <a href="#visi" class="block py-2 px-3 text-sm text-dq-warm-gray hover:text-dq-green">Visi &amp; Misi</a>
+        <a href="#pimpinan" class="block py-2 px-3 text-sm text-dq-warm-gray hover:text-dq-green">Pimpinan</a>
+        <a href="#sejarah" class="block py-2 px-3 text-sm text-dq-warm-gray hover:text-dq-green">Sejarah</a>
+      </div>
+      <button class="mobile-sub-toggle w-full flex items-center justify-between py-3 px-3 text-sm font-medium text-dq-charcoal hover:bg-dq-green-lt rounded-lg"><span>Program</span><svg class="mobile-arrow w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+      <div class="mobile-submenu pl-4 space-y-1">
+        <a href="program.html#reguler" class="block py-2 px-3 text-sm text-dq-warm-gray hover:text-dq-green">Program Reguler</a>
+        <a href="program.html#excellent" class="block py-2 px-3 text-sm text-dq-warm-gray hover:text-dq-green">Excellent Class</a>
+        <a href="dq3.html" class="block py-2 px-3 text-sm text-dq-warm-gray hover:text-dq-green">International (DQ 3)</a>
+        <a href="program.html#dirasah" class="block py-2 px-3 text-sm text-dq-warm-gray hover:text-dq-green">Dirasah Islamiyyah</a>
+      </div>
+      <a href="berita.html" class="block py-3 px-3 text-sm font-medium text-dq-charcoal hover:bg-dq-green-lt rounded-lg">Berita</a>
+      <a href="kontak.html" class="block py-3 px-3 text-sm font-medium text-dq-charcoal hover:bg-dq-green-lt rounded-lg">Kontak</a>
+      <div class="pt-4 border-t border-gray-100 mt-4">
+        <a href="https://daftar.daarelqolam.ac.id/" target="_blank" class="block w-full text-center bg-dq-green hover:bg-dq-green-dk text-white text-sm font-semibold px-4 py-3 rounded-lg transition-colors">Daftar Sekarang</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <section class="pt-32 pb-16 bg-dq-green arabesque-bg">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
+        <span class="w-1.5 h-1.5 rounded-full bg-dq-gold"></span>
+        <span class="text-xs font-semibold text-dq-gold tracking-wide uppercase">Tentang Kami</span>
+      </div>
+      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-4">Mengenal <span class="text-dq-gold italic">Daar el-Qolam</span></h1>
+      <p class="text-white/80 text-base lg:text-lg max-w-2xl mx-auto">Pesantren modern yang telah mendidik lebih dari 30.000 alumni selama 58 tahun — mengintegrasikan ilmu agama dan ilmu pengetahuan umum.</p>
+    </div>
+  </section>
+
+  <!-- ═══ PAGE NAV ═══ -->
+  <div class="sticky top-16 z-30 bg-white border-b border-dq-green/10 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <nav class="flex gap-1 overflow-x-auto py-3">
+        <a href="#profil" class="flex-shrink-0 text-sm font-medium text-dq-charcoal hover:text-dq-green px-4 py-2 rounded-lg hover:bg-dq-green-lt transition-colors">Profil</a>
+        <a href="#visi" class="flex-shrink-0 text-sm font-medium text-dq-charcoal hover:text-dq-green px-4 py-2 rounded-lg hover:bg-dq-green-lt transition-colors">Visi &amp; Misi</a>
+        <a href="#pimpinan" class="flex-shrink-0 text-sm font-medium text-dq-charcoal hover:text-dq-green px-4 py-2 rounded-lg hover:bg-dq-green-lt transition-colors">Pimpinan</a>
+        <a href="#sejarah" class="flex-shrink-0 text-sm font-medium text-dq-charcoal hover:text-dq-green px-4 py-2 rounded-lg hover:bg-dq-green-lt transition-colors">Sejarah</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ═══ PROFIL ═══ -->
+  <section id="profil" class="py-20 lg:py-28 bg-dq-ivory">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <span class="gold-line text-xs font-semibold text-dq-gold tracking-widest uppercase">Profil Pesantren</span>
+          <h2 class="font-serif text-3xl lg:text-4xl font-semibold text-dq-charcoal mt-4 mb-6">Pondok Pesantren<br/><span class="text-dq-green italic">Daar el-Qolam</span></h2>
+          <p class="text-dq-warm-gray leading-relaxed mb-5">Pondok Pesantren Daar el-Qolam adalah salah satu pesantren modern terkemuka di Indonesia, berdiri sejak 1968 di Jayanti, Kabupaten Tangerang, Banten. Didirikan oleh KH. Ahmad Rifai Arif, pesantren ini telah berkembang menjadi empat kampus yang terintegrasi.</p>
+          <p class="text-dq-warm-gray leading-relaxed mb-8">Mengusung kurikulum Madrasatul Muallimin al-Islamiyah (MMI), Daar el-Qolam memadukan pendidikan agama Islam yang mendalam dengan kurikulum nasional dan internasional, menghasilkan lulusan yang kompeten dalam ilmu agama maupun ilmu pengetahuan umum.</p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl p-4 border border-dq-green/10 text-center">
+              <p class="font-serif text-4xl font-bold text-dq-green">1968</p>
+              <p class="text-xs text-dq-warm-gray mt-1">Tahun Berdiri</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 border border-dq-green/10 text-center">
+              <p class="font-serif text-4xl font-bold text-dq-green">4</p>
+              <p class="text-xs text-dq-warm-gray mt-1">Kampus Terintegrasi</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 border border-dq-green/10 text-center">
+              <p class="font-serif text-4xl font-bold text-dq-green">5K+</p>
+              <p class="text-xs text-dq-warm-gray mt-1">Santri Aktif</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 border border-dq-green/10 text-center">
+              <p class="font-serif text-4xl font-bold text-dq-green">30K+</p>
+              <p class="text-xs text-dq-warm-gray mt-1">Alumni</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="rounded-2xl overflow-hidden shadow-card-lg aspect-[4/3]">
+            <img src="DJI_0866 (2)-2.jpg" alt="Panorama Pesantren Daar el-Qolam" class="w-full h-full object-cover"/>
+          </div>
+          <div class="mt-4 grid grid-cols-2 gap-4">
+            <div class="rounded-xl overflow-hidden shadow-card aspect-video"><img src="BP3A8852.jpg" alt="Kegiatan Santri" class="w-full h-full object-cover"/></div>
+            <div class="rounded-xl overflow-hidden shadow-card aspect-video"><img src="DJI_0849.jpg" alt="Fasilitas" class="w-full h-full object-cover"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VISI MISI ═══ -->
+  <section id="visi" class="py-20 lg:py-28 bg-dq-green arabesque-bg">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="gold-line text-xs font-semibold text-dq-gold tracking-widest uppercase">Landasan</span>
+        <h2 class="font-serif text-3xl lg:text-4xl font-semibold text-white mt-3">Visi &amp; Misi</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="reveal bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-dq-gold/20 flex items-center justify-center">
+              <svg class="w-5 h-5 text-dq-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-white">Visi</h3>
+          </div>
+          <p class="text-white/90 leading-relaxed text-base">"Terwujudnya lembaga pendidikan Islam yang unggul dalam menghasilkan generasi yang beriman, berilmu, berakhlak mulia, dan mampu berkontribusi bagi kemajuan umat dan bangsa."</p>
+        </div>
+        <div class="reveal bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20" style="transition-delay:0.15s;">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-dq-gold/20 flex items-center justify-center">
+              <svg class="w-5 h-5 text-dq-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-white">Misi</h3>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2 text-white/90 text-sm"><svg class="w-4 h-4 text-dq-gold mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Menyelenggarakan pendidikan Islam yang berkualitas dan berstandar tinggi</li>
+            <li class="flex items-start gap-2 text-white/90 text-sm"><svg class="w-4 h-4 text-dq-gold mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Membangun karakter santri yang berakhlak mulia dan mandiri</li>
+            <li class="flex items-start gap-2 text-white/90 text-sm"><svg class="w-4 h-4 text-dq-gold mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mengintegrasikan ilmu agama dan ilmu pengetahuan umum secara harmonis</li>
+            <li class="flex items-start gap-2 text-white/90 text-sm"><svg class="w-4 h-4 text-dq-gold mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mempersiapkan santri menghadapi tantangan global dengan bekal keimanan yang kuat</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 reveal">
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 text-center">
+          <p class="font-arabic text-3xl lg:text-4xl text-white mb-3 leading-relaxed" dir="rtl">وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ</p>
+          <p class="text-white/80 text-sm italic">"Dan Aku tidak menciptakan jin dan manusia melainkan supaya mereka beribadah kepada-Ku." — QS. Adz-Dzariyat: 56</p>
+          <p class="text-dq-gold font-serif text-lg mt-4">Mendidik dengan Hati · Membentuk dengan Ilmu · Mengukir dengan Akhlak</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PIMPINAN ═══ -->
+  <section id="pimpinan" class="py-20 lg:py-28 bg-dq-ivory">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="gold-line text-xs font-semibold text-dq-gold tracking-widest uppercase">Kepemimpinan</span>
+        <h2 class="font-serif text-3xl lg:text-4xl font-semibold text-dq-charcoal mt-3 mb-4">Pimpinan <span class="text-dq-green italic">Pesantren</span></h2>
+        <p class="text-dq-warm-gray max-w-xl mx-auto text-base">Dipimpin oleh ulama dan pendidik berpengalaman yang berkomitmen pada kemajuan pendidikan Islam.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="reveal bg-white rounded-2xl p-6 border border-dq-green/10 shadow-card text-center">
+          <div class="w-20 h-20 rounded-full bg-dq-green mx-auto mb-4 flex items-center justify-center">
+            <span class="text-xl font-bold text-white font-serif">KH</span>
+          </div>
+          <h3 class="font-serif text-lg font-semibold text-dq-charcoal mb-1">KH. Ahmad Rifai Arif</h3>
+          <p class="text-xs text-dq-gold font-semibold uppercase tracking-widest mb-2">Pendiri</p>
+          <p class="text-sm text-dq-warm-gray">Pendiri Pondok Pesantren Daar el-Qolam pada tahun 1968, visioner yang meletakkan fondasi pendidikan pesantren modern di Indonesia.</p>
+        </div>
+        <div class="reveal bg-white rounded-2xl p-6 border border-dq-green/10 shadow-card text-center" style="transition-delay:0.1s;">
+          <div class="w-20 h-20 rounded-full bg-dq-green mx-auto mb-4 flex items-center justify-center">
+            <span class="text-xl font-bold text-white font-serif">KH</span>
+          </div>
+          <h3 class="font-serif text-lg font-semibold text-dq-charcoal mb-1">KH. Adrian Mafatihullah Karim</h3>
+          <p class="text-xs text-dq-gold font-semibold uppercase tracking-widest mb-2">Pimpinan Pesantren</p>
+          <p class="text-sm text-dq-warm-gray">Memimpin Pondok Pesantren Daar el-Qolam dengan visi memadukan tradisi pesantren dengan kebutuhan pendidikan modern.</p>
+        </div>
+        <div class="reveal bg-white rounded-2xl p-6 border border-dq-green/10 shadow-card text-center" style="transition-delay:0.2s;">
+          <div class="w-20 h-20 rounded-full bg-dq-green mx-auto mb-4 flex items-center justify-center">
+            <span class="text-xl font-bold text-white font-serif">DQ</span>
+          </div>
+          <h3 class="font-serif text-lg font-semibold text-dq-charcoal mb-1">Dewan Asatidz</h3>
+          <p class="text-xs text-dq-gold font-semibold uppercase tracking-widest mb-2">Para Pengajar</p>
+          <p class="text-sm text-dq-warm-gray">Ratusan guru berpengalaman dari dalam dan luar negeri, alumni universitas terkemuka di Indonesia dan Timur Tengah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SEJARAH ═══ -->
+  <section id="sejarah" class="py-20 lg:py-28 bg-white">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="gold-line text-xs font-semibold text-dq-gold tracking-widest uppercase">Perjalanan</span>
+        <h2 class="font-serif text-3xl lg:text-4xl font-semibold text-dq-charcoal mt-3 mb-4">Sejarah <span class="text-dq-green italic">Singkat</span></h2>
+      </div>
+      <div class="relative">
+        <div class="absolute left-[7px] top-0 bottom-0 w-0.5 bg-dq-green/20 hidden sm:block"></div>
+        <div class="space-y-8">
+          <div class="reveal flex gap-6">
+            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-dq-green mt-1 hidden sm:block ring-4 ring-dq-green-lt"></div>
+            <div class="flex-1 pb-8 border-b border-dq-green/10">
+              <p class="text-xs font-bold text-dq-gold uppercase tracking-widest mb-1">1968</p>
+              <h3 class="font-serif text-xl font-semibold text-dq-charcoal mb-2">Berdiri dan Berkembang</h3>
+              <p class="text-sm text-dq-warm-gray leading-relaxed">KH. Ahmad Rifai Arif mendirikan Pondok Pesantren Daar el-Qolam di Jayanti, Tangerang. Dengan visi pesantren modern yang memadukan ilmu agama dan umum, pesantren mulai menerima santri pertamanya.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-6" style="transition-delay:0.1s;">
+            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-dq-green mt-1 hidden sm:block ring-4 ring-dq-green-lt"></div>
+            <div class="flex-1 pb-8 border-b border-dq-green/10">
+              <p class="text-xs font-bold text-dq-gold uppercase tracking-widest mb-1">1980-an</p>
+              <h3 class="font-serif text-xl font-semibold text-dq-charcoal mb-2">Pengembangan Kurikulum MMI</h3>
+              <p class="text-sm text-dq-warm-gray leading-relaxed">Kurikulum Madrasatul Muallimin al-Islamiyah (MMI) disempurnakan dan menjadi ciri khas Daar el-Qolam — perpaduan unik antara kurikulum pesantren dan kurikulum nasional.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-6" style="transition-delay:0.2s;">
+            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-dq-green mt-1 hidden sm:block ring-4 ring-dq-green-lt"></div>
+            <div class="flex-1 pb-8 border-b border-dq-green/10">
+              <p class="text-xs font-bold text-dq-gold uppercase tracking-widest mb-1">1990-an</p>
+              <h3 class="font-serif text-xl font-semibold text-dq-charcoal mb-2">Ekspansi Multi-Kampus</h3>
+              <p class="text-sm text-dq-warm-gray leading-relaxed">Pesantren berkembang pesat dengan dibukanya Daar el-Qolam 2 (Excellent Class) yang berfokus pada pengembangan ilmu pengetahuan dan teknologi, memperluas pilihan program pendidikan.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-6" style="transition-delay:0.3s;">
+            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-dq-green mt-1 hidden sm:block ring-4 ring-dq-green-lt"></div>
+            <div class="flex-1 pb-8 border-b border-dq-green/10">
+              <p class="text-xs font-bold text-dq-gold uppercase tracking-widest mb-1">2000-an</p>
+              <h3 class="font-serif text-xl font-semibold text-dq-charcoal mb-2">DQ3 — Kampus Dza'Izza Internasional</h3>
+              <p class="text-sm text-dq-warm-gray leading-relaxed">Lahirnya Daar el-Qolam 3 Kampus Dza'Izza dengan program bilingual internasional. Menjalin kerjasama dengan Universitas Az-Zaitunah Tunisia, membuka era baru pendidikan internasional di lingkungan pesantren.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-6" style="transition-delay:0.4s;">
+            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-dq-gold mt-1 hidden sm:block ring-4 ring-dq-gold-lt"></div>
+            <div class="flex-1">
+              <p class="text-xs font-bold text-dq-gold uppercase tracking-widest mb-1">Kini</p>
+              <h3 class="font-serif text-xl font-semibold text-dq-charcoal mb-2">58 Tahun Mendidik Generasi Bangsa</h3>
+              <p class="text-sm text-dq-warm-gray leading-relaxed">Dengan 4 kampus terintegrasi, lebih dari 5.000 santri aktif, dan 30.000+ alumni yang tersebar di seluruh penjuru Indonesia dan dunia, Daar el-Qolam terus bertumbuh sebagai institusi pendidikan Islam terdepan di Indonesia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="bg-dq-green-dk text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
+        <div class="col-span-2 lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-3 mb-4">
+            <img src="Logo Darqo.png" alt="Logo Daar el-Qolam" class="w-9 h-9 object-contain brightness-0 invert"/>
+            <div>
+              <p class="text-[10px] text-white/50 tracking-wide uppercase">Pondok Pesantren</p>
+              <p class="font-serif text-sm font-semibold text-white">Daar el-Qolam</p>
+            </div>
+          </a>
+          <p class="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">Mendidik generasi berilmu dan berakhlak sejak 1968 di Jayanti, Kabupaten Tangerang, Banten.</p>
+          <div class="flex gap-3">
+            <a href="https://www.youtube.com/@ElQolam/videos" target="_blank" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors" aria-label="YouTube"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="https://www.instagram.com/daarelqolam/" target="_blank" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors" aria-label="Instagram"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="https://www.tiktok.com/@ponpesdaarelqolam" target="_blank" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors" aria-label="TikTok"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.72a8.27 8.27 0 004.84 1.55V6.82a4.85 4.85 0 01-1.07-.13z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-white/40 uppercase tracking-widest mb-4">Tentang</p>
+          <ul class="space-y-2.5">
+            <li><a href="#profil" class="text-sm text-white font-semibold">Profil Pesantren</a></li>
+            <li><a href="#visi" class="text-sm text-white/70 hover:text-white transition-colors">Visi &amp; Misi</a></li>
+            <li><a href="#pimpinan" class="text-sm text-white/70 hover:text-white transition-colors">Pimpinan</a></li>
+            <li><a href="#sejarah" class="text-sm text-white/70 hover:text-white transition-colors">Sejarah</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-white/40 uppercase tracking-widest mb-4">Program</p>
+          <ul class="space-y-2.5">
+            <li><a href="program.html#reguler" class="text-sm text-white/70 hover:text-white transition-colors">Program Reguler</a></li>
+            <li><a href="program.html#excellent" class="text-sm text-white/70 hover:text-white transition-colors">Excellent Class</a></li>
+            <li><a href="dq3.html" class="text-sm text-white/70 hover:text-white transition-colors">Kelas Internasional</a></li>
+            <li><a href="program.html#dirasah" class="text-sm text-white/70 hover:text-white transition-colors">Dirasah Islamiyyah</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-white/40 uppercase tracking-widest mb-4">Kontak</p>
+          <ul class="space-y-2.5">
+            <li><a href="kontak.html" class="text-sm text-white/70 hover:text-white transition-colors">Jayanti, Kab. Tangerang</a></li>
+            <li><a href="tel:+622159576882" class="text-sm text-white/70 hover:text-white transition-colors">+62 21 5957 6882</a></li>
+            <li><a href="https://daftar.daarelqolam.ac.id/" target="_blank" class="text-sm text-white/70 hover:text-white transition-colors">Daftar Sekarang</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-white/40 text-sm">© 2026 Pondok Pesantren Daar el-Qolam. Hak cipta dilindungi.</p>
+        <a href="kontak.html" class="text-white/40 hover:text-white/70 text-xs transition-colors">Kontak</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
