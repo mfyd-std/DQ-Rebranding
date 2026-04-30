@@ -325,6 +325,12 @@ html.dark .theme-toggle:hover { background: rgba(255, 255, 255, 0.08); }
 html.dark .theme-toggle .icon-moon { display: none; }
 html.dark .theme-toggle .icon-sun { display: block; }
 
+/* Logo light/dark swap */
+.logo-light { display: block; }
+.logo-dark { display: none; }
+html.dark .logo-light { display: none; }
+html.dark .logo-dark { display: block; }
+
 /* ─── Tag dot pulse animation (apply with .pulse-dot) ─── */
 .pulse-dot {
   animation: pulseDot 1.4s ease-in-out infinite;
