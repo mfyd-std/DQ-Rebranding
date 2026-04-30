@@ -263,6 +263,287 @@ body.menu-open {
   overflow: hidden;
 }
 
+/* ═══ DARK MODE ═══ — opt-in via .dark on <html> */
+html.dark {
+  color-scheme: dark;
+}
+html.dark body {
+  background-color: #0F1714 !important;
+  color: #E5E7EB;
+}
+html.dark body.dq-bg-animated,
+html.dark section.bg-dq-ivory {
+  background-color: #0F1714 !important;
+  background-image:
+    radial-gradient(60% 90% at 20% 0%, rgba(0, 108, 85, 0.30) 0%, transparent 55%),
+    radial-gradient(70% 90% at 90% 100%, rgba(201, 162, 39, 0.16) 0%, transparent 55%) !important;
+}
+html.dark .bg-white,
+html.dark .navbar-glass,
+html.dark .stat-box {
+  background-color: #1A2422 !important;
+  color: #E5E7EB;
+}
+html.dark .navbar-glass {
+  background: rgba(15, 23, 20, 0.65) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+html.dark .navbar-glass.scrolled {
+  background: rgba(15, 23, 20, 0.92) !important;
+}
+html.dark .text-dq-charcoal { color: #E5E7EB !important; }
+html.dark .text-dq-warm-gray { color: #9CA3AF !important; }
+html.dark .border-dq-green\/10 { border-color: rgba(0, 108, 85, 0.35) !important; }
+html.dark .border-gray-100,
+html.dark .border-gray-200 { border-color: rgba(255, 255, 255, 0.08) !important; }
+html.dark .bg-dq-green-lt { background-color: rgba(0, 108, 85, 0.22) !important; }
+html.dark .bg-dq-gold-lt { background-color: rgba(201, 162, 39, 0.22) !important; }
+html.dark .nav-dropdown,
+html.dark .mobile-menu { background: #1A2422 !important; }
+html.dark .mobile-menu { background-color: rgba(15, 23, 20, 0.97) !important; }
+html.dark .text-dq-green { color: #2CB58E !important; }
+html.dark .program-card,
+html.dark .news-card,
+html.dark [class*="bg-dq-ivory"]:not(section):not(body) { background-color: #1A2422 !important; }
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.4s ease;
+}
+.theme-toggle:hover { background: rgba(0, 108, 85, 0.1); }
+html.dark .theme-toggle:hover { background: rgba(255, 255, 255, 0.08); }
+.theme-toggle .icon-moon { display: block; }
+.theme-toggle .icon-sun { display: none; }
+html.dark .theme-toggle .icon-moon { display: none; }
+html.dark .theme-toggle .icon-sun { display: block; }
+
+/* ─── Tag dot pulse animation (apply with .pulse-dot) ─── */
+.pulse-dot {
+  animation: pulseDot 1.4s ease-in-out infinite;
+}
+
+/* ─── DQ container (1440px max, 20px side padding — flat across breakpoints) ─── */
+.dq-container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ─── Animated DQ ambient gradient ───
+   Applied to body + every <section class="bg-dq-ivory"> so the brand glow
+   feels persistent as you scroll. Cards/buttons with bg-dq-ivory keep solid color. */
+body.dq-bg-animated,
+section.bg-dq-ivory,
+section.dq-bg-animated {
+  background-color: #FAFAF8;
+  background-image:
+    radial-gradient(60% 90% at 20% 0%, rgba(0, 108, 85, 0.16) 0%, transparent 55%),
+    radial-gradient(70% 90% at 90% 100%, rgba(201, 162, 39, 0.14) 0%, transparent 55%);
+  background-size: 200% 200%, 200% 200%;
+  background-attachment: fixed, fixed;
+  animation: dqGradientShift 22s ease-in-out infinite alternate;
+}
+@keyframes dqGradientShift {
+  0%   { background-position: 0% 0%, 100% 100%; }
+  50%  { background-position: 30% 20%, 70% 80%; }
+  100% { background-position: 60% 10%, 40% 90%; }
+}
+
+/* ─── Hero last-word rotator (vertical slide spring) ─── */
+.text-rotator {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  vertical-align: baseline;
+  overflow: hidden;
+  min-width: 6ch;
+}
+.text-rotator .rt-spacer { visibility: hidden; }
+.text-rotator .rt-word {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(150%);
+  transition: opacity 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+              transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: #006C55;
+  font-style: italic;
+}
+.text-rotator .rt-word.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.text-rotator .rt-word.exit-up {
+  opacity: 0;
+  transform: translateY(-150%);
+  transition: opacity 0.5s ease, transform 0.6s ease;
+}
+
+/* ─── Infinite photo carousel (no hover interaction — no lag) ─── */
+.photo-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+.photo-marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: photoScroll 60s linear infinite;
+  will-change: transform;
+}
+@keyframes photoScroll {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+.photo-marquee-item {
+  width: 14rem;
+  height: 14rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+.photo-marquee-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .photo-marquee-item { width: 18rem; height: 18rem; }
+}
+@media (min-width: 1024px) {
+  .photo-marquee-item { width: 22rem; height: 22rem; }
+}
+
+/* ─── Lightbox modal ─── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 1rem;
+}
+.lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+.lightbox-img {
+  max-width: 92vw;
+  max-height: 88vh;
+  border-radius: 1rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+  transform: scale(0.92);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.lightbox.open .lightbox-img {
+  transform: scale(1);
+}
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotate(90deg);
+}
+
+/* ─── Universal interactive card/photo enhancement ─── */
+.card-interactive {
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.35s ease,
+              border-color 0.35s ease;
+  will-change: transform;
+}
+.card-interactive::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.4),
+              0 16px 48px -12px rgba(0, 108, 85, 0.35);
+}
+.card-interactive:hover {
+  transform: translateY(-4px) scale(1.015);
+}
+.card-interactive:hover::after {
+  opacity: 1;
+}
+.card-interactive:active {
+  transform: translateY(-1px) scale(0.995);
+}
+
+.photo-interactive {
+  cursor: zoom-in;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.35s ease;
+}
+.photo-interactive img {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 0.4s ease;
+  will-change: transform;
+}
+.photo-interactive:hover img {
+  transform: scale(1.06);
+  filter: saturate(1.08) contrast(1.04);
+}
+.photo-interactive::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(201, 162, 39, 0.18) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.photo-interactive:hover::before {
+  opacity: 1;
+}
+
 /* ─── Anchor scroll offset (clears fixed navbar) ─── */
 section[id],
 div[id] {

@@ -237,6 +237,114 @@ function initSmoothScroll() {
   });
 }
 
+// ─── HERO TEXT ROTATOR ───
+function initTextRotator() {
+  var rotator = document.querySelector('.text-rotator');
+  if (!rotator) return;
+  var words = rotator.querySelectorAll('.rt-word');
+  if (!words.length) return;
+  var spacer = rotator.querySelector('.rt-spacer');
+  var idx = 0;
+
+  function setSpacer() {
+    if (spacer) spacer.textContent = words[idx].textContent;
+  }
+
+  // Start: first word visible
+  words[0].classList.add('active');
+  setSpacer();
+
+  setInterval(function() {
+    var current = words[idx];
+    var nextIdx = (idx + 1) % words.length;
+    var next = words[nextIdx];
+
+    current.classList.remove('active');
+    current.classList.add('exit-up');
+
+    next.classList.remove('exit-up');
+    // Force reflow so transition replays
+    void next.offsetWidth;
+    next.classList.add('active');
+
+    idx = nextIdx;
+    setSpacer();
+
+    setTimeout(function() {
+      current.classList.remove('exit-up');
+    }, 800);
+  }, 2000);
+}
+
+// ─── LIGHTBOX MODAL (click-to-zoom) ───
+function initLightbox() {
+  var triggers = document.querySelectorAll('[data-lightbox]');
+  if (!triggers.length) return;
+
+  var lightbox = document.getElementById('lightbox');
+  if (!lightbox) {
+    lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML =
+      '<button class="lightbox-close" aria-label="Tutup">' +
+      '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>' +
+      '</button>' +
+      '<img class="lightbox-img" alt=""/>';
+    document.body.appendChild(lightbox);
+  }
+  var imgEl = lightbox.querySelector('.lightbox-img');
+  var closeBtn = lightbox.querySelector('.lightbox-close');
+
+  function open(src, alt) {
+    imgEl.src = src;
+    imgEl.alt = alt || '';
+    lightbox.classList.add('open');
+    document.body.classList.add('menu-open');
+  }
+  function close() {
+    lightbox.classList.remove('open');
+    document.body.classList.remove('menu-open');
+  }
+
+  for (var i = 0; i < triggers.length; i++) {
+    (function(t) {
+      t.addEventListener('click', function(e) {
+        e.preventDefault();
+        var img = t.tagName === 'IMG' ? t : t.querySelector('img');
+        var src = t.getAttribute('data-lightbox-src') || (img && img.src);
+        var alt = t.getAttribute('data-lightbox-alt') || (img && img.alt) || '';
+        if (src) open(src, alt);
+      });
+    })(triggers[i]);
+  }
+
+  closeBtn.addEventListener('click', close);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) close();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) close();
+  });
+}
+
+// ─── DARK MODE TOGGLE ───
+function initThemeToggle() {
+  var html = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('dq-theme'); } catch (e) {}
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (saved === 'dark' || (!saved && prefersDark)) html.classList.add('dark');
+
+  var btns = document.querySelectorAll('[data-theme-toggle]');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() {
+      html.classList.toggle('dark');
+      try { localStorage.setItem('dq-theme', html.classList.contains('dark') ? 'dark' : 'light'); } catch (e) {}
+    });
+  }
+}
+
 // ─── INITIALIZE ───
 document.addEventListener('DOMContentLoaded', function() {
   renderFAQ();
@@ -247,4 +355,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initSmoothScroll();
   initStatsCounter();
   initNewsFilter();
+  initTextRotator();
+  initLightbox();
+  initThemeToggle();
 });
