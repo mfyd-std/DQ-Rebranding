@@ -16,24 +16,24 @@ const programs = [
 ];
 
 const exploreItems = [
-  { title: "Fasilitas", description: "Masjid, laboratorium, perpustakaan, lapangan olahraga, dan lainnya.", image: "/images/DJI_0849.jpg", href: "#jelajahi-fasilitas" },
-  { title: "Kehidupan Islami", description: "Shalat berjamaah, halaqoh Quran, kajian, dan disiplin ibadah harian.", image: "/images/BP3A8921.jpg", href: "#jelajahi-kehidupan" },
-  { title: "Ekstrakurikuler", description: "Pramuka, olahraga, seni, jurnalistik, robotika, dan banyak lagi.", image: "/images/upacaradq2.jpg", href: "#jelajahi-ekskul" },
-  { title: "Kehidupan Asrama", description: "Lingkungan asrama yang nyaman, aman, dan membentuk kemandirian.", image: "/images/BP3A8852.jpg", href: "#jelajahi-asrama" },
+  { title: "Fasilitas", description: "Masjid, laboratorium, perpustakaan, lapangan olahraga, dan lainnya.", image: "/images/DJI_0849.webp", href: "#jelajahi-fasilitas" },
+  { title: "Kehidupan Islami", description: "Shalat berjamaah, halaqoh Quran, kajian, dan disiplin ibadah harian.", image: "/images/BP3A8921.webp", href: "#jelajahi-kehidupan" },
+  { title: "Ekstrakurikuler", description: "Pramuka, olahraga, seni, jurnalistik, robotika, dan banyak lagi.", image: "/images/upacaradq2.webp", href: "#jelajahi-ekskul" },
+  { title: "Kehidupan Asrama", description: "Lingkungan asrama yang nyaman, aman, dan membentuk kemandirian.", image: "/images/BP3A8852.webp", href: "#jelajahi-asrama" },
 ];
 
 const heroImages = [
-  { file: "BP3A8852.jpg", alt: "Kegiatan santri Daar el-Qolam", className: "col-span-3 row-span-2" },
-  { file: "DJI_0849.jpg", alt: "Fasilitas Daar el-Qolam", className: "col-span-2" },
-  { file: "upacaradq2.jpg", alt: "Upacara santri", className: "col-span-2" },
-  { file: "DJI_0866 (2)-2.jpg", alt: "Panorama pesantren", className: "col-span-5" },
+  { file: "BP3A8852.webp", alt: "Kegiatan santri Daar el-Qolam", className: "col-span-3 row-span-2" },
+  { file: "DJI_0849.webp", alt: "Fasilitas Daar el-Qolam", className: "col-span-2" },
+  { file: "upacaradq2.webp", alt: "Upacara santri", className: "col-span-2" },
+  { file: "DJI_0866 (2)-2.webp", alt: "Panorama pesantren", className: "col-span-5" },
 ];
-const gallery = ["7S1A0164.JPG", "BP3A0743.JPG", "7S1A0198.JPG", "BP3A0909.JPG", "7S1A0206.JPG", "BP3A0993.JPG", "BP3A1185.JPG", "BP3A1224.JPG", "DJI_0866 (2).jpg"];
+const gallery = ["7S1A0164.webp", "BP3A0743.webp", "7S1A0198.webp", "BP3A0909.webp", "7S1A0206.webp", "BP3A0993.webp", "BP3A1185.webp", "BP3A1224.webp", "DJI_0866 (2).webp"];
 const news = [
-  { slug: "kolaborasi-literasi-dzaizza", category: "Akademik", date: "April 2026", title: "Tingkatkan Kualitas Perpustakaan, Dza'Izza Perkuat Kolaborasi Literasi", excerpt: "Program literasi baru untuk meningkatkan budaya membaca dan riset di kalangan santri DQ3.", image: "/images/BP3A1179.JPG" },
-  { slug: "seleksi-paskibraka-tangerang", category: "Prestasi", date: "Maret 2026", title: "Santri DQ3 Mengikuti Seleksi Paskibraka Kabupaten Tangerang", excerpt: "Santri Daar el-Qolam 3 berhasil lolos seleksi tingkat kecamatan dan mewakili di tingkat kabupaten.", image: "/images/BP3A1242.JPG" },
-  { slug: "seleksi-nasional-opsi-2026", category: "Prestasi", date: "Februari 2026", title: "Dua Santriwati Tembus Seleksi Nasional OPSI 2026", excerpt: "Pencapaian membanggakan dari santriwati DQ3 dalam Olimpiade Penelitian Siswa Indonesia.", image: "/images/BP3A1252.JPG" },
-  { slug: "kegiatan-apel-santri", category: "Kegiatan", date: "Januari 2026", title: "Kegiatan Apel Santri Menguatkan Disiplin dan Kebersamaan", excerpt: "Agenda rutin pesantren membangun karakter disiplin dan rasa tanggung jawab santri.", image: "/images/BP3A1185.JPG" },
+  { slug: "kolaborasi-literasi-dzaizza", category: "Akademik", date: "April 2026", title: "Tingkatkan Kualitas Perpustakaan, Dza'Izza Perkuat Kolaborasi Literasi", excerpt: "Program literasi baru untuk meningkatkan budaya membaca dan riset di kalangan santri DQ3.", image: "/images/BP3A1179.webp" },
+  { slug: "seleksi-paskibraka-tangerang", category: "Prestasi", date: "Maret 2026", title: "Santri DQ3 Mengikuti Seleksi Paskibraka Kabupaten Tangerang", excerpt: "Santri Daar el-Qolam 3 berhasil lolos seleksi tingkat kecamatan dan mewakili di tingkat kabupaten.", image: "/images/BP3A1242.webp" },
+  { slug: "seleksi-nasional-opsi-2026", category: "Prestasi", date: "Februari 2026", title: "Dua Santriwati Tembus Seleksi Nasional OPSI 2026", excerpt: "Pencapaian membanggakan dari santriwati DQ3 dalam Olimpiade Penelitian Siswa Indonesia.", image: "/images/BP3A1252.webp" },
+  { slug: "kegiatan-apel-santri", category: "Kegiatan", date: "Januari 2026", title: "Kegiatan Apel Santri Menguatkan Disiplin dan Kebersamaan", excerpt: "Agenda rutin pesantren membangun karakter disiplin dan rasa tanggung jawab santri.", image: "/images/BP3A1185.webp" },
 ];
 const menuGroups = [
   { label: "Tentang DQ", href: "#tentang", items: [["Profil Pesantren", "#tentang"], ["Visi & Misi", "#tentang"], ["Sejarah", "#tentang"]] },
