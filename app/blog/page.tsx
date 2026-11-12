@@ -48,7 +48,7 @@ export default function BlogPage() {
           <SectionHeading eyebrow="Berita & Kegiatan" title="Kabar Terbaru dari" emphasis="Daar el-Qolam" description="Informasi akademik, prestasi, dan kegiatan santri." />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {posts.map((post) => (
-              <article key={post.slug} className="flex flex-col rounded-2xl border border-dq-green/10 bg-white p-6 shadow-card">
+              <article id={post.slug} key={post.slug} className="flex flex-col rounded-2xl border border-dq-green/10 bg-white p-6 shadow-card">
                 <div className="flex items-center gap-2 text-xs"><span className="rounded-full bg-dq-green-light px-3 py-1 font-semibold text-dq-green">{post.category}</span><time className="text-dq-warm-gray">{post.date}</time></div>
                 <h2 className="mt-5 font-serif text-2xl font-semibold leading-tight text-dq-charcoal">{post.title}</h2>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-dq-warm-gray">{post.excerpt}</p>
