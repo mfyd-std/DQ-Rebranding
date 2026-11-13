@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 const registrationUrl = "https://daftar.daarelqolam.ac.id/";
+const dq3RegistrationUrl = "https://psb.daarelqolam3.sch.id/";
 
 const facilities = [
   {
@@ -139,12 +140,21 @@ export default function ExplorePage() {
             <Link href="/" className="px-3 py-2 text-sm font-medium hover:text-dq-green">
               Beranda
             </Link>
-            <Link href="/blog" className="px-3 py-2 text-sm font-medium hover:text-dq-green">
-              Berita
+            <Link href="/#tentang" className="px-3 py-2 text-sm font-medium hover:text-dq-green">
+              Tentang DQ
+            </Link>
+            <Link href="/#program" className="px-3 py-2 text-sm font-medium hover:text-dq-green">
+              Program
             </Link>
             <span className="px-3 py-2 text-sm font-semibold text-dq-green" aria-current="page">
               Jelajahi
             </span>
+            <Link href="/#berita" className="px-3 py-2 text-sm font-medium hover:text-dq-green">
+              Berita
+            </Link>
+            <Link href="/#kontak" className="px-3 py-2 text-sm font-medium hover:text-dq-green">
+              Kontak
+            </Link>
           </nav>
           <div className="flex items-center gap-2">
             <span className="hidden items-center gap-1.5 rounded-full border border-dq-gold/30 bg-dq-gold-light px-3 py-1 text-xs font-semibold text-dq-gold md:inline-flex">
@@ -317,7 +327,7 @@ export default function ExplorePage() {
 
       <footer className="bg-dq-green-dark text-white">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5 lg:gap-10">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-7 lg:gap-10">
             <div className="col-span-2 lg:col-span-2">
               <Link href="/" className="inline-flex">
                 <Image src="/images/logo-daar-el-qolam-white.svg" alt="Logo Daar el-Qolam" width={220} height={54} className="h-12 w-auto" />
@@ -328,8 +338,18 @@ export default function ExplorePage() {
                 <a href="https://www.youtube.com/@ElQolam/videos" target="_blank" rel="noreferrer">YouTube @ElQolam</a>
                 <a href="https://www.instagram.com/daarelqolam/" target="_blank" rel="noreferrer">Instagram @daarelqolam</a>
                 <a href="https://www.instagram.com/dzaizza_official/" target="_blank" rel="noreferrer">Instagram @dzaizza_official</a>
+                <a href="https://www.instagram.com/darqomusic/" target="_blank" rel="noreferrer">Instagram @darqomusic</a>
                 <a href="https://www.tiktok.com/@ponpesdaarelqolam" target="_blank" rel="noreferrer">TikTok @ponpesdaarelqolam</a>
               </div>
+            </div>
+            <div>
+              <p className="text-sm font-bold">Program</p>
+              <ul className="mt-3 space-y-2.5 text-sm text-white/70">
+                <li><Link href="/#program-reguler" className="hover:text-white">Program Reguler</Link></li>
+                <li><Link href="/#program-excellent" className="hover:text-white">Excellent Class</Link></li>
+                <li><Link href="/#dq3" className="hover:text-white">Kelas Internasional</Link></li>
+                <li><Link href="/#program-dirasah" className="hover:text-white">Dirasah Islamiyyah</Link></li>
+              </ul>
             </div>
             <div>
               <p className="text-sm font-bold">Jelajahi</p>
@@ -340,9 +360,10 @@ export default function ExplorePage() {
             <div>
               <p className="text-sm font-bold">Navigasi</p>
               <ul className="mt-3 space-y-2.5 text-sm text-white/70">
-                <li><Link href="/" className="hover:text-white">Beranda</Link></li>
-                <li><Link href="/blog" className="hover:text-white">Berita &amp; Kegiatan</Link></li>
-                <li><a href={registrationUrl} target="_blank" rel="noreferrer" className="hover:text-white">PSB Daar el-Qolam</a></li>
+                <li><Link href="/#tentang" className="hover:text-white">Tentang DQ</Link></li>
+                <li><Link href="/#program" className="hover:text-white">Program</Link></li>
+                <li><Link href="/blog" className="hover:text-white">Berita</Link></li>
+                <li><Link href="/#kontak" className="hover:text-white">Kontak</Link></li>
               </ul>
             </div>
             <div>
@@ -352,6 +373,14 @@ export default function ExplorePage() {
                 <li><a href="tel:+622159576882" className="hover:text-white">+62 21 5957 6882</a></li>
                 <li><a href="https://wa.me/6281319789000" target="_blank" rel="noreferrer" className="hover:text-white">WhatsApp</a></li>
                 <li><a href="mailto:info@daarelqolam.ac.id" className="hover:text-white">info@daarelqolam.ac.id</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-sm font-bold">Pendaftaran</p>
+              <ul className="mt-3 space-y-2.5 text-sm text-white/70">
+                <li><a href={registrationUrl} target="_blank" rel="noreferrer" className="hover:text-white">PSB Daar el-Qolam</a></li>
+                <li><a href={dq3RegistrationUrl} target="_blank" rel="noreferrer" className="hover:text-white">PSB DQ3</a></li>
+                <li><a href={registrationUrl} target="_blank" rel="noreferrer" className="hover:text-white">Info e-brosur (laman PSB)</a></li>
               </ul>
             </div>
           </div>
