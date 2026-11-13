@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import {
   registrationUrl,
   siteNavGroups,
-  siteNavLinks,
+  sitePrimaryLinks,
   type SiteNavItem,
 } from "@/components/site-navigation";
 
@@ -61,16 +61,10 @@ export function SiteHeader() {
               </div>
             </div>
           ))}
-          {isHome ? siteNavLinks.map((item) => <HeaderLink key={item.label} item={{ ...item, href: item.label === "Berita" ? "#berita" : item.href }} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />) : (
-            <>
-              {isAbout ? <span className="px-3 py-2 text-sm font-semibold text-dq-green" aria-current="page">Tentang DQ</span> : <HeaderLink item={{ label: "Beranda", href: "/" }} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />}
-              {!isAbout && <HeaderLink item={{ label: "Tentang DQ", href: "/tentang" }} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />}
-              <HeaderLink item={{ label: "Program", href: "/#program" }} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />
-              {isExplore ? <span className="px-3 py-2 text-sm font-semibold text-dq-green" aria-current="page">Jelajahi</span> : <HeaderLink item={{ label: "Jelajahi", href: "/jelajahi" }} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />}
-              <HeaderLink item={{ label: "Berita", href: "/blog" }} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />
-              <HeaderLink item={{ label: "Kontak", href: "/#kontak" }} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />
-            </>
-          )}
+          {isHome ? sitePrimaryLinks.filter((item) => item.label === "Berita" || item.label === "Kontak").map((item) => <HeaderLink key={item.label} item={{ ...item, href: item.homeHref ?? item.href }} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />) : sitePrimaryLinks.map((item) => {
+            const isCurrent = (isAbout && item.label === "Tentang DQ") || (isExplore && item.label === "Jelajahi");
+            return isCurrent ? <span key={item.label} className="px-3 py-2 text-sm font-semibold text-dq-green" aria-current="page">{item.label}</span> : <HeaderLink key={item.label} item={item} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />;
+          })}
         </nav>
         <div className="flex items-center gap-2">
           {isHome && <button type="button" className="theme-toggle" onClick={() => setDarkMode((value) => !value)} aria-label={darkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap"} aria-pressed={darkMode}><span className="icon-moon" aria-hidden="true">☾</span><span className="icon-sun" aria-hidden="true">☀</span></button>}
