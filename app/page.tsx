@@ -42,8 +42,6 @@ export default function HomePage() {
   const [activeFilter, setActiveFilter] = useState<NewsFilter>("Semua");
   const [lightbox, setLightbox] = useState<{ file: string; alt: string } | null>(null);
 
-
-
   useEffect(() => {
     const words = ["Berilmu", "Berakhlak", "Berbadan Sehat", "Perubahan"];
     let index = 0;
@@ -67,8 +65,6 @@ export default function HomePage() {
 
   return (
     <main className="overflow-hidden">
-
-
       <section id="hero" className="ornament-tl ornament-br relative bg-dq-ivory px-6 pb-20 pt-28 lg:px-8 lg:pb-28 lg:pt-36">
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-4xl text-center"><div className="mb-6 inline-flex items-center gap-2 rounded-full border border-dq-green/20 bg-dq-green-light px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-dq-green"><span className="pulse-dot h-1.5 w-1.5 rounded-full bg-dq-green" />Est. 1968 · Tangerang, Banten</div><h1 className="font-serif text-5xl font-semibold leading-[1.08] text-dq-charcoal sm:text-6xl lg:text-8xl">Tempat Terbaik<br /><span className="italic text-dq-green">Membangun Generasi</span><br /><span className="inline-block min-w-[7ch] italic text-dq-green">{headline}</span></h1><p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-dq-warm-gray lg:text-lg">Sejak 1968, Pondok Pesantren Daar el-Qolam mendidik ribuan santri menjadi generasi yang unggul dalam ilmu agama, sains, dan teknologi serta dengan akhlak mulia sebagai fondasi utama.</p><div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><a href={registrationUrl} target="_blank" rel="noreferrer" className="rounded-lg bg-dq-green px-6 py-3.5 text-sm font-semibold text-white shadow-card hover:bg-dq-green-dark">Daftar Sekarang</a><Link href="#program" className="rounded-lg border-2 border-dq-green px-6 py-3.5 text-sm font-semibold text-dq-green hover:bg-dq-green hover:text-white">Pelajari Program ↓</Link></div></div>

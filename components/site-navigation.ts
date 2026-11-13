@@ -45,10 +45,16 @@ export const siteNavGroups: SiteNavGroup[] = [
   },
 ];
 
-export const siteNavLinks: SiteNavItem[] = [
-  { label: "Berita", href: "/blog", },
+export const sitePrimaryLinks: SiteNavItem[] = [
+  { label: "Beranda", href: "/" },
+  { label: "Tentang DQ", href: "/tentang", homeHref: "#tentang" },
+  { label: "Program", href: "/#program", homeHref: "#program" },
+  { label: "Jelajahi", href: "/jelajahi", homeHref: "#jelajahi" },
+  { label: "Berita", href: "/blog", homeHref: "#berita" },
   { label: "Kontak", href: "/#kontak" },
 ];
+
+export const siteFooterNavigationLinks = sitePrimaryLinks.filter(({ label }) => label !== "Beranda");
 
 export const siteFooterGroups = [
   {
@@ -69,11 +75,20 @@ export const siteFooterGroups = [
       { label: "Kehidupan Asrama", href: "/jelajahi#asrama" },
     ],
   },
+  {
+    label: "Pendaftaran",
+    links: [
+      { label: "PSB Daar el-Qolam", href: registrationUrl },
+      { label: "PSB DQ3", href: dq3RegistrationUrl },
+      { label: "Info e-brosur (laman PSB)", href: registrationUrl },
+    ],
+  },
 ];
 
 export const siteSocialLinks: SiteNavItem[] = [
   { label: "YouTube @ElQolam", href: "https://www.youtube.com/@ElQolam/videos" },
   { label: "Instagram @daarelqolam", href: "https://www.instagram.com/daarelqolam/" },
   { label: "Instagram @dzaizza_official", href: "https://www.instagram.com/dzaizza_official/" },
+  { label: "Instagram @darqomusic", href: "https://www.instagram.com/darqomusic/" },
   { label: "TikTok @ponpesdaarelqolam", href: "https://www.tiktok.com/@ponpesdaarelqolam" },
 ];

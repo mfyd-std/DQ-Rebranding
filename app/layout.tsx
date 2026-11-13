@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body><SiteHeader />{children}<SiteFooter /></body>
+      <body>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }

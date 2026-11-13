@@ -4,11 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  dq3RegistrationUrl,
-  registrationUrl,
   siteFooterGroups,
+  siteFooterNavigationLinks,
   siteSocialLinks,
 } from "@/components/site-navigation";
+
+function FooterLink({ href, label }: { href: string; label: string }) {
+  return href.startsWith("http") ? (
+    <a href={href} target="_blank" rel="noreferrer" className="hover:text-white">{label}</a>
+  ) : (
+    <Link href={href} className="hover:text-white">{label}</Link>
+  );
+}
 
 export function SiteFooter() {
   const pathname = usePathname();
@@ -33,17 +40,14 @@ export function SiteFooter() {
             <div key={group.label}>
               <p className="text-sm font-bold">{group.label}</p>
               <ul className="mt-3 space-y-2.5 text-sm text-white/70">
-                {group.links.map((link) => <li key={link.label}><Link href={link.href}>{link.label}</Link></li>)}
+                {group.links.map((link) => <li key={link.label}><FooterLink href={link.href} label={link.label} /></li>)}
               </ul>
             </div>
           ))}
           <div>
             <p className="text-sm font-bold">Navigasi</p>
             <ul className="mt-3 space-y-2.5 text-sm text-white/70">
-              <li><Link href="/tentang">Tentang DQ</Link></li>
-              <li><Link href="/#program">Program</Link></li>
-              <li><Link href="/blog">Berita</Link></li>
-              <li><Link href="/#kontak">Kontak</Link></li>
+              {siteFooterNavigationLinks.map((link) => <li key={link.label}><Link href={link.href}>{link.label}</Link></li>)}
             </ul>
           </div>
           <div>
@@ -54,11 +58,7 @@ export function SiteFooter() {
               <li><a href="https://wa.me/6281319789000" target="_blank" rel="noreferrer">WhatsApp</a></li>
               <li><a href="mailto:info@daarelqolam.ac.id">info@daarelqolam.ac.id</a></li>
             </ul>
-            <p className="mt-6 text-sm font-bold">Pendaftaran</p>
-            <ul className="mt-3 space-y-2.5 text-sm text-white/70">
-              <li><a href={registrationUrl} target="_blank" rel="noreferrer">PSB Daar el-Qolam</a></li>
-              <li><a href={dq3RegistrationUrl} target="_blank" rel="noreferrer">PSB DQ3</a></li>
-            </ul>
+
           </div>
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
