@@ -65,7 +65,7 @@ export function SiteFooter() {
           <p className="text-sm text-white/40">© 2026 Pondok Pesantren Daar el-Qolam. Hak cipta dilindungi.</p>
           <div className="flex gap-4 text-xs text-white/40">
             <Link href="/tentang">Tentang DQ</Link>
-            <Link href="/#kontak">Kontak</Link>
+            <Link href="/kontak">Kontak</Link>
             <Link href="/tentang#profil">Profil pesantren</Link>
           </div>
         </div>

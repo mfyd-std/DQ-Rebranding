@@ -22,6 +22,7 @@ const navigationGroups: SiteNavGroup[] = [
     items: [
       { label: "Profil Pesantren", href: "/tentang#profil", homeHref: "#tentang" },
       { label: "Visi & Misi", href: "/tentang#visi", homeHref: "#tentang" },
+      { label: "Pimpinan", href: "/tentang#pimpinan", homeHref: "#tentang" },
       { label: "Sejarah", href: "/tentang#sejarah", homeHref: "#tentang" },
     ],
   },
@@ -56,14 +57,14 @@ const navigationGroups: SiteNavGroup[] = [
     items: [
       { label: "PSB Daar el-Qolam", href: registrationUrl },
       { label: "PSB DQ3", href: dq3RegistrationUrl },
-      { label: "Info e-brosur (laman PSB)", href: registrationUrl },
+      { label: "Info e-brosur", href: "/assets/legacy/docs/brosur_sanbar_2025.pdf" },
     ],
   },
 ];
 
 const navigationLinks: SiteNavItem[] = [
   { label: "Berita", href: "/blog", homeHref: "#berita" },
-  { label: "Kontak", href: "/#kontak" },
+  { label: "Kontak", href: "/kontak" },
 ];
 
 const toNavItem = ({ label, footerLabel, href, homeHref }: SiteNavItem): SiteNavItem => ({
