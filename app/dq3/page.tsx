@@ -2,9 +2,9 @@ import Image from "next/image";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export const metadata = {
-  title: "DQ3 Kampus Dza'Izza — Pesantren Beyond Pesantren",
+  title: "DQ3 Kampus Dza'Izza, Pesantren Beyond Pesantren",
   description:
-    "Daar el-Qolam 3 Kampus Dza'Izza — Go Global, Be a Global Player. Program bilingual internasional dengan kerjasama Az-Zaitunah Tunisia.",
+    "Daar el-Qolam 3 Kampus Dza'Izza, Go Global, Be a Global Player. Program bilingual internasional dengan kerjasama Az-Zaitunah Tunisia.",
 };
 
 const advantages = [
@@ -141,7 +141,7 @@ export default function Dq3Page() {
             </h1>
             <p className="mt-5 text-lg font-medium text-white/90 lg:text-xl">Go Global, Be a Global Player</p>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75">
-              Daar el-Qolam 3 Kampus Dza&apos;Izza mempersiapkan santri menjadi pemimpin global — dengan kurikulum bilingual, kerjasama internasional, dan pondasi Islam yang kokoh.
+              Daar el-Qolam 3 Kampus Dza&apos;Izza mempersiapkan santri menjadi pemimpin global, dengan kurikulum bilingual, kerjasama internasional, dan pondasi Islam yang kokoh.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a href="https://psb.daarelqolam3.sch.id/" target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-dq-gold px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-yellow-600 hover:shadow-card-lg">
@@ -153,7 +153,7 @@ export default function Dq3Page() {
             </div>
           </div>
           <div className="relative hidden min-h-[420px] lg:block">
-            <Image src="/images/BP3A8871.webp" alt="Kampus DQ3 Dza'Izza" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-contain object-center" priority />
+            <Image src="/images/BP3A8871trans.webp" alt="Kampus DQ3 Dza'Izza" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-contain object-center" priority />
           </div>
         </div>
       </section>
@@ -221,7 +221,7 @@ export default function Dq3Page() {
             <span className="text-xs font-semibold uppercase tracking-wide text-dq-gold">PSB DQ3 Dibuka</span>
           </div>
           <h2 className="font-serif text-4xl font-semibold text-white lg:text-5xl">Bergabunglah dengan<br /><span className="italic text-dq-gold">Keluarga Besar DQ3</span></h2>
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/75 lg:text-lg">Jadikan Kampus Dza&apos;Izza sebagai batu loncatan putra-putri Anda menuju panggung dunia — dengan bekal iman, ilmu, dan akhlak.</p>
+          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/75 lg:text-lg">Jadikan Kampus Dza&apos;Izza sebagai batu loncatan putra-putri Anda menuju panggung dunia, dengan bekal iman, ilmu, dan akhlak.</p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a href="https://psb.daarelqolam3.sch.id/" target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-dq-gold px-8 py-4 text-sm font-semibold text-white transition hover:bg-yellow-600 hover:shadow-card-lg">Daftar PSB DQ3 Sekarang <ArrowIcon /></a>
             <a href="https://www.daarelqolam3.sch.id/" target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border-2 border-white/40 px-8 py-4 text-sm font-semibold text-white transition hover:border-white">Website Resmi DQ3 <ExternalIcon /></a>
