@@ -54,7 +54,7 @@ export function SiteFooter() {
             <p className="text-sm font-bold">Kontak</p>
             <ul className="mt-3 space-y-2.5 text-sm text-white/70">
               <li>Jayanti, Kab. Tangerang</li>
-              <li><a href="tel:+622****6882">+62 21 5957 6882</a></li>
+              <li><a href="tel:+622159576882">+62 21 5957 6882</a></li>
               <li><a href="https://wa.me/6281319789000" target="_blank" rel="noreferrer">WhatsApp</a></li>
               <li><a href="mailto:info@daarelqolam.ac.id">info@daarelqolam.ac.id</a></li>
             </ul>
