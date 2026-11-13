@@ -1,38 +1,6 @@
 import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
-
-type BlogPost = {
-  slug: string;
-  category: "Akademik" | "Prestasi" | "Kegiatan";
-  date: string;
-  title: string;
-  excerpt: string;
-};
-
-// Mock contract only. Replace with CMS/backend reader in a later task.
-const posts: BlogPost[] = [
-  {
-    slug: "kolaborasi-literasi-dzaizza",
-    category: "Akademik",
-    date: "April 2026",
-    title: "Tingkatkan Kualitas Perpustakaan, Dza'Izza Perkuat Kolaborasi Literasi",
-    excerpt: "Program literasi baru untuk meningkatkan budaya membaca dan riset di kalangan santri DQ3.",
-  },
-  {
-    slug: "seleksi-paskibraka-tangerang",
-    category: "Prestasi",
-    date: "Maret 2026",
-    title: "Santri DQ3 Mengikuti Seleksi Paskibraka Kabupaten Tangerang",
-    excerpt: "Santri Daar el-Qolam 3 berhasil lolos seleksi tingkat kecamatan dan mewakili di tingkat kabupaten.",
-  },
-  {
-    slug: "seleksi-nasional-opsi-2026",
-    category: "Prestasi",
-    date: "Februari 2026",
-    title: "Dua Santriwati Tembus Seleksi Nasional OPSI 2026",
-    excerpt: "Pencapaian membanggakan dari santriwati DQ3 dalam Olimpiade Penelitian Siswa Indonesia.",
-  },
-];
+import { posts } from "@/app/blog/blog-data";
 
 export default function BlogPage() {
   return (

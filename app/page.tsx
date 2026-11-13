@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { registrationUrl } from "@/components/site-navigation";
+import { posts as news } from "@/app/blog/blog-data";
 const whatsappUrl = "https://wa.me/6281319789000";
 
 const programs = [
@@ -28,12 +29,7 @@ const heroImages = [
   { file: "DJI_0866 (2)-2.webp", alt: "Panorama pesantren", className: "col-span-5" },
 ];
 const gallery = ["7S1A0164.webp", "BP3A0743.webp", "7S1A0198.webp", "BP3A0909.webp", "7S1A0206.webp", "BP3A0993.webp", "BP3A1185.webp", "BP3A1224.webp", "DJI_0866 (2).webp"];
-const news = [
-  { slug: "kolaborasi-literasi-dzaizza", category: "Akademik", date: "April 2026", title: "Tingkatkan Kualitas Perpustakaan, Dza'Izza Perkuat Kolaborasi Literasi", excerpt: "Program literasi baru untuk meningkatkan budaya membaca dan riset di kalangan santri DQ3.", image: "/images/BP3A1179.webp" },
-  { slug: "seleksi-paskibraka-tangerang", category: "Prestasi", date: "Maret 2026", title: "Santri DQ3 Mengikuti Seleksi Paskibraka Kabupaten Tangerang", excerpt: "Santri Daar el-Qolam 3 berhasil lolos seleksi tingkat kecamatan dan mewakili di tingkat kabupaten.", image: "/images/BP3A1242.webp" },
-  { slug: "seleksi-nasional-opsi-2026", category: "Prestasi", date: "Februari 2026", title: "Dua Santriwati Tembus Seleksi Nasional OPSI 2026", excerpt: "Pencapaian membanggakan dari santriwati DQ3 dalam Olimpiade Penelitian Siswa Indonesia.", image: "/images/BP3A1252.webp" },
-  { slug: "kegiatan-apel-santri", category: "Kegiatan", date: "Januari 2026", title: "Kegiatan Apel Santri Menguatkan Disiplin dan Kebersamaan", excerpt: "Agenda rutin pesantren membangun karakter disiplin dan rasa tanggung jawab santri.", image: "/images/BP3A1185.webp" },
-];
+
 const filters = ["Semua", "Akademik", "Prestasi", "Kegiatan"] as const;
 type NewsFilter = (typeof filters)[number];
 
