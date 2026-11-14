@@ -2,7 +2,6 @@ export type SiteNavItem = {
   label: string;
   footerLabel?: string;
   href: string;
-  homeHref?: string;
 };
 
 export type SiteNavGroup = SiteNavItem & {
@@ -18,35 +17,33 @@ const navigationGroups: SiteNavGroup[] = [
   {
     label: "Tentang DQ",
     href: "/tentang",
-    homeHref: "#tentang",
     items: [
-      { label: "Profil Pesantren", href: "/tentang#profil", homeHref: "#tentang" },
-      { label: "Visi & Misi", href: "/tentang#visi", homeHref: "#tentang" },
-      { label: "Pimpinan", href: "/tentang#pimpinan", homeHref: "#tentang" },
-      { label: "Sejarah", href: "/tentang#sejarah", homeHref: "#tentang" },
+      { label: "Profil Pesantren", href: "/tentang#profil" },
+      { label: "Visi & Misi", href: "/tentang#visi" },
+      { label: "Pimpinan", href: "/tentang#pimpinan" },
+      { label: "Sejarah", href: "/tentang#sejarah" },
     ],
   },
   {
     label: "Program",
-    href: "/#program",
+    href: "/program",
     footer: true,
     items: [
-      { label: "Program Reguler (DQ Pusat)", footerLabel: "Program Reguler", href: "/#program-reguler" },
-      { label: "Excellent Class (DQ 2)", footerLabel: "Excellent Class", href: "/#program-excellent" },
-      { label: "International (DQ 3)", footerLabel: "Kelas Internasional", href: "/#dq3" },
-      { label: "Dirasah Islamiyyah (DQ 4)", footerLabel: "Dirasah Islamiyyah", href: "/#program-dirasah" },
+      { label: "Program Reguler (DQ Pusat)", footerLabel: "Program Reguler", href: "/program#reguler" },
+      { label: "Excellent Class (DQ 2)", footerLabel: "Excellent Class", href: "/program#excellent" },
+      { label: "International (DQ 3)", footerLabel: "Kelas Internasional", href: "/dq3" },
+      { label: "Dirasah Islamiyyah (DQ 4)", footerLabel: "Dirasah Islamiyyah", href: "/program#dirasah" },
     ],
   },
   {
     label: "Jelajahi",
     href: "/jelajahi",
-    homeHref: "#jelajahi",
     footer: true,
     items: [
-      { label: "Fasilitas", href: "/jelajahi#fasilitas", homeHref: "#jelajahi-fasilitas" },
-      { label: "Kehidupan Islami", href: "/jelajahi#kehidupan", homeHref: "#jelajahi-kehidupan" },
-      { label: "Ekstrakurikuler", href: "/jelajahi#ekskul", homeHref: "#jelajahi-ekskul" },
-      { label: "Kehidupan Asrama", href: "/jelajahi#asrama", homeHref: "#jelajahi-asrama" },
+      { label: "Fasilitas", href: "/jelajahi#fasilitas" },
+      { label: "Kehidupan Islami", href: "/jelajahi#kehidupan" },
+      { label: "Ekstrakurikuler", href: "/jelajahi#ekskul" },
+      { label: "Kehidupan Asrama", href: "/jelajahi#asrama" },
     ],
   },
   {
@@ -63,15 +60,14 @@ const navigationGroups: SiteNavGroup[] = [
 ];
 
 const navigationLinks: SiteNavItem[] = [
-  { label: "Berita", href: "/blog", homeHref: "#berita" },
+  { label: "Berita", href: "/blog" },
   { label: "Kontak", href: "/kontak" },
 ];
 
-const toNavItem = ({ label, footerLabel, href, homeHref }: SiteNavItem): SiteNavItem => ({
+const toNavItem = ({ label, footerLabel, href }: SiteNavItem): SiteNavItem => ({
   label,
   href,
   ...(footerLabel ? { footerLabel } : {}),
-  ...(homeHref ? { homeHref } : {}),
 });
 
 export const siteNavGroups = navigationGroups.filter(({ header = true }) => header);
