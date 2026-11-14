@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { CheckIcon } from "@heroicons/react/24/outline";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
@@ -174,7 +175,7 @@ export default function TentangPage() {
               <ul className="mt-6 space-y-4">
                 {missions.map((mission) => (
                   <li key={mission} className="flex items-start gap-3 text-sm leading-relaxed text-white/90">
-                    <span className="mt-1 text-dq-gold" aria-hidden="true">✓</span>
+                    <span className="mt-1 inline-flex shrink-0 items-center text-dq-gold" aria-hidden="true"><CheckIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" /></span>
                     <span>{mission}</span>
                   </li>
                 ))}
