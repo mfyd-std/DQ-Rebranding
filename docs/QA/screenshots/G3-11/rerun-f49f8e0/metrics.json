@@ -1,0 +1,1924 @@
+{
+  "method": {
+    "threshold_height_abs_percent": 2,
+    "threshold_pixel_percent": 5,
+    "changed_pixel": "max(R,G,B)>10",
+    "alignment": "top-left; white padding only for unequal dimensions"
+  },
+  "contexts": [
+    {
+      "source": "http://127.0.0.1:3211/?qa_normalized=f49f8e0&theme=light",
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "clientWidth": 1440,
+      "bodyClientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 10813,
+      "rootClass": "",
+      "theme": "light",
+      "sections": [
+        {
+          "index": 1,
+          "id": "hero",
+          "top": 0,
+          "left": 0,
+          "width": 1440,
+          "height": 1548.9375
+        },
+        {
+          "index": 2,
+          "id": "",
+          "top": 1548.9375,
+          "left": 0,
+          "width": 1440,
+          "height": 453.5
+        },
+        {
+          "index": 3,
+          "id": "",
+          "top": 2002.4375,
+          "left": 0,
+          "width": 1440,
+          "height": 1102
+        },
+        {
+          "index": 4,
+          "id": "",
+          "top": 3104.4375,
+          "left": 0,
+          "width": 1440,
+          "height": 354.5
+        },
+        {
+          "index": 5,
+          "id": "",
+          "top": 3458.9375,
+          "left": 0,
+          "width": 1440,
+          "height": 350
+        },
+        {
+          "index": 6,
+          "id": "",
+          "top": 3808.9375,
+          "left": 0,
+          "width": 1440,
+          "height": 480
+        },
+        {
+          "index": 7,
+          "id": "program",
+          "top": 4288.9375,
+          "left": 0,
+          "width": 1440,
+          "height": 802.25
+        },
+        {
+          "index": 8,
+          "id": "dq3",
+          "top": 5091.1875,
+          "left": 0,
+          "width": 1440,
+          "height": 726.84375
+        },
+        {
+          "index": 9,
+          "id": "jelajahi",
+          "top": 5818.03125,
+          "left": 0,
+          "width": 1440,
+          "height": 732.5
+        },
+        {
+          "index": 10,
+          "id": "",
+          "top": 6550.53125,
+          "left": 0,
+          "width": 1440,
+          "height": 605
+        },
+        {
+          "index": 11,
+          "id": "",
+          "top": 7155.53125,
+          "left": 0,
+          "width": 1440,
+          "height": 344
+        },
+        {
+          "index": 12,
+          "id": "berita",
+          "top": 7499.53125,
+          "left": 0,
+          "width": 1440,
+          "height": 754.75
+        },
+        {
+          "index": 13,
+          "id": "faq",
+          "top": 8254.28125,
+          "left": 0,
+          "width": 1440,
+          "height": 2054
+        }
+      ],
+      "source_name": "next",
+      "viewport": "desktop",
+      "requested_width": 1440,
+      "requested_height": 900,
+      "screenshot": "next-desktop-light-full.png"
+    },
+    {
+      "source": "http://127.0.0.1:3211/?qa_normalized=f49f8e0&theme=dark",
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "clientWidth": 1440,
+      "bodyClientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 10813,
+      "rootClass": "dark",
+      "theme": "dark",
+      "sections": [
+        {
+          "index": 1,
+          "id": "hero",
+          "top": 0,
+          "left": 0,
+          "width": 1440,
+          "height": 1548.9375
+        },
+        {
+          "index": 2,
+          "id": "",
+          "top": 1548.9375,
+          "left": 0,
+          "width": 1440,
+          "height": 453.5
+        },
+        {
+          "index": 3,
+          "id": "",
+          "top": 2002.4375,
+          "left": 0,
+          "width": 1440,
+          "height": 1102
+        },
+        {
+          "index": 4,
+          "id": "",
+          "top": 3104.4375,
+          "left": 0,
+          "width": 1440,
+          "height": 354.5
+        },
+        {
+          "index": 5,
+          "id": "",
+          "top": 3458.9375,
+          "left": 0,
+          "width": 1440,
+          "height": 350
+        },
+        {
+          "index": 6,
+          "id": "",
+          "top": 3808.9375,
+          "left": 0,
+          "width": 1440,
+          "height": 480
+        },
+        {
+          "index": 7,
+          "id": "program",
+          "top": 4288.9375,
+          "left": 0,
+          "width": 1440,
+          "height": 802.25
+        },
+        {
+          "index": 8,
+          "id": "dq3",
+          "top": 5091.1875,
+          "left": 0,
+          "width": 1440,
+          "height": 726.84375
+        },
+        {
+          "index": 9,
+          "id": "jelajahi",
+          "top": 5818.03125,
+          "left": 0,
+          "width": 1440,
+          "height": 732.5
+        },
+        {
+          "index": 10,
+          "id": "",
+          "top": 6550.53125,
+          "left": 0,
+          "width": 1440,
+          "height": 605
+        },
+        {
+          "index": 11,
+          "id": "",
+          "top": 7155.53125,
+          "left": 0,
+          "width": 1440,
+          "height": 344
+        },
+        {
+          "index": 12,
+          "id": "berita",
+          "top": 7499.53125,
+          "left": 0,
+          "width": 1440,
+          "height": 754.75
+        },
+        {
+          "index": 13,
+          "id": "faq",
+          "top": 8254.28125,
+          "left": 0,
+          "width": 1440,
+          "height": 2054
+        }
+      ],
+      "source_name": "next",
+      "viewport": "desktop",
+      "requested_width": 1440,
+      "requested_height": 900,
+      "screenshot": "next-desktop-dark-full.png"
+    },
+    {
+      "source": "http://127.0.0.1:3211/?qa_normalized=f49f8e0&theme=light",
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "clientWidth": 390,
+      "bodyClientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 14542,
+      "rootClass": "",
+      "theme": "light",
+      "sections": [
+        {
+          "index": 1,
+          "id": "hero",
+          "top": 0,
+          "left": 0,
+          "width": 390,
+          "height": 1395.3125
+        },
+        {
+          "index": 2,
+          "id": "",
+          "top": 1395.3125,
+          "left": 0,
+          "width": 390,
+          "height": 382.5
+        },
+        {
+          "index": 3,
+          "id": "",
+          "top": 1777.8125,
+          "left": 0,
+          "width": 390,
+          "height": 486.375
+        },
+        {
+          "index": 4,
+          "id": "",
+          "top": 2264.1875,
+          "left": 0,
+          "width": 390,
+          "height": 433.5
+        },
+        {
+          "index": 5,
+          "id": "",
+          "top": 2697.6875,
+          "left": 0,
+          "width": 390,
+          "height": 444
+        },
+        {
+          "index": 6,
+          "id": "",
+          "top": 3141.6875,
+          "left": 0,
+          "width": 390,
+          "height": 320
+        },
+        {
+          "index": 7,
+          "id": "program",
+          "top": 3461.6875,
+          "left": 0,
+          "width": 390,
+          "height": 1623.3125
+        },
+        {
+          "index": 8,
+          "id": "dq3",
+          "top": 5085,
+          "left": 0,
+          "width": 390,
+          "height": 1003
+        },
+        {
+          "index": 9,
+          "id": "jelajahi",
+          "top": 6088,
+          "left": 0,
+          "width": 390,
+          "height": 1696.75
+        },
+        {
+          "index": 10,
+          "id": "",
+          "top": 7784.75,
+          "left": 0,
+          "width": 390,
+          "height": 1120
+        },
+        {
+          "index": 11,
+          "id": "",
+          "top": 8904.75,
+          "left": 0,
+          "width": 390,
+          "height": 456
+        },
+        {
+          "index": 12,
+          "id": "berita",
+          "top": 9360.75,
+          "left": 0,
+          "width": 390,
+          "height": 1642.90625
+        },
+        {
+          "index": 13,
+          "id": "faq",
+          "top": 11003.65625,
+          "left": 0,
+          "width": 390,
+          "height": 2490
+        }
+      ],
+      "source_name": "next",
+      "viewport": "mobile",
+      "requested_width": 390,
+      "requested_height": 844,
+      "screenshot": "next-mobile-light-full.png"
+    },
+    {
+      "source": "http://127.0.0.1:3211/?qa_normalized=f49f8e0&theme=dark",
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "clientWidth": 390,
+      "bodyClientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 14542,
+      "rootClass": "dark",
+      "theme": "dark",
+      "sections": [
+        {
+          "index": 1,
+          "id": "hero",
+          "top": 0,
+          "left": 0,
+          "width": 390,
+          "height": 1395.3125
+        },
+        {
+          "index": 2,
+          "id": "",
+          "top": 1395.3125,
+          "left": 0,
+          "width": 390,
+          "height": 382.5
+        },
+        {
+          "index": 3,
+          "id": "",
+          "top": 1777.8125,
+          "left": 0,
+          "width": 390,
+          "height": 486.375
+        },
+        {
+          "index": 4,
+          "id": "",
+          "top": 2264.1875,
+          "left": 0,
+          "width": 390,
+          "height": 433.5
+        },
+        {
+          "index": 5,
+          "id": "",
+          "top": 2697.6875,
+          "left": 0,
+          "width": 390,
+          "height": 444
+        },
+        {
+          "index": 6,
+          "id": "",
+          "top": 3141.6875,
+          "left": 0,
+          "width": 390,
+          "height": 320
+        },
+        {
+          "index": 7,
+          "id": "program",
+          "top": 3461.6875,
+          "left": 0,
+          "width": 390,
+          "height": 1623.3125
+        },
+        {
+          "index": 8,
+          "id": "dq3",
+          "top": 5085,
+          "left": 0,
+          "width": 390,
+          "height": 1003
+        },
+        {
+          "index": 9,
+          "id": "jelajahi",
+          "top": 6088,
+          "left": 0,
+          "width": 390,
+          "height": 1696.75
+        },
+        {
+          "index": 10,
+          "id": "",
+          "top": 7784.75,
+          "left": 0,
+          "width": 390,
+          "height": 1120
+        },
+        {
+          "index": 11,
+          "id": "",
+          "top": 8904.75,
+          "left": 0,
+          "width": 390,
+          "height": 456
+        },
+        {
+          "index": 12,
+          "id": "berita",
+          "top": 9360.75,
+          "left": 0,
+          "width": 390,
+          "height": 1642.90625
+        },
+        {
+          "index": 13,
+          "id": "faq",
+          "top": 11003.65625,
+          "left": 0,
+          "width": 390,
+          "height": 2490
+        }
+      ],
+      "source_name": "next",
+      "viewport": "mobile",
+      "requested_width": 390,
+      "requested_height": 844,
+      "screenshot": "next-mobile-dark-full.png"
+    },
+    {
+      "source": "http://127.0.0.1:3210/index.html?qa_normalized=f49f8e0&theme=light",
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "clientWidth": 1440,
+      "bodyClientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 10843,
+      "rootClass": "",
+      "theme": "light",
+      "sections": [
+        {
+          "index": 1,
+          "id": "",
+          "top": 0,
+          "left": 0,
+          "width": 1440,
+          "height": 1548
+        },
+        {
+          "index": 2,
+          "id": "",
+          "top": 1548,
+          "left": 0,
+          "width": 1440,
+          "height": 456
+        },
+        {
+          "index": 3,
+          "id": "",
+          "top": 2004,
+          "left": 0,
+          "width": 1440,
+          "height": 1103.5
+        },
+        {
+          "index": 4,
+          "id": "",
+          "top": 3107.5,
+          "left": 0,
+          "width": 1440,
+          "height": 352
+        },
+        {
+          "index": 5,
+          "id": "",
+          "top": 3459.5,
+          "left": 0,
+          "width": 1440,
+          "height": 350
+        },
+        {
+          "index": 6,
+          "id": "",
+          "top": 3809.5,
+          "left": 0,
+          "width": 1440,
+          "height": 480
+        },
+        {
+          "index": 7,
+          "id": "program",
+          "top": 4289.5,
+          "left": 0,
+          "width": 1440,
+          "height": 801.25
+        },
+        {
+          "index": 8,
+          "id": "",
+          "top": 5090.75,
+          "left": 0,
+          "width": 1440,
+          "height": 731
+        },
+        {
+          "index": 9,
+          "id": "",
+          "top": 5821.75,
+          "left": 0,
+          "width": 1440,
+          "height": 732
+        },
+        {
+          "index": 10,
+          "id": "",
+          "top": 6553.75,
+          "left": 0,
+          "width": 1440,
+          "height": 605
+        },
+        {
+          "index": 11,
+          "id": "",
+          "top": 7158.75,
+          "left": 0,
+          "width": 1440,
+          "height": 340
+        },
+        {
+          "index": 12,
+          "id": "",
+          "top": 7498.75,
+          "left": 0,
+          "width": 1440,
+          "height": 755
+        },
+        {
+          "index": 13,
+          "id": "faq",
+          "top": 8253.75,
+          "left": 0,
+          "width": 1440,
+          "height": 2054
+        }
+      ],
+      "source_name": "legacy",
+      "viewport": "desktop",
+      "requested_width": 1440,
+      "requested_height": 900,
+      "screenshot": "legacy-desktop-light-full.png"
+    },
+    {
+      "source": "http://127.0.0.1:3210/index.html?qa_normalized=f49f8e0&theme=dark",
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "clientWidth": 1440,
+      "bodyClientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 10843,
+      "rootClass": "dark",
+      "theme": "dark",
+      "sections": [
+        {
+          "index": 1,
+          "id": "",
+          "top": 0,
+          "left": 0,
+          "width": 1440,
+          "height": 1548
+        },
+        {
+          "index": 2,
+          "id": "",
+          "top": 1548,
+          "left": 0,
+          "width": 1440,
+          "height": 456
+        },
+        {
+          "index": 3,
+          "id": "",
+          "top": 2004,
+          "left": 0,
+          "width": 1440,
+          "height": 1103.5
+        },
+        {
+          "index": 4,
+          "id": "",
+          "top": 3107.5,
+          "left": 0,
+          "width": 1440,
+          "height": 352
+        },
+        {
+          "index": 5,
+          "id": "",
+          "top": 3459.5,
+          "left": 0,
+          "width": 1440,
+          "height": 350
+        },
+        {
+          "index": 6,
+          "id": "",
+          "top": 3809.5,
+          "left": 0,
+          "width": 1440,
+          "height": 480
+        },
+        {
+          "index": 7,
+          "id": "program",
+          "top": 4289.5,
+          "left": 0,
+          "width": 1440,
+          "height": 801.25
+        },
+        {
+          "index": 8,
+          "id": "",
+          "top": 5090.75,
+          "left": 0,
+          "width": 1440,
+          "height": 731
+        },
+        {
+          "index": 9,
+          "id": "",
+          "top": 5821.75,
+          "left": 0,
+          "width": 1440,
+          "height": 732
+        },
+        {
+          "index": 10,
+          "id": "",
+          "top": 6553.75,
+          "left": 0,
+          "width": 1440,
+          "height": 605
+        },
+        {
+          "index": 11,
+          "id": "",
+          "top": 7158.75,
+          "left": 0,
+          "width": 1440,
+          "height": 340
+        },
+        {
+          "index": 12,
+          "id": "",
+          "top": 7498.75,
+          "left": 0,
+          "width": 1440,
+          "height": 755
+        },
+        {
+          "index": 13,
+          "id": "faq",
+          "top": 8253.75,
+          "left": 0,
+          "width": 1440,
+          "height": 2054
+        }
+      ],
+      "source_name": "legacy",
+      "viewport": "desktop",
+      "requested_width": 1440,
+      "requested_height": 900,
+      "screenshot": "legacy-desktop-dark-full.png"
+    },
+    {
+      "source": "http://127.0.0.1:3210/index.html?qa_normalized=f49f8e0&theme=light",
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "clientWidth": 390,
+      "bodyClientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 14557,
+      "rootClass": "",
+      "theme": "light",
+      "sections": [
+        {
+          "index": 1,
+          "id": "",
+          "top": 0,
+          "left": 0,
+          "width": 390,
+          "height": 1395.3125
+        },
+        {
+          "index": 2,
+          "id": "",
+          "top": 1395.3125,
+          "left": 0,
+          "width": 390,
+          "height": 382.5
+        },
+        {
+          "index": 3,
+          "id": "",
+          "top": 1777.8125,
+          "left": 0,
+          "width": 390,
+          "height": 480.875
+        },
+        {
+          "index": 4,
+          "id": "",
+          "top": 2258.6875,
+          "left": 0,
+          "width": 390,
+          "height": 441.5
+        },
+        {
+          "index": 5,
+          "id": "",
+          "top": 2700.1875,
+          "left": 0,
+          "width": 390,
+          "height": 448
+        },
+        {
+          "index": 6,
+          "id": "",
+          "top": 3148.1875,
+          "left": 0,
+          "width": 390,
+          "height": 320
+        },
+        {
+          "index": 7,
+          "id": "program",
+          "top": 3468.1875,
+          "left": 0,
+          "width": 390,
+          "height": 1642.25
+        },
+        {
+          "index": 8,
+          "id": "",
+          "top": 5110.4375,
+          "left": 0,
+          "width": 390,
+          "height": 999
+        },
+        {
+          "index": 9,
+          "id": "",
+          "top": 6109.4375,
+          "left": 0,
+          "width": 390,
+          "height": 1700
+        },
+        {
+          "index": 10,
+          "id": "",
+          "top": 7809.4375,
+          "left": 0,
+          "width": 390,
+          "height": 1116.5
+        },
+        {
+          "index": 11,
+          "id": "",
+          "top": 8925.9375,
+          "left": 0,
+          "width": 390,
+          "height": 452
+        },
+        {
+          "index": 12,
+          "id": "",
+          "top": 9377.9375,
+          "left": 0,
+          "width": 390,
+          "height": 1611
+        },
+        {
+          "index": 13,
+          "id": "faq",
+          "top": 10988.9375,
+          "left": 0,
+          "width": 390,
+          "height": 2462
+        }
+      ],
+      "source_name": "legacy",
+      "viewport": "mobile",
+      "requested_width": 390,
+      "requested_height": 844,
+      "screenshot": "legacy-mobile-light-full.png"
+    },
+    {
+      "source": "http://127.0.0.1:3210/index.html?qa_normalized=f49f8e0&theme=dark",
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "clientWidth": 390,
+      "bodyClientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 14557,
+      "rootClass": "dark",
+      "theme": "dark",
+      "sections": [
+        {
+          "index": 1,
+          "id": "",
+          "top": 0,
+          "left": 0,
+          "width": 390,
+          "height": 1395.3125
+        },
+        {
+          "index": 2,
+          "id": "",
+          "top": 1395.3125,
+          "left": 0,
+          "width": 390,
+          "height": 382.5
+        },
+        {
+          "index": 3,
+          "id": "",
+          "top": 1777.8125,
+          "left": 0,
+          "width": 390,
+          "height": 480.875
+        },
+        {
+          "index": 4,
+          "id": "",
+          "top": 2258.6875,
+          "left": 0,
+          "width": 390,
+          "height": 441.5
+        },
+        {
+          "index": 5,
+          "id": "",
+          "top": 2700.1875,
+          "left": 0,
+          "width": 390,
+          "height": 448
+        },
+        {
+          "index": 6,
+          "id": "",
+          "top": 3148.1875,
+          "left": 0,
+          "width": 390,
+          "height": 320
+        },
+        {
+          "index": 7,
+          "id": "program",
+          "top": 3468.1875,
+          "left": 0,
+          "width": 390,
+          "height": 1642.25
+        },
+        {
+          "index": 8,
+          "id": "",
+          "top": 5110.4375,
+          "left": 0,
+          "width": 390,
+          "height": 999
+        },
+        {
+          "index": 9,
+          "id": "",
+          "top": 6109.4375,
+          "left": 0,
+          "width": 390,
+          "height": 1700
+        },
+        {
+          "index": 10,
+          "id": "",
+          "top": 7809.4375,
+          "left": 0,
+          "width": 390,
+          "height": 1116.5
+        },
+        {
+          "index": 11,
+          "id": "",
+          "top": 8925.9375,
+          "left": 0,
+          "width": 390,
+          "height": 452
+        },
+        {
+          "index": 12,
+          "id": "",
+          "top": 9377.9375,
+          "left": 0,
+          "width": 390,
+          "height": 1611
+        },
+        {
+          "index": 13,
+          "id": "faq",
+          "top": 10988.9375,
+          "left": 0,
+          "width": 390,
+          "height": 2462
+        }
+      ],
+      "source_name": "legacy",
+      "viewport": "mobile",
+      "requested_width": 390,
+      "requested_height": 844,
+      "screenshot": "legacy-mobile-dark-full.png"
+    }
+  ],
+  "metrics": [
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 1,
+      "legacy_height": 1548,
+      "next_height": 1548.9375,
+      "height_delta_percent": 0.060562015503875966,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 2,
+      "legacy_height": 456,
+      "next_height": 453.5,
+      "height_delta_percent": -0.5482456140350876,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 3,
+      "legacy_height": 1103.5,
+      "next_height": 1102,
+      "height_delta_percent": -0.1359311282283643,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 4,
+      "legacy_height": 352,
+      "next_height": 354.5,
+      "height_delta_percent": 0.7102272727272727,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 5,
+      "legacy_height": 350,
+      "next_height": 350,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 6,
+      "legacy_height": 480,
+      "next_height": 480,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 7,
+      "legacy_height": 801.25,
+      "next_height": 802.25,
+      "height_delta_percent": 0.12480499219968799,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 8,
+      "legacy_height": 731,
+      "next_height": 726.84375,
+      "height_delta_percent": -0.5685704514363885,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 9,
+      "legacy_height": 732,
+      "next_height": 732.5,
+      "height_delta_percent": 0.06830601092896176,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 10,
+      "legacy_height": 605,
+      "next_height": 605,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 11,
+      "legacy_height": 340,
+      "next_height": 344,
+      "height_delta_percent": 1.1764705882352942,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 12,
+      "legacy_height": 755,
+      "next_height": 754.75,
+      "height_delta_percent": -0.033112582781456956,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 13,
+      "legacy_height": 2054,
+      "next_height": 2054,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 1,
+      "pixel_changed": 878173,
+      "pixel_total": 2230560,
+      "pixel_percent": 39.37006850297683,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 2,
+      "pixel_changed": 79320,
+      "pixel_total": 656640,
+      "pixel_percent": 12.0796783625731,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 3,
+      "pixel_changed": 1098867,
+      "pixel_total": 1589760,
+      "pixel_percent": 69.12156551932367,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 4,
+      "pixel_changed": 65916,
+      "pixel_total": 511200,
+      "pixel_percent": 12.8943661971831,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 5,
+      "pixel_changed": 18529,
+      "pixel_total": 505440,
+      "pixel_percent": 3.665914846470402,
+      "pixel_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 6,
+      "pixel_changed": 0,
+      "pixel_total": 692640,
+      "pixel_percent": 0.0,
+      "pixel_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 7,
+      "pixel_changed": 123201,
+      "pixel_total": 1157760,
+      "pixel_percent": 10.641324626865671,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 8,
+      "pixel_changed": 475531,
+      "pixel_total": 1054080,
+      "pixel_percent": 45.11336900425015,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 9,
+      "pixel_changed": 311720,
+      "pixel_total": 1055520,
+      "pixel_percent": 29.53236319539185,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 10,
+      "pixel_changed": 59557,
+      "pixel_total": 872640,
+      "pixel_percent": 6.824922075540887,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 11,
+      "pixel_changed": 75992,
+      "pixel_total": 496800,
+      "pixel_percent": 15.296296296296298,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 12,
+      "pixel_changed": 362902,
+      "pixel_total": 1088640,
+      "pixel_percent": 33.335354203409764,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "light",
+      "section": 13,
+      "pixel_changed": 226334,
+      "pixel_total": 2959200,
+      "pixel_percent": 7.648486077318194,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 1,
+      "legacy_height": 1548,
+      "next_height": 1548.9375,
+      "height_delta_percent": 0.060562015503875966,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 2,
+      "legacy_height": 456,
+      "next_height": 453.5,
+      "height_delta_percent": -0.5482456140350876,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 3,
+      "legacy_height": 1103.5,
+      "next_height": 1102,
+      "height_delta_percent": -0.1359311282283643,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 4,
+      "legacy_height": 352,
+      "next_height": 354.5,
+      "height_delta_percent": 0.7102272727272727,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 5,
+      "legacy_height": 350,
+      "next_height": 350,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 6,
+      "legacy_height": 480,
+      "next_height": 480,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 7,
+      "legacy_height": 801.25,
+      "next_height": 802.25,
+      "height_delta_percent": 0.12480499219968799,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 8,
+      "legacy_height": 731,
+      "next_height": 726.84375,
+      "height_delta_percent": -0.5685704514363885,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 9,
+      "legacy_height": 732,
+      "next_height": 732.5,
+      "height_delta_percent": 0.06830601092896176,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 10,
+      "legacy_height": 605,
+      "next_height": 605,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 11,
+      "legacy_height": 340,
+      "next_height": 344,
+      "height_delta_percent": 1.1764705882352942,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 12,
+      "legacy_height": 755,
+      "next_height": 754.75,
+      "height_delta_percent": -0.033112582781456956,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 13,
+      "legacy_height": 2054,
+      "next_height": 2054,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 1,
+      "pixel_changed": 860178,
+      "pixel_total": 2230560,
+      "pixel_percent": 38.56332042177749,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 2,
+      "pixel_changed": 79320,
+      "pixel_total": 656640,
+      "pixel_percent": 12.0796783625731,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 3,
+      "pixel_changed": 1080706,
+      "pixel_total": 1589760,
+      "pixel_percent": 67.97919182769726,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 4,
+      "pixel_changed": 65916,
+      "pixel_total": 511200,
+      "pixel_percent": 12.8943661971831,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 5,
+      "pixel_changed": 51416,
+      "pixel_total": 505440,
+      "pixel_percent": 10.172522950300728,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 6,
+      "pixel_changed": 0,
+      "pixel_total": 692640,
+      "pixel_percent": 0.0,
+      "pixel_pass": true
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 7,
+      "pixel_changed": 125145,
+      "pixel_total": 1157760,
+      "pixel_percent": 10.809235074626866,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 8,
+      "pixel_changed": 475533,
+      "pixel_total": 1054080,
+      "pixel_percent": 45.1135587431694,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 9,
+      "pixel_changed": 323703,
+      "pixel_total": 1055520,
+      "pixel_percent": 30.667633015006825,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 10,
+      "pixel_changed": 52305,
+      "pixel_total": 872640,
+      "pixel_percent": 5.993880638063807,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 11,
+      "pixel_changed": 81770,
+      "pixel_total": 496800,
+      "pixel_percent": 16.459339774557165,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 12,
+      "pixel_changed": 359775,
+      "pixel_total": 1088640,
+      "pixel_percent": 33.04811507936508,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "desktop",
+      "theme": "dark",
+      "section": 13,
+      "pixel_changed": 265121,
+      "pixel_total": 2959200,
+      "pixel_percent": 8.959211949175453,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 1,
+      "legacy_height": 1395.3125,
+      "next_height": 1395.3125,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 2,
+      "legacy_height": 382.5,
+      "next_height": 382.5,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 3,
+      "legacy_height": 480.875,
+      "next_height": 486.375,
+      "height_delta_percent": 1.1437483753574214,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 4,
+      "legacy_height": 441.5,
+      "next_height": 433.5,
+      "height_delta_percent": -1.8120045300113252,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 5,
+      "legacy_height": 448,
+      "next_height": 444,
+      "height_delta_percent": -0.8928571428571428,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 6,
+      "legacy_height": 320,
+      "next_height": 320,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 7,
+      "legacy_height": 1642.25,
+      "next_height": 1623.3125,
+      "height_delta_percent": -1.153143553052215,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 8,
+      "legacy_height": 999,
+      "next_height": 1003,
+      "height_delta_percent": 0.40040040040040037,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 9,
+      "legacy_height": 1700,
+      "next_height": 1696.75,
+      "height_delta_percent": -0.1911764705882353,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 10,
+      "legacy_height": 1116.5,
+      "next_height": 1120,
+      "height_delta_percent": 0.3134796238244514,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 11,
+      "legacy_height": 452,
+      "next_height": 456,
+      "height_delta_percent": 0.8849557522123894,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 12,
+      "legacy_height": 1611,
+      "next_height": 1642.90625,
+      "height_delta_percent": 1.9805245189323404,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 13,
+      "legacy_height": 2462,
+      "next_height": 2490,
+      "height_delta_percent": 1.1372867587327375,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 1,
+      "pixel_changed": 131575,
+      "pixel_total": 544440,
+      "pixel_percent": 24.167034016604216,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 2,
+      "pixel_changed": 12356,
+      "pixel_total": 149370,
+      "pixel_percent": 8.272076052754903,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 3,
+      "pixel_changed": 75456,
+      "pixel_total": 190320,
+      "pixel_percent": 39.6469104665826,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 4,
+      "pixel_changed": 35297,
+      "pixel_total": 172770,
+      "pixel_percent": 20.43005151357296,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 5,
+      "pixel_changed": 16179,
+      "pixel_total": 175110,
+      "pixel_percent": 9.239335274970019,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 6,
+      "pixel_changed": 62,
+      "pixel_total": 125190,
+      "pixel_percent": 0.04952472242191868,
+      "pixel_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 7,
+      "pixel_changed": 121459,
+      "pixel_total": 640770,
+      "pixel_percent": 18.95516331913167,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 8,
+      "pixel_changed": 54654,
+      "pixel_total": 391170,
+      "pixel_percent": 13.971930362757881,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 9,
+      "pixel_changed": 257097,
+      "pixel_total": 663390,
+      "pixel_percent": 38.7550309772532,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 10,
+      "pixel_changed": 66489,
+      "pixel_total": 437190,
+      "pixel_percent": 15.208261854113772,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 11,
+      "pixel_changed": 30382,
+      "pixel_total": 178230,
+      "pixel_percent": 17.046512932727374,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 12,
+      "pixel_changed": 291250,
+      "pixel_total": 641160,
+      "pixel_percent": 45.4254788196394,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "light",
+      "section": 13,
+      "pixel_changed": 190785,
+      "pixel_total": 971490,
+      "pixel_percent": 19.638390513541054,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 1,
+      "legacy_height": 1395.3125,
+      "next_height": 1395.3125,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 2,
+      "legacy_height": 382.5,
+      "next_height": 382.5,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 3,
+      "legacy_height": 480.875,
+      "next_height": 486.375,
+      "height_delta_percent": 1.1437483753574214,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 4,
+      "legacy_height": 441.5,
+      "next_height": 433.5,
+      "height_delta_percent": -1.8120045300113252,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 5,
+      "legacy_height": 448,
+      "next_height": 444,
+      "height_delta_percent": -0.8928571428571428,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 6,
+      "legacy_height": 320,
+      "next_height": 320,
+      "height_delta_percent": 0.0,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 7,
+      "legacy_height": 1642.25,
+      "next_height": 1623.3125,
+      "height_delta_percent": -1.153143553052215,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 8,
+      "legacy_height": 999,
+      "next_height": 1003,
+      "height_delta_percent": 0.40040040040040037,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 9,
+      "legacy_height": 1700,
+      "next_height": 1696.75,
+      "height_delta_percent": -0.1911764705882353,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 10,
+      "legacy_height": 1116.5,
+      "next_height": 1120,
+      "height_delta_percent": 0.3134796238244514,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 11,
+      "legacy_height": 452,
+      "next_height": 456,
+      "height_delta_percent": 0.8849557522123894,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 12,
+      "legacy_height": 1611,
+      "next_height": 1642.90625,
+      "height_delta_percent": 1.9805245189323404,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 13,
+      "legacy_height": 2462,
+      "next_height": 2490,
+      "height_delta_percent": 1.1372867587327375,
+      "height_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 1,
+      "pixel_changed": 144779,
+      "pixel_total": 544440,
+      "pixel_percent": 26.59227830431269,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 2,
+      "pixel_changed": 12356,
+      "pixel_total": 149370,
+      "pixel_percent": 8.272076052754903,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 3,
+      "pixel_changed": 75958,
+      "pixel_total": 190320,
+      "pixel_percent": 39.910676754939054,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 4,
+      "pixel_changed": 35687,
+      "pixel_total": 172770,
+      "pixel_percent": 20.65578514788447,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 5,
+      "pixel_changed": 15771,
+      "pixel_total": 175110,
+      "pixel_percent": 9.006338872708582,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 6,
+      "pixel_changed": 390,
+      "pixel_total": 125190,
+      "pixel_percent": 0.3115264797507788,
+      "pixel_pass": true
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 7,
+      "pixel_changed": 126746,
+      "pixel_total": 640770,
+      "pixel_percent": 19.78026436943053,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 8,
+      "pixel_changed": 54532,
+      "pixel_total": 391170,
+      "pixel_percent": 13.940741876933302,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 9,
+      "pixel_changed": 258432,
+      "pixel_total": 663390,
+      "pixel_percent": 38.956270067381176,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 10,
+      "pixel_changed": 64037,
+      "pixel_total": 437190,
+      "pixel_percent": 14.647407305748072,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 11,
+      "pixel_changed": 31922,
+      "pixel_total": 178230,
+      "pixel_percent": 17.91056500028054,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 12,
+      "pixel_changed": 304641,
+      "pixel_total": 641160,
+      "pixel_percent": 47.51403705783268,
+      "pixel_pass": false
+    },
+    {
+      "viewport": "mobile",
+      "theme": "dark",
+      "section": 13,
+      "pixel_changed": 220441,
+      "pixel_total": 971490,
+      "pixel_percent": 22.69102100896561,
+      "pixel_pass": false
+    }
+  ]
+}
