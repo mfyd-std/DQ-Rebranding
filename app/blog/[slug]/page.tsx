@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { notFound } from "next/navigation";
 import { posts } from "@/app/blog/blog-data";
 
@@ -17,7 +18,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <header className="border-b border-dq-green/10 bg-white">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-5 lg:px-8">
           <Link href="/blog" className="font-serif text-2xl font-bold text-dq-green">Daar el-Qolam</Link>
-          <Link href="/blog" className="text-sm font-semibold text-dq-green hover:text-dq-green-dark">← Kembali ke berita</Link>
+          <Link href="/blog" className="inline-flex items-center gap-1 text-sm font-semibold text-dq-green hover:text-dq-green-dark"><ArrowLeftIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" />Kembali ke berita</Link>
         </div>
       </header>
       <article className="mx-auto max-w-4xl px-6 py-20 lg:px-8 lg:py-28">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { SectionHeading } from "@/components/SectionHeading";
 import { registrationUrl } from "@/components/site-navigation";
 import { ContactForm } from "./ContactForm";
@@ -75,7 +76,7 @@ export default function ContactPage() {
             <div className="mt-8 space-y-5">
               <ContactCard title="Alamat" icon={<PinIcon />}>
                 <p className="text-sm text-dq-warm-gray">Jl. Pesantren No. 1, Jayanti, Kabupaten Tangerang, Banten 15610</p>
-                <a href={mapUrl} target="_blank" rel="noreferrer" className="mt-1 inline-block text-xs font-semibold text-dq-green hover:text-dq-green-dark">Buka di Google Maps →</a>
+                <a href={mapUrl} target="_blank" rel="noreferrer" className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-dq-green hover:text-dq-green-dark">Buka di Google Maps <ArrowRightIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" /></a>
               </ContactCard>
               <ContactCard title="Telepon" icon={<PhoneIcon />}>
                 <a href="tel:+622159576882" className="text-sm text-dq-warm-gray hover:text-dq-green">+62 21 5957 6882</a>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Bars3Icon, ChevronDownIcon, MoonIcon, SunIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
   registrationUrl,
   siteNavGroups,
@@ -48,7 +49,7 @@ export function SiteHeader() {
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigasi utama">
           {siteNavGroups.map((group) => (
             <div key={group.label} className="group relative">
-              <Link href={group.href} className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-dq-charcoal hover:text-dq-green">{group.label}<span aria-hidden="true">⌄</span></Link>
+              <Link href={group.href} className="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-dq-charcoal hover:text-dq-green">{group.label}<ChevronDownIcon className="h-3 w-3 shrink-0" aria-hidden="true" focusable="false" /></Link>
               <div className="invisible absolute left-0 top-full w-56 translate-y-2 rounded-xl border border-dq-green/10 bg-white py-2 opacity-0 shadow-card-lg transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                 {group.items.map((item) => <HeaderLink key={item.label} item={item} className="block px-4 py-2 text-sm text-dq-charcoal hover:bg-dq-green-light hover:text-dq-green" />)}
               </div>
@@ -57,15 +58,15 @@ export function SiteHeader() {
           {sitePrimaryLinks.filter((item) => item.label === "Berita" || item.label === "Kontak").map((item) => <HeaderLink key={item.label} item={item} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />)}
         </nav>
         <div className="flex items-center gap-2">
-          <button type="button" className="theme-toggle" onClick={() => setDarkMode((value) => !value)} aria-label={darkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap"} aria-pressed={darkMode}><span className="icon-moon" aria-hidden="true">☾</span><span className="icon-sun" aria-hidden="true">☀</span></button>
+          <button type="button" className="theme-toggle" onClick={() => setDarkMode((value) => !value)} aria-label={darkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap"} aria-pressed={darkMode}><MoonIcon className="icon-moon h-5 w-5 shrink-0" aria-hidden="true" focusable="false" /><SunIcon className="icon-sun h-5 w-5 shrink-0" aria-hidden="true" focusable="false" /></button>
           <span className="hidden items-center gap-1.5 rounded-full border border-dq-gold/30 bg-dq-gold-light px-3 py-1 text-xs font-semibold text-dq-gold md:inline-flex"><span className="pulse-dot h-1.5 w-1.5 rounded-full bg-dq-gold" />Pendaftaran Dibuka</span>
           <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className={isExplore ? "rounded-lg bg-dq-green px-3 py-2 text-xs font-semibold text-white hover:bg-dq-green-dark lg:px-4 lg:text-sm" : "hidden rounded-lg bg-dq-green px-4 py-2 text-sm font-semibold text-white lg:inline-flex"}>{isExplore ? <><span className="lg:hidden">Ayo Mondok!</span><span className="hidden lg:inline">Daftar Sekarang</span></> : "Daftar Sekarang"}</a>
           {!isExplore && <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="rounded-md bg-dq-green px-3 py-1.5 text-xs font-semibold text-white lg:hidden">Ayo Mondok!</a>}
-          <button type="button" onClick={() => setMenuOpen(true)} className="rounded-md p-2 text-xl lg:hidden" aria-label="Buka menu" aria-expanded={menuOpen}>☰</button>
+          <button type="button" onClick={() => setMenuOpen(true)} className="rounded-md p-2 lg:hidden" aria-label="Buka menu" aria-expanded={menuOpen}><Bars3Icon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" /></button>
         </div>
       </div>
       {menuOpen && <div className="mobile-menu open fixed inset-0 z-[60] bg-dq-ivory/95 backdrop-blur-xl lg:hidden"><div className="flex h-full flex-col"><div className="flex items-center justify-between border-b border-dq-green/10 px-5 py-4"><Link href="/" onClick={closeMenu} aria-label="Kembali ke beranda"><Image src="/images/logo-daar-el-qolam.svg" alt="Logo Daar el-Qolam" width={180} height={42} className="logo-light h-9 w-auto" />
-          <Image src="/images/logo-daar-el-qolam-wordmark-white.svg" alt="Logo Daar el-Qolam" width={180} height={42} className="logo-dark h-9 w-auto" /></Link><button type="button" onClick={closeMenu} className="p-2 text-2xl" aria-label="Tutup menu">×</button></div><nav className="flex-1 overflow-y-auto px-5 py-4" aria-label="Menu mobile"><Link href="/" onClick={closeMenu} className="mm-link active">Beranda</Link>{siteNavGroups.map((group) => <div key={group.label}><p className="mm-section-title">{group.label}</p><Link href={group.href} onClick={closeMenu} className="mm-link">{group.label}</Link>{group.items.map((item) => <Link key={item.label} href={item.href} onClick={closeMenu} className="mm-sub">{item.label}</Link>)}</div>)}<p className="mm-section-title">Lainnya</p><Link href="/blog" onClick={closeMenu} className="mm-link">Berita &amp; Kegiatan</Link><Link href="/#faq" onClick={closeMenu} className="mm-link">FAQ</Link><Link href="/kontak" onClick={closeMenu} className="mm-link">Kontak</Link></nav><div className="border-t border-dq-green/10 px-5 py-4"><a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="block rounded-lg bg-dq-green px-4 py-3 text-center text-sm font-semibold text-white">Ayo Mondok!</a></div></div></div>}
+          <Image src="/images/logo-daar-el-qolam-wordmark-white.svg" alt="Logo Daar el-Qolam" width={180} height={42} className="logo-dark h-9 w-auto" /></Link><button type="button" onClick={closeMenu} className="p-2" aria-label="Tutup menu"><XMarkIcon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" /></button></div><nav className="flex-1 overflow-y-auto px-5 py-4" aria-label="Menu mobile"><Link href="/" onClick={closeMenu} className="mm-link active">Beranda</Link>{siteNavGroups.map((group) => <div key={group.label}><p className="mm-section-title">{group.label}</p><Link href={group.href} onClick={closeMenu} className="mm-link">{group.label}</Link>{group.items.map((item) => <Link key={item.label} href={item.href} onClick={closeMenu} className="mm-sub">{item.label}</Link>)}</div>)}<p className="mm-section-title">Lainnya</p><Link href="/blog" onClick={closeMenu} className="mm-link">Berita &amp; Kegiatan</Link><Link href="/#faq" onClick={closeMenu} className="mm-link">FAQ</Link><Link href="/kontak" onClick={closeMenu} className="mm-link">Kontak</Link></nav><div className="border-t border-dq-green/10 px-5 py-4"><a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="block rounded-lg bg-dq-green px-4 py-3 text-center text-sm font-semibold text-white">Ayo Mondok!</a></div></div></div>}
     </header>
   );
 }
