@@ -68,46 +68,8 @@
   100% { background-position: 60% 10%, 40% 90%; }
 }
 
-/* Legacy home rhythm at 1440px parity viewport. */
+/* Content and component geometry set section heights without clipping. */
 @media (min-width: 1024px) {
-  #hero { min-height: 1548px; }
-  #tentang { min-height: 456px; }
-  #faq { min-height: 2054px; }
-
-  /* Legacy order: video precedes the Arabic quote. Keep both as separate DOM sections. */
-  .parity-video { min-height: 1095px; }
-  .parity-quote {
-    height: 352px;
-    min-height: 352px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-  }
-  .parity-stats { min-height: 350px; }
-  .parity-marquee { min-height: 480px; }
-  .parity-program { min-height: 801px; }
-  .parity-dq3 { min-height: 725px; }
-  .parity-explore {
-    height: 732px;
-    overflow: hidden;
-    padding-top: 88px;
-    padding-bottom: 88px;
-  }
-  .parity-testimonial {
-    height: 605px;
-    overflow: hidden;
-    padding-top: 104px;
-    padding-bottom: 104px;
-  }
-  .parity-cta { min-height: 340px; }
-  .parity-news {
-    height: 755px;
-    overflow: hidden;
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-  .parity-faq details { padding-top: 16px; padding-bottom: 16px; }
   .parity-news h3 { font-size: 1rem; }
   .parity-news > div > div:nth-of-type(2) { margin-top: 2rem; }
-  .parity-news .news-card > div:last-child > span { display: none; }
 }
