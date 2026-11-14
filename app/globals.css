@@ -68,6 +68,50 @@
   100% { background-position: 60% 10%, 40% 90%; }
 }
 
+/* Match legacy's content-driven phone rhythm; leave desktop cascade untouched. */
+@media (max-width: 1023px) {
+  #hero { padding-top: 80px; padding-bottom: 64px; }
+  #hero > div { padding: 64px 0 0; }  /* Legacy hero keeps top breathing room. */
+  #hero h1 { line-height: 1.08; }
+  #hero .bento-wrap { margin-top: 48px; }
+  #hero .bento-wrap > div { aspect-ratio: 57 / 80; }
+  .parity-quote > div > div:first-child { margin-bottom: 32px; }
+  .parity-quote > div > p:nth-of-type(1) { margin-bottom: 24px; }
+  .parity-quote > div > p:nth-of-type(2) { margin-top: 0; margin-bottom: 12px; }
+  .parity-quote > div > p:nth-of-type(3) { margin-top: 0; }
+  .parity-quote > div > div:last-child { margin-top: 40px; }
+  .parity-motto > div > p:nth-of-type(2) { margin-bottom: 24px; }
+  .parity-motto > div > div:first-child span, .parity-motto > div > div:last-child span { font-size: 20px; line-height: 20px; }  /* Legacy dividers use smaller glyphs. */
+  .parity-marquee { padding-top: 48px; padding-bottom: 48px; }
+  .parity-program .program-card { padding: 24px; }
+  .parity-program .program-card > span:first-child { font-size: 10px; margin-bottom: 4px; }
+  .parity-program .program-card > div[aria-hidden] { width: 44px; height: auto; aspect-ratio: 1; margin-bottom: 16px; }
+  .parity-program .program-card h3 { font-size: 20px; line-height: 28px; margin-bottom: 8px; }
+  .parity-program .program-card p { margin-top: 0; margin-bottom: 16px; }
+  .parity-program .program-card > div:last-child { margin-top: 0; }
+  .parity-dq3 .grid.gap-4 > div { padding-top: 16px; padding-bottom: 16px; }
+  .parity-explore .group > div:first-child { aspect-ratio: 57 / 32; }
+  .parity-explore .group > div:last-child { position: relative; }
+  .parity-explore .group > div:last-child > span:first-child { position: absolute; right: 20px; top: 20px; }
+  .parity-explore .group h3 { font-size: 18px; margin-top: 0; margin-bottom: 4px; }
+  .parity-explore .group p { margin-top: 0; line-height: 20px; }
+  .parity-testimonial > div > div:last-child { margin-top: 48px; }
+  .parity-testimonial figure > div:first-child { margin-bottom: 12px; line-height: 16px; }
+  .parity-testimonial figure blockquote { line-height: 20px; }
+  .parity-testimonial figure figcaption { margin-top: 24px; }
+  .parity-cta .arabesque-bg { align-items: center; }
+  .parity-cta h2 { font-size: 24px; line-height: 32px; }
+  .parity-news .news-card > div:first-child { aspect-ratio: 57 / 32; }
+  .parity-news .news-card h3 { font-size: 16px; line-height: 22px; margin-top: 8px; }
+  .parity-news .news-card p { line-height: 20px; margin-top: 8px; }
+  .parity-news .news-card > div:last-child > span:last-child { margin-top: 8px; }
+  .parity-news .news-card > div:last-child { padding-bottom: 8px; }
+  .parity-news > div > div:nth-of-type(2) { margin-top: 16px; }
+  .parity-news > div > div:nth-of-type(2) button { font-size: 12px; padding-top: 6px; padding-bottom: 6px; }
+  .parity-news > div > div:nth-of-type(3) { margin-top: 28px; }
+  .parity-news > div > div:last-child { margin-top: 0; }
+}
+
 /* Content and component geometry set section heights without clipping. */
 @media (min-width: 1024px) {
   .parity-news h3 { font-size: 1rem; }
