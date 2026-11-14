@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import {
   siteFooterGroups,
   siteFooterNavigationLinks,
@@ -11,17 +10,13 @@ import {
 
 function FooterLink({ href, label }: { href: string; label: string }) {
   return href.startsWith("http") ? (
-    <a href={href} target="_blank" rel="noreferrer" className="hover:text-white">{label}</a>
+    <a href={href} target="_blank" rel="noopener noreferrer" className="hover:text-white">{label}</a>
   ) : (
     <Link href={href} className="hover:text-white">{label}</Link>
   );
 }
 
 export function SiteFooter() {
-  const pathname = usePathname();
-
-  if (pathname === "/blog") return null;
-
   return (
     <footer className="bg-dq-green-dark text-white">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
@@ -33,7 +28,7 @@ export function SiteFooter() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/65">Mendidik generasi berilmu dan berakhlak sejak 1968 di Jayanti, Kabupaten Tangerang, Banten.</p>
             <p className="mt-6 text-sm font-bold">Media sosial</p>
             <div className="mt-3 flex flex-col gap-2 text-sm text-white/70">
-              {siteSocialLinks.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noreferrer">{link.label}</a>)}
+              {siteSocialLinks.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>)}
             </div>
           </div>
           {siteFooterGroups.map((group) => (
@@ -55,7 +50,7 @@ export function SiteFooter() {
             <ul className="mt-3 space-y-2.5 text-sm text-white/70">
               <li>Jayanti, Kab. Tangerang</li>
               <li><a href="tel:+622159576882">+62 21 5957 6882</a></li>
-              <li><a href="https://wa.me/6281319789000" target="_blank" rel="noreferrer">WhatsApp</a></li>
+              <li><a href="https://wa.me/6281319789000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
               <li><a href="mailto:info@daarelqolam.ac.id">info@daarelqolam.ac.id</a></li>
             </ul>
 
