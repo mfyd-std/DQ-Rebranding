@@ -1,0 +1,149 @@
+{
+  "clientWidth": 1440,
+  "dpr": 1,
+  "viewport": [
+    1440,
+    900
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "id": "hero",
+      "className": "ornament-tl ornament-br relative bg-dq-ivory px-6 pb-20 pt-28 lg:px-8 lg:pb-28 lg:pt-36",
+      "text": "EST. 1968 · TANGERANG, BANTEN\nTempat Terbaik\nMembangun Generasi\nBerakhlak\n\nSejak 1968, Pondok Pesant",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1548.9375
+    },
+    {
+      "number": 2,
+      "id": "",
+      "className": "parity-quote arabesque-bg bg-dq-green px-6 py-16 text-center lg:px-8 lg:py-24",
+      "text": "✦\n\nاَلْعِلْمُ بِلَا عَمَلٍ كَالشَّجَرِ بِلَا ثَمَرٍ\n\n\"Ilmu tanpa amal seperti pohon tanpa buah\"\n\n— M",
+      "x": 0,
+      "y": 1548.9375,
+      "width": 1440,
+      "height": 453.5
+    },
+    {
+      "number": 3,
+      "id": "",
+      "className": "parity-video bg-white px-6 py-16 lg:px-8 lg:py-24",
+      "text": "VIDEO PROFIL\n\nMengenal Daar el-Qolam Lebih Dekat",
+      "x": 0,
+      "y": 2002.4375,
+      "width": 1440,
+      "height": 1102
+    },
+    {
+      "number": 4,
+      "id": "",
+      "className": "parity-motto arabesque-bg bg-dq-green px-6 py-12 text-center lg:px-8 lg:py-12",
+      "text": "✦\n\nوَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ\n\n\"Dan Aku tidak menciptakan jin dan manus",
+      "x": 0,
+      "y": 3104.4375,
+      "width": 1440,
+      "height": 354.5
+    },
+    {
+      "number": 5,
+      "id": "",
+      "className": "parity-stats bg-dq-ivory px-6 py-16 lg:px-8 lg:py-24",
+      "text": "5.000+\n\nSantri Aktif\n\n58\n\nTahun Berpengalaman\n\n30.000+\n\nAlumni Nasional\n\n4\n\nKampus Terintegrasi",
+      "x": 0,
+      "y": 3458.9375,
+      "width": 1440,
+      "height": 350
+    },
+    {
+      "number": 6,
+      "id": "",
+      "className": "parity-marquee bg-dq-ivory py-10 lg:py-16",
+      "text": "",
+      "x": 0,
+      "y": 3808.9375,
+      "width": 1440,
+      "height": 480
+    },
+    {
+      "number": 7,
+      "id": "program",
+      "className": "parity-program bg-white px-6 py-20 lg:px-8 lg:py-28",
+      "text": "PROGRAM PENDIDIKAN\n\nPilih Jalur Pendidikan yang Tepat untuk Putra-Putri Anda\n\nEmpat program unggulan",
+      "x": 0,
+      "y": 4288.9375,
+      "width": 1440,
+      "height": 802.25
+    },
+    {
+      "number": 8,
+      "id": "dq3",
+      "className": "parity-dq3 dq3-gradient relative overflow-hidden px-6 py-20 lg:px-8 lg:py-28",
+      "text": "DAAR EL-QOLAM 3\nKampus Dza'Izza\nPesantren Beyond Pesantren\n\nGo Global, Be a Global Player. DQ3 mempe",
+      "x": 0,
+      "y": 5091.1875,
+      "width": 1440,
+      "height": 726.84375
+    },
+    {
+      "number": 9,
+      "id": "jelajahi",
+      "className": "parity-explore bg-dq-ivory px-6 py-20 lg:px-8 lg:py-28",
+      "text": "JELAJAHI\n\nKehidupan di Daar el-Qolam\n\nFasilitas modern, kehidupan Islami yang kaya, dan lingkungan a",
+      "x": 0,
+      "y": 5818.03125,
+      "width": 1440,
+      "height": 732.5
+    },
+    {
+      "number": 10,
+      "id": "",
+      "className": "parity-testimonial bg-white px-6 py-20 lg:px-8 lg:py-28",
+      "text": "TESTIMONI\n\nApa Kata Wali Santri & Alumni\n★★★★★\n“Anak saya berkembang pesat dalam hafalan Qur'an dan ",
+      "x": 0,
+      "y": 6550.53125,
+      "width": 1440,
+      "height": 605
+    },
+    {
+      "number": 11,
+      "id": "",
+      "className": "parity-cta bg-dq-ivory px-6 py-16 lg:px-8 lg:py-20",
+      "text": "TAHUN PELAJARAN 2026/2027\n\nSegera Daftarkan Putra-Putri Anda\n\nKuota terbatas · Jayanti, Kab. Tangera",
+      "x": 0,
+      "y": 7155.53125,
+      "width": 1440,
+      "height": 344
+    },
+    {
+      "number": 12,
+      "id": "berita",
+      "className": "parity-news bg-white px-6 py-20 lg:px-8 lg:py-16",
+      "text": "BERITA & KEGIATAN\n\nKabar Terbaru dari Daar el-Qolam\nSemua\nAkademik\nPrestasi\nKegiatan\n01\nAkademik\nApr",
+      "x": 0,
+      "y": 7499.53125,
+      "width": 1440,
+      "height": 754.75
+    },
+    {
+      "number": 13,
+      "id": "faq",
+      "className": "parity-faq bg-dq-ivory px-6 py-20 lg:px-8 lg:py-28",
+      "text": "FAQ\n\nPertanyaan yang Sering Diajukan\n\nTemukan jawaban untuk pertanyaan umum seputar pendaftaran, bia",
+      "x": 0,
+      "y": 8254.28125,
+      "width": 1440,
+      "height": 2054
+    }
+  ],
+  "capture": {
+    "method": "Page.captureScreenshot",
+    "captureBeyondViewport": true,
+    "fromSurface": true,
+    "attempt": 1,
+    "uniqueColors": 468923,
+    "bytes": 3381033,
+    "url": "http://127.0.0.1:3189/"
+  }
+}

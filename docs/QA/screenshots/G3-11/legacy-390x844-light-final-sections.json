@@ -1,0 +1,149 @@
+{
+  "clientWidth": 390,
+  "dpr": 1,
+  "viewport": [
+    390,
+    844
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "id": "",
+      "className": "relative min-h-screen pt-20 lg:pt-24 flex items-center overflow-x-hidden bg-dq-ivory ornament-tl ornament-br",
+      "text": "EST. 1968 · TANGERANG, BANTEN\nTempat Terbaik\nMembangun Generasi\n\nBerilmu\nBerakhlak\nBerbadan Sehat\nPe",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1395.3125
+    },
+    {
+      "number": 2,
+      "id": "",
+      "className": "bg-dq-green arabesque-bg py-16 lg:py-24 reveal",
+      "text": "اَلْعِلْمُ بِلَا عَمَلٍ كَالشَّجَرِ بِلَا ثَمَرٍ\n\n\"Ilmu tanpa amal seperti pohon tanpa buah\"\n\n— MAHF",
+      "x": 0,
+      "y": 1395.3125,
+      "width": 390,
+      "height": 382.5
+    },
+    {
+      "number": 3,
+      "id": "",
+      "className": "video-section py-16 lg:py-24 bg-white reveal",
+      "text": "VIDEO PROFIL\nMengenal Daar el-Qolam Lebih Dekat",
+      "x": 0,
+      "y": 1777.8125,
+      "width": 390,
+      "height": 480.875
+    },
+    {
+      "number": 4,
+      "id": "",
+      "className": "bg-dq-green arabesque-bg py-12 lg:py-16 reveal",
+      "text": "وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ\n\n\"Dan Aku tidak menciptakan jin dan manusia ",
+      "x": 0,
+      "y": 2258.6875,
+      "width": 390,
+      "height": 441.5
+    },
+    {
+      "number": 5,
+      "id": "",
+      "className": "py-16 lg:py-24 bg-dq-ivory reveal",
+      "text": "0\n\nSantri Aktif\n\n0\n\nTahun Berpengalaman\n\n0\n\nAlumni Nasional\n\n0\n\nKampus Terintegrasi",
+      "x": 0,
+      "y": 2700.1875,
+      "width": 390,
+      "height": 448
+    },
+    {
+      "number": 6,
+      "id": "",
+      "className": "py-12 lg:py-16 bg-dq-ivory reveal",
+      "text": "",
+      "x": 0,
+      "y": 3148.1875,
+      "width": 390,
+      "height": 320
+    },
+    {
+      "number": 7,
+      "id": "program",
+      "className": "py-20 lg:py-28 bg-white",
+      "text": "PROGRAM PENDIDIKAN\nPilih Jalur Pendidikan\nyang Tepat untuk Putra-Putri Anda\n\nEmpat program unggulan ",
+      "x": 0,
+      "y": 3468.1875,
+      "width": 390,
+      "height": 1642.25
+    },
+    {
+      "number": 8,
+      "id": "",
+      "className": "relative py-20 lg:py-28 dq3-gradient overflow-hidden",
+      "text": "DAAR EL-QOLAM 3\nKampus Dza'Izza\nPesantren Beyond Pesantren\n\nGo Global, Be a Global Player — DQ3 memp",
+      "x": 0,
+      "y": 5110.4375,
+      "width": 390,
+      "height": 999
+    },
+    {
+      "number": 9,
+      "id": "",
+      "className": "py-20 lg:py-28 bg-dq-ivory",
+      "text": "JELAJAHI\nKehidupan di Daar el-Qolam\n\nFasilitas modern, kehidupan Islami yang kaya, dan lingkungan as",
+      "x": 0,
+      "y": 6109.4375,
+      "width": 390,
+      "height": 1700
+    },
+    {
+      "number": 10,
+      "id": "",
+      "className": "py-20 lg:py-28 bg-white",
+      "text": "TESTIMONI\nApa Kata Wali Santri & Alumni\n\"\n\n\"Anak saya berkembang pesat dalam hafalan Qur'an dan baha",
+      "x": 0,
+      "y": 7809.4375,
+      "width": 390,
+      "height": 1116.5
+    },
+    {
+      "number": 11,
+      "id": "",
+      "className": "py-16 lg:py-20 bg-dq-ivory reveal",
+      "text": "TAHUN PELAJARAN 2026/2027\n\nSegera Daftarkan Putra-Putri Anda\n\nKuota terbatas · Jayanti, Kab. Tangera",
+      "x": 0,
+      "y": 8925.9375,
+      "width": 390,
+      "height": 452
+    },
+    {
+      "number": 12,
+      "id": "",
+      "className": "py-20 lg:py-28 bg-white",
+      "text": "BERITA & KEGIATAN\nKabar Terbaru dari Daar el-Qolam\nSemua\nAkademik\nPrestasi\nKegiatan\nLihat semua beri",
+      "x": 0,
+      "y": 9377.9375,
+      "width": 390,
+      "height": 1611
+    },
+    {
+      "number": 13,
+      "id": "faq",
+      "className": "py-20 lg:py-28 bg-dq-ivory",
+      "text": "FAQ\nPertanyaan yang Sering Diajukan\n\nTemukan jawaban untuk pertanyaan umum seputar pendaftaran, biay",
+      "x": 0,
+      "y": 10988.9375,
+      "width": 390,
+      "height": 2462
+    }
+  ],
+  "capture": {
+    "method": "Page.captureScreenshot",
+    "captureBeyondViewport": true,
+    "fromSurface": true,
+    "attempt": 1,
+    "uniqueColors": 389943,
+    "bytes": 2403216,
+    "url": "http://127.0.0.1:3188/index.html"
+  }
+}
