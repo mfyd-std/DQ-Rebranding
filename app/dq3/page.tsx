@@ -153,7 +153,7 @@ export default function Dq3Page() {
             </div>
           </div>
           <div className="relative hidden min-h-[420px] lg:block">
-            <Image src="/images/BP3A8871trans.webp" alt="Kampus DQ3 Dza'Izza" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-contain object-center" priority />
+            <Image src="/images/BP3A8871trans.webp" alt="Kampus DQ3 Dza'Izza" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-contain object-bottom" priority />
           </div>
         </div>
       </section>
