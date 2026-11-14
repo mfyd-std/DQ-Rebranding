@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body>
+      <body className="dq-bg-animated">
         <SiteHeader />
         {children}
         <SiteFooter />
