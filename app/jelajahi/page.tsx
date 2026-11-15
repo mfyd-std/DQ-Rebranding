@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BoltIcon, ChatBubbleLeftRightIcon, CheckIcon as HeroCheckIcon, FlagIcon, HeartIcon, MusicalNoteIcon, PencilSquareIcon, SparklesIcon, TrophyIcon } from "@heroicons/react/24/outline";
+import { AcademicCapIcon, BoltIcon, BookOpenIcon, ChatBubbleLeftRightIcon, CheckIcon as HeroCheckIcon, FlagIcon, HeartIcon, LanguageIcon, MoonIcon, MusicalNoteIcon, PencilSquareIcon, SparklesIcon, TrophyIcon } from "@heroicons/react/24/outline";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export const metadata = {
@@ -60,25 +60,25 @@ const islamicLife = [
     title: "Shalat Berjamaah 5 Waktu",
     description:
       "Seluruh santri shalat berjamaah di masjid setiap waktu shalat, membentuk disiplin dan kebersamaan.",
-    mark: "01",
+    Icon: MoonIcon,
   },
   {
     title: "Halaqoh Qur'an Harian",
     description:
       "Sesi tilawah dan tahfidz Al-Qur'an setiap pagi bersama musyrif dan musyrifah yang berpengalaman.",
-    mark: "02",
+    Icon: BookOpenIcon,
   },
   {
     title: "Pengajian Rutin & Kajian Islam",
     description:
       "Kajian kitab, ceramah, dan diskusi keislaman yang memperdalam pemahaman agama santri.",
-    mark: "03",
+    Icon: AcademicCapIcon,
   },
   {
     title: "Lingkungan Berbahasa Arab & Inggris",
     description:
       "Percakapan sehari-hari dalam bahasa Arab dan Inggris diwajibkan untuk mengakselerasi penguasaan bahasa.",
-    mark: "04",
+    Icon: LanguageIcon,
   },
 ];
 
@@ -199,8 +199,8 @@ export default function ExplorePage() {
             <div className="mt-8 space-y-4">
               {islamicLife.map((item) => (
                 <article key={item.title} className="flex items-start gap-4 rounded-xl bg-dq-ivory p-4">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-dq-green-light font-serif text-xl font-semibold text-dq-green" aria-hidden="true">
-                    {item.mark}
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-dq-green-light text-dq-green" aria-hidden="true">
+                    <item.Icon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" />
                   </span>
                   <div>
                     <h2 className="text-sm font-semibold text-dq-charcoal">{item.title}</h2>

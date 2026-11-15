@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckIcon } from "@heroicons/react/24/outline";
+import { CheckIcon, ClipboardDocumentCheckIcon, EyeIcon } from "@heroicons/react/24/outline";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
@@ -165,13 +165,13 @@ export default function TentangPage() {
           <SectionHeading eyebrow="Landasan" title="Visi & Misi" light />
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <div className="rounded-2xl border border-white/20 bg-white/10 p-8">
-              <h3 className="font-serif text-3xl font-semibold text-white">Visi</h3>
+              <h3 className="flex items-center gap-3 font-serif text-3xl font-semibold text-white"><EyeIcon className="h-5 w-5 shrink-0 text-dq-gold" aria-hidden="true" focusable="false" />Visi</h3>
               <p className="mt-6 text-base leading-relaxed text-white/90">
                 &quot;Terwujudnya lembaga pendidikan Islam yang unggul dalam menghasilkan generasi yang beriman, berilmu, berakhlak mulia, dan mampu berkontribusi bagi kemajuan umat dan bangsa.&quot;
               </p>
             </div>
             <div className="rounded-2xl border border-white/20 bg-white/10 p-8">
-              <h3 className="font-serif text-3xl font-semibold text-white">Misi</h3>
+              <h3 className="flex items-center gap-3 font-serif text-3xl font-semibold text-white"><ClipboardDocumentCheckIcon className="h-5 w-5 shrink-0 text-dq-gold" aria-hidden="true" focusable="false" />Misi</h3>
               <ul className="mt-6 space-y-4">
                 {missions.map((mission) => (
                   <li key={mission} className="flex items-start gap-3 text-sm leading-relaxed text-white/90">
