@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import { SectionHeading } from "@/components/SectionHeading";
 import { registrationUrl } from "@/components/site-navigation";
 import { ContactForm } from "./ContactForm";
@@ -127,7 +127,7 @@ export default function ContactPage() {
             <p className="mt-2 text-sm text-white/70">Daftar sekarang di <span className="font-semibold text-white">daftar.daarelqolam.ac.id</span> · Biaya pendaftaran Rp 400.000</p>
           </div>
           <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
-            <a href={registrationUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-lg bg-dq-gold px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-yellow-600">Daftar Sekarang</a>
+            <a href={registrationUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-dq-gold px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-yellow-600">Daftar Sekarang <PaperAirplaneIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" /></a>
             <a href={whatsappUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border-2 border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/80"><WhatsAppIcon />Hubungi WhatsApp</a>
           </div>
         </div>
