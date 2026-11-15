@@ -7,6 +7,7 @@ import {
   siteFooterNavigationLinks,
   siteSocialLinks,
 } from "@/components/site-navigation";
+import { InstagramIcon, TikTokIcon, YouTubeIcon } from "@/components/BrandIcons";
 
 function FooterLink({ href, label }: { href: string; label: string }) {
   return href.startsWith("http") ? (
@@ -28,7 +29,10 @@ export function SiteFooter() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/65">Mendidik generasi berilmu dan berakhlak sejak 1968 di Jayanti, Kabupaten Tangerang, Banten.</p>
             <p className="mt-6 text-sm font-bold">Media sosial</p>
             <div className="mt-3 flex flex-col gap-2 text-sm text-white/70">
-              {siteSocialLinks.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>)}
+              {siteSocialLinks.map((link) => {
+                const Icon = link.label.startsWith("YouTube") ? YouTubeIcon : link.label.startsWith("Instagram") ? InstagramIcon : TikTokIcon;
+                return <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2"><Icon />{link.label}</a>;
+              })}
             </div>
           </div>
           {siteFooterGroups.map((group) => (
