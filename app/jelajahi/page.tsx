@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AcademicCapIcon, BoltIcon, BookOpenIcon, ChatBubbleLeftRightIcon, CheckIcon as HeroCheckIcon, FlagIcon, HeartIcon, LanguageIcon, MoonIcon, MusicalNoteIcon, PencilSquareIcon, SparklesIcon, TrophyIcon } from "@heroicons/react/24/outline";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export const metadata = {
@@ -59,37 +60,37 @@ const islamicLife = [
     title: "Shalat Berjamaah 5 Waktu",
     description:
       "Seluruh santri shalat berjamaah di masjid setiap waktu shalat, membentuk disiplin dan kebersamaan.",
-    mark: "01",
+    Icon: MoonIcon,
   },
   {
     title: "Halaqoh Qur'an Harian",
     description:
       "Sesi tilawah dan tahfidz Al-Qur'an setiap pagi bersama musyrif dan musyrifah yang berpengalaman.",
-    mark: "02",
+    Icon: BookOpenIcon,
   },
   {
     title: "Pengajian Rutin & Kajian Islam",
     description:
       "Kajian kitab, ceramah, dan diskusi keislaman yang memperdalam pemahaman agama santri.",
-    mark: "03",
+    Icon: AcademicCapIcon,
   },
   {
     title: "Lingkungan Berbahasa Arab & Inggris",
     description:
       "Percakapan sehari-hari dalam bahasa Arab dan Inggris diwajibkan untuk mengakselerasi penguasaan bahasa.",
-    mark: "04",
+    Icon: LanguageIcon,
   },
 ];
 
 const extracurriculars = [
-  ["Pramuka", "Kepanduan & kepemimpinan"],
-  ["Nasyid & Marawis", "Musik Islami"],
-  ["Robotika", "Teknologi & coding"],
-  ["Jurnalistik", "Tulis & media"],
-  ["PMR / Kesehatan", "Palang Merah Remaja"],
-  ["Sepak Bola", "Olahraga & tim"],
-  ["Debat Bahasa", "Arab & Inggris"],
-  ["Teater & Drama", "Seni pertunjukan"],
+  ["Pramuka", "Kepanduan & kepemimpinan", FlagIcon],
+  ["Nasyid & Marawis", "Musik Islami", MusicalNoteIcon],
+  ["Robotika", "Teknologi & coding", BoltIcon],
+  ["Jurnalistik", "Tulis & media", PencilSquareIcon],
+  ["PMR / Kesehatan", "Palang Merah Remaja", HeartIcon],
+  ["Sepak Bola", "Olahraga & tim", TrophyIcon],
+  ["Debat Bahasa", "Arab & Inggris", ChatBubbleLeftRightIcon],
+  ["Teater & Drama", "Seni pertunjukan", SparklesIcon],
 ] as const;
 
 const dormitoryBenefits = [
@@ -114,7 +115,7 @@ function CheckIcon() {
       aria-hidden="true"
       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-dq-green-light text-sm font-bold text-dq-green"
     >
-      ✓
+      <HeroCheckIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" />
     </span>
   );
 }
@@ -198,8 +199,8 @@ export default function ExplorePage() {
             <div className="mt-8 space-y-4">
               {islamicLife.map((item) => (
                 <article key={item.title} className="flex items-start gap-4 rounded-xl bg-dq-ivory p-4">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-dq-green-light font-serif text-xl font-semibold text-dq-green" aria-hidden="true">
-                    {item.mark}
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-dq-green-light text-dq-green" aria-hidden="true">
+                    <item.Icon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" />
                   </span>
                   <div>
                     <h2 className="text-sm font-semibold text-dq-charcoal">{item.title}</h2>
@@ -234,10 +235,10 @@ export default function ExplorePage() {
             description="Lebih dari 30 kegiatan ekstrakurikuler tersedia untuk mengembangkan potensi santri secara menyeluruh."
           />
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {extracurriculars.map(([title, description]) => (
+            {extracurriculars.map(([title, description, Icon]) => (
               <article key={title} className="rounded-xl border border-dq-green/10 bg-white p-4 text-center shadow-card transition-all duration-200 hover:-translate-y-0.5 hover:shadow-card-lg sm:p-5">
-                <span className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-dq-green-light font-serif text-xl font-semibold text-dq-green" aria-hidden="true">
-                  +
+                <span className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-dq-green-light text-dq-green" aria-hidden="true">
+                  <Icon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" />
                 </span>
                 <h2 className="text-sm font-semibold text-dq-charcoal">{title}</h2>
                 <p className="mt-1 text-xs leading-relaxed text-dq-warm-gray">{description}</p>

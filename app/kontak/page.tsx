@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { ArrowRightIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import { SectionHeading } from "@/components/SectionHeading";
 import { registrationUrl } from "@/components/site-navigation";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -46,9 +48,6 @@ function MailIcon() {
   return <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m3 8 7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2Z" /></svg>;
 }
 
-function WhatsAppIcon() {
-  return <span className="text-base font-bold" aria-hidden="true">WA</span>;
-}
 
 export default function ContactPage() {
   return (
@@ -75,13 +74,13 @@ export default function ContactPage() {
             <div className="mt-8 space-y-5">
               <ContactCard title="Alamat" icon={<PinIcon />}>
                 <p className="text-sm text-dq-warm-gray">Jl. Pesantren No. 1, Jayanti, Kabupaten Tangerang, Banten 15610</p>
-                <a href={mapUrl} target="_blank" rel="noreferrer" className="mt-1 inline-block text-xs font-semibold text-dq-green hover:text-dq-green-dark">Buka di Google Maps →</a>
+                <a href={mapUrl} target="_blank" rel="noreferrer" className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-dq-green hover:text-dq-green-dark">Buka di Google Maps <ArrowRightIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" /></a>
               </ContactCard>
               <ContactCard title="Telepon" icon={<PhoneIcon />}>
                 <a href="tel:+622159576882" className="text-sm text-dq-warm-gray hover:text-dq-green">+62 21 5957 6882</a>
                 <p className="mt-0.5 text-xs text-dq-warm-gray">Senin–Jumat, 08:00–16:00 WIB</p>
               </ContactCard>
-              <ContactCard title="WhatsApp" icon={<WhatsAppIcon />}>
+              <ContactCard title="WhatsApp" icon={<WhatsAppIcon className="h-4 w-4" />}>
                 <a href={whatsappUrl} target="_blank" rel="noreferrer" className="text-sm text-dq-warm-gray hover:text-dq-green">+62 813-1978-9000</a>
                 <p className="mt-0.5 text-xs text-dq-warm-gray">Respon cepat untuk pertanyaan pendaftaran</p>
               </ContactCard>
@@ -126,8 +125,8 @@ export default function ContactPage() {
             <p className="mt-2 text-sm text-white/70">Daftar sekarang di <span className="font-semibold text-white">daftar.daarelqolam.ac.id</span> · Biaya pendaftaran Rp 400.000</p>
           </div>
           <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
-            <a href={registrationUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-lg bg-dq-gold px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-yellow-600">Daftar Sekarang</a>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border-2 border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/80"><WhatsAppIcon />Hubungi WhatsApp</a>
+            <a href={registrationUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-dq-gold px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-yellow-600">Daftar Sekarang <PaperAirplaneIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" /></a>
+            <a href={whatsappUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border-2 border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/80"><WhatsAppIcon className="h-4 w-4 shrink-0" />Hubungi WhatsApp</a>
           </div>
         </div>
       </section>
