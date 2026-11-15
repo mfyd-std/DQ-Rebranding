@@ -79,7 +79,7 @@
   .parity-quote > div > p:nth-of-type(1) { margin-bottom: 24px; }
   .parity-quote > div > p:nth-of-type(2) { margin-top: 0; margin-bottom: 12px; }
   .parity-quote > div > p:nth-of-type(3) { margin-top: 0; }
-  .parity-quote > div > div:last-child { margin-top: 40px; }
+  .parity-quote > div > div:last-child { margin-top: 32px; }
   .parity-motto > div > p:nth-of-type(2) { margin-bottom: 24px; }
   .parity-motto > div > div:first-child span, .parity-motto > div > div:last-child span { font-size: 20px; line-height: 20px; }  /* Legacy dividers use smaller glyphs. */
   .parity-marquee { padding-top: 48px; padding-bottom: 48px; }
@@ -114,6 +114,12 @@
 
 /* Content and component geometry set section heights without clipping. */
 @media (min-width: 1024px) {
+  .parity-quote > div > div:first-child { margin-bottom: 32px; }
+  .parity-quote > div > p:nth-of-type(1) { line-height: 1; margin-bottom: 24px; }
+  .parity-quote > div > p:nth-of-type(2) { margin-top: 0; }
+  .parity-quote > div > p:nth-of-type(3) { font-size: 14px; line-height: 20px; }
+  .parity-motto { padding-top: 64px; padding-bottom: 64px; }
+  .parity-motto > div > p:first-of-type { line-height: 40px; }
   .parity-news h3 { font-size: 1rem; }
   .parity-news > div > div:nth-of-type(2) { margin-top: 2rem; }
 }
