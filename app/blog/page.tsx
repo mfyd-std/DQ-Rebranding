@@ -1,21 +1,23 @@
 import Link from "next/link";
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
-import { SectionHeading } from "@/components/SectionHeading";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { posts } from "@/app/blog/blog-data";
 
 export default function BlogPage() {
   return (
     <main className="min-h-screen bg-dq-ivory">
-      <header className="border-b border-dq-green/10 bg-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-          <Link href="/" className="font-serif text-2xl font-bold text-dq-green">Daar el-Qolam</Link>
-          <Link href="/" className="inline-flex items-center gap-1 text-sm font-semibold text-dq-green hover:text-dq-green-dark"><ArrowLeftIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" />Kembali ke beranda</Link>
+      <section className="arabesque-bg bg-dq-green px-6 pb-16 pt-32 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
+            <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-dq-gold" />
+            <span className="text-xs font-semibold uppercase tracking-wide text-dq-gold">Berita &amp; Kegiatan</span>
+          </div>
+          <h1 className="mb-4 font-serif text-4xl font-semibold text-white sm:text-5xl lg:text-6xl">Kabar Terbaru dari<br /><span className="italic text-dq-gold">Daar el-Qolam</span></h1>
+          <p className="mx-auto max-w-2xl text-base text-white/80 lg:text-lg">Prestasi santri, kegiatan akademik, dan berbagai liputan terkini dari lingkungan pesantren Daar el-Qolam.</p>
         </div>
-      </header>
-      <section className="px-6 py-20 lg:px-8 lg:py-28">
+      </section>
+      <section className="px-6 py-12 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-7xl">
-          <SectionHeading eyebrow="Berita & Kegiatan" title="Kabar Terbaru dari" emphasis="Daar el-Qolam" description="Informasi akademik, prestasi, dan kegiatan santri." />
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-3">
             {posts.map((post) => (
               <article id={post.slug} key={post.slug} className="flex flex-col rounded-2xl border border-dq-green/10 bg-white p-6 shadow-card">
                 <div className="flex items-center gap-2 text-xs"><span className="rounded-full bg-dq-green-light px-3 py-1 font-semibold text-dq-green">{post.category}</span><time className="text-dq-warm-gray">{post.date}</time></div>
