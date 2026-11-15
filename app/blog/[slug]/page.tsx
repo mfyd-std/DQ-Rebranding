@@ -25,8 +25,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <span className={`rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide ${post.category === "Akademik" ? "bg-dq-green-light text-dq-green" : "bg-dq-gold-light text-dq-gold"}`}>{post.category.toLowerCase()}</span>
             <time className="text-sm text-dq-warm-gray">{post.slug === "kolaborasi-literasi-dzaizza" ? "15 April 2026" : post.slug === "seleksi-paskibraka-tangerang" ? "22 Maret 2026" : post.slug === "seleksi-nasional-opsi-2026" ? "10 Februari 2026" : post.date}</time>
           </div>
-          <h1 className="mb-4 font-serif text-3xl font-semibold leading-tight text-dq-charcoal sm:text-4xl lg:text-5xl">{post.title}</h1>
-          <p className="text-base leading-relaxed text-dq-warm-gray lg:text-lg">{post.excerpt}</p>
+          <h1 className="mb-4 font-serif text-3xl font-semibold leading-tight text-dq-charcoal sm:text-4xl lg:text-5xl lg:leading-[48px]">{post.title}</h1>
+                    <p className="text-base leading-relaxed text-dq-warm-gray lg:text-lg lg:leading-7">{post.excerpt}</p>
         </div>
       </section>
     </main>
