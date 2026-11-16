@@ -25,8 +25,18 @@ export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState<string | null>(null);
   const [darkMode, setDarkMode] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const hamburgerRef = useRef<HTMLButtonElement>(null);
   const isExplore = pathname === "/jelajahi";
+
+  // Legacy js/main.js toggled .scrolled past 20px. Without it the glass header
+  // kept its 55% resting background and read as plain transparency.
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     const storedTheme = window.localStorage.getItem("dq-theme");
@@ -65,7 +75,7 @@ export function SiteHeader() {
   };
 
   return (
-    <header className="navbar-glass fixed inset-x-0 top-0 z-50">
+    <header className={`navbar-glass fixed inset-x-0 top-0 z-50${scrolled ? " scrolled" : ""}`}>
       <div className="mx-auto flex h-16 dq-container items-center justify-between px-5 lg:h-20 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center" aria-label="Daar el-Qolam beranda">
           <Image src="/images/logo-daar-el-qolam.svg" alt="Logo Daar el-Qolam" width={205} height={48} priority className="logo-light h-9 w-auto lg:h-11" />

@@ -86,6 +86,14 @@
 
 /* Match legacy's content-driven phone rhythm; leave desktop cascade untouched. */
 @media (max-width: 1023px) {
+  /* iOS/Android: a fixed background establishes its own backdrop root, which
+     disables backdrop-filter on the fixed header behind it. Scroll attachment
+     on phones keeps the animated gradients and restores the glass blur. */
+  body.dq-bg-animated,
+  section.bg-dq-ivory,
+  section.dq-bg-animated {
+    background-attachment: scroll, scroll;
+  }
   #hero { padding-top: 80px; padding-bottom: 64px; }
   #hero > div { padding-top: 64px; }  /* Legacy hero keeps top breathing room. */
   #hero h1 { line-height: 1.08; }
