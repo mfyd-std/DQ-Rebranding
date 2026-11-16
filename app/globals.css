@@ -71,10 +71,10 @@
 /* Match legacy's content-driven phone rhythm; leave desktop cascade untouched. */
 @media (max-width: 1023px) {
   #hero { padding-top: 80px; padding-bottom: 64px; }
-  #hero > div { padding: 64px 0 0; }  /* Legacy hero keeps top breathing room. */
+  #hero > div { padding-top: 64px; }  /* Legacy hero keeps top breathing room. */
   #hero h1 { line-height: 1.08; }
   #hero .bento-wrap { margin-top: 48px; }
-  #hero .bento-wrap > div { aspect-ratio: 57 / 80; }
+  #hero .bento-wrap > .grid { aspect-ratio: auto; height: 480px; }
   .parity-quote > div > div:first-child { margin-bottom: 32px; }
   .parity-quote > div > p:nth-of-type(1) { margin-bottom: 24px; }
   .parity-quote > div > p:nth-of-type(2) { margin-top: 0; margin-bottom: 12px; }
@@ -122,4 +122,33 @@
   .parity-motto > div > p:first-of-type { line-height: 40px; }
   .parity-news h3 { font-size: 1rem; }
   .parity-news > div > div:nth-of-type(2) { margin-top: 2rem; }
+}
+
+/* Match legacy -lt dark surfaces for the migrated -light token names. */
+html.dark .bg-dq-green-light { background-color: rgba(0, 108, 85, 0.22) !important; }
+html.dark .bg-dq-gold-light { background-color: rgba(201, 162, 39, 0.22) !important; }
+
+/* Section navigation needs dark hover surfaces and text above legacy overrides. */
+html.dark main nav [class~="hover:bg-dq-green-light"]:hover {
+  background-color: rgba(0, 108, 85, 0.22) !important;
+  color: #2CB58E !important;
+}
+
+/* Reveals only hide after observer installs; preserve hover transforms on cards. */
+html.reveal-ready .reveal:not(.visible) { opacity: 0; transform: translateY(24px); }
+.reveal { opacity: 1; transform: none; }
+.reveal.visible { opacity: 1; }
+/* Legacy dq-container provides outer pad; narrow reading widths remain intentional. */
+.dq-container.max-w-3xl { max-width: 48rem; }
+.dq-container.max-w-4xl { max-width: 56rem; }
+.dq-container.max-w-5xl { max-width: 64rem; }
+section > .max-w-3xl, section > .max-w-4xl, section > .max-w-5xl { padding-left: 20px; padding-right: 20px; }
+/* Keep inherited card hover spring above revealed resting state. */
+.reveal.card-interactive.visible:hover { transform: translateY(-4px) scale(1.015); }
+.reveal.card-interactive.visible:active { transform: translateY(-1px) scale(0.995); }
+html.reveal-ready .card-interactive.reveal:not(.visible) { transform: translateY(24px); }
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .animate-fade-up, .animate-fade-in, .animate-float, .animate-bounce-scroll, .rt-word { animation: none !important; transition: none !important; }
+  .text-rotator .rt-word:not(.active) { display: none; }
+  html.reveal-ready .reveal:not(.visible) { opacity: 1; transform: none; }
 }

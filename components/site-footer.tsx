@@ -20,7 +20,7 @@ function FooterLink({ href, label }: { href: string; label: string }) {
 export function SiteFooter() {
   return (
     <footer className="bg-dq-green-dark text-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div className="mx-auto dq-container px-6 py-16 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-7 lg:gap-10">
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="inline-flex">

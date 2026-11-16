@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Pondok Pesantren Daar el-Qolam",
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="id">
       <body className="dq-bg-animated">
         <SiteHeader />
+        <ScrollReveal />
         {children}
         <SiteFooter />
       </body>

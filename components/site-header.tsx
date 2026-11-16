@@ -41,7 +41,7 @@ export function SiteHeader() {
 
   return (
     <header className="navbar-glass fixed inset-x-0 top-0 z-50">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:h-20 lg:px-8">
+      <div className="mx-auto flex h-16 dq-container items-center justify-between px-5 lg:h-20 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center" aria-label="Daar el-Qolam beranda">
           <Image src="/images/logo-daar-el-qolam.svg" alt="Logo Daar el-Qolam" width={205} height={48} priority className="logo-light h-9 w-auto lg:h-11" />
           <Image src="/images/logo-daar-el-qolam-wordmark-white.svg" alt="Logo Daar el-Qolam" width={205} height={48} priority className="logo-dark h-9 w-auto lg:h-11" />
@@ -58,10 +58,10 @@ export function SiteHeader() {
           {sitePrimaryLinks.filter((item) => item.label === "Berita" || item.label === "Kontak").map((item) => <HeaderLink key={item.label} item={item} className="px-3 py-2 text-sm font-medium hover:text-dq-green" />)}
         </nav>
         <div className="flex items-center gap-2">
-          <button type="button" className="theme-toggle" onClick={() => setDarkMode((value) => !value)} aria-label={darkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap"} aria-pressed={darkMode}><MoonIcon className="icon-moon h-5 w-5 shrink-0" aria-hidden="true" focusable="false" /><SunIcon className="icon-sun h-5 w-5 shrink-0" aria-hidden="true" focusable="false" /></button>
           <span className="hidden items-center gap-1.5 rounded-full border border-dq-gold/30 bg-dq-gold-light px-3 py-1 text-xs font-semibold text-dq-gold md:inline-flex"><span className="pulse-dot h-1.5 w-1.5 rounded-full bg-dq-gold" />Pendaftaran Dibuka</span>
           <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className={isExplore ? "rounded-lg bg-dq-green px-3 py-2 text-xs font-semibold text-white hover:bg-dq-green-dark lg:px-4 lg:text-sm" : "hidden rounded-lg bg-dq-green px-4 py-2 text-sm font-semibold text-white lg:inline-flex"}>{isExplore ? <><span className="lg:hidden">Ayo Mondok!</span><span className="hidden lg:inline">Daftar Sekarang</span></> : "Daftar Sekarang"}</a>
           {!isExplore && <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="rounded-md bg-dq-green px-3 py-1.5 text-xs font-semibold text-white lg:hidden">Ayo Mondok!</a>}
+          <button type="button" className="theme-toggle" onClick={() => setDarkMode((value) => !value)} aria-label={darkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap"} aria-pressed={darkMode}><MoonIcon className="icon-moon h-5 w-5 shrink-0" aria-hidden="true" focusable="false" /><SunIcon className="icon-sun h-5 w-5 shrink-0" aria-hidden="true" focusable="false" /></button>
           <button type="button" onClick={() => setMenuOpen(true)} className="rounded-md p-2 lg:hidden" aria-label="Buka menu" aria-expanded={menuOpen}><Bars3Icon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" /></button>
         </div>
       </div>
