@@ -35,7 +35,6 @@ Legacy inbound URLs (`/index.html`, `/berita.html`, and so on) are 301-redirecte
 app/                 routes, global styles, layout
   styles/legacy.css  base stylesheet ported from the old site (imported by globals.css)
 components/          header, footer, StatCounter, navigation config, brand icons
-content/             structured page copy
 public/              served assets (images, brochure PDF, logos)
 docs/                project documentation
   DECISIONS/         decision records
