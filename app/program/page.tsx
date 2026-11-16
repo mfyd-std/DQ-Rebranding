@@ -176,8 +176,6 @@ function ProgramDetails({ program }: { program: Program }) {
       <p className="mb-6 leading-relaxed text-dq-warm-gray">
         {program.description}
       </p>
-      ಂ=functions.patch#output text for clarity: tool is already executed; no
-      further call required.
       <div className="mb-8 grid gap-4 sm:grid-cols-2">
         {program.facts.map((fact) => (
           <div
