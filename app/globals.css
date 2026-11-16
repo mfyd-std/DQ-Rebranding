@@ -114,7 +114,6 @@
   .parity-program .program-card p { margin-top: 0; margin-bottom: 16px; }
   .parity-program .program-card > div:last-child { margin-top: 0; }
   .parity-dq3 .grid.gap-4 > div { padding-top: 16px; padding-bottom: 16px; }
-  .parity-explore .group > div:first-child { aspect-ratio: 57 / 32; }
   .parity-explore .group > div:last-child { position: relative; }
   .parity-explore .group > div:last-child > span:first-child { position: absolute; right: 20px; top: 20px; }
   .parity-explore .group h3 { font-size: 18px; margin-top: 0; margin-bottom: 4px; }
