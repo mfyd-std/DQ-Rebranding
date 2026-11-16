@@ -10,9 +10,9 @@
   --color-dq-ivory: #fafaf8;
   --color-dq-charcoal: #333333;
   --color-dq-warm-gray: #6b6b6b;
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Plus Jakarta Sans", Arial, sans-serif;
-  --font-arabic: "Amiri", Georgia, serif;
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", Arial, sans-serif;
+  --font-arabic: var(--font-amiri), "Amiri", Georgia, serif;
   --shadow-card: 0 4px 24px rgb(0 108 85 / 10%);
   --shadow-card-lg: 0 8px 40px rgb(0 108 85 / 14%);
   --shadow-float: 0 8px 32px rgb(0 0 0 / 12%);
@@ -29,6 +29,22 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Mobile browsers boost/inflate text they think is too small. The legacy
+       pages never triggered it, so pin the adjustment to keep phone typography
+       identical to desktop rendering. */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Never let the browser fake a heavier weight: a synthesised bold serif was
+     what made the hero headline look bold on phones. */
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif,
+  .font-sans {
+    font-synthesis-weight: none;
   }
 
   body {
