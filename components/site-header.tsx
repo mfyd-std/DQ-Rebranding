@@ -75,6 +75,7 @@ export function SiteHeader() {
   };
 
   return (
+    <>
     <header className={`navbar-glass fixed inset-x-0 top-0 z-50${scrolled ? " scrolled" : ""}`}>
       <div className="mx-auto flex h-16 dq-container items-center justify-between px-5 lg:h-20 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center" aria-label="Daar el-Qolam beranda">
@@ -100,7 +101,14 @@ export function SiteHeader() {
           <button ref={hamburgerRef} type="button" onClick={() => setMenuOpen(true)} className="rounded-md p-2 lg:hidden" aria-label="Buka menu" aria-expanded={menuOpen}><Bars3Icon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" /></button>
         </div>
       </div>
-      {menuOpen && (
+    </header>
+    {/*
+      Keep this overlay OUTSIDE <header>. The header carries backdrop-filter,
+      and a non-none backdrop-filter makes the element a containing block for
+      position: fixed descendants. Rendered inside the header, this overlay
+      collapses to the header's own 64px box and becomes unusable.
+    */}
+    {menuOpen && (
         <div className="mobile-menu open fixed inset-0 z-[60] bg-dq-ivory/95 backdrop-blur-xl lg:hidden">
           <div className="flex h-full flex-col">
             <div className="flex items-center justify-between border-b border-dq-green/10 px-5 py-4">
@@ -147,6 +155,6 @@ export function SiteHeader() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }

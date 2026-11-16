@@ -105,10 +105,19 @@
 }
 
 /* ─── Glassmorphism Navbar ─── */
+/* NOTE: Lightning CSS (Tailwind v4 pipeline) rewrites the declarations below
+   into -webkit-backdrop-filter only for this rule, and Chrome does not support
+   the -webkit- alias (CSS.supports('-webkit-backdrop-filter') === false), so the
+   glass effect silently disappears in production. The effective blur is applied
+   by the backdrop-blur-[18px] / backdrop-saturate-150 utilities on the <header>
+   element in components/site-header.tsx. Keep both in sync. */
 .navbar-glass {
   background: rgba(250, 250, 248, 0.55);
-  backdrop-filter: saturate(160%) blur(18px);
+  /* Order matters: Lightning CSS keeps only the LAST declaration of a
+     prefixed/unprefixed pair for this rule. Chrome does not support the
+     -webkit- alias, so the unprefixed property must come last. */
   -webkit-backdrop-filter: saturate(160%) blur(18px);
+  backdrop-filter: saturate(160%) blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 1px 0 rgba(0, 108, 85, 0.04);
 }
