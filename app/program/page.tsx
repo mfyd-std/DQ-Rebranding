@@ -349,8 +349,9 @@ export default function ProgramPage() {
         </section>
       ))}
 
-      <section id="dq3" className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] arabesque-bg bg-dq-green py-16">
-        <div className="mx-auto dq-container">
+      <section id="dq3" className="dq3-gradient relative scroll-mt-[7.5rem] overflow-hidden py-16 lg:scroll-mt-[9rem]">
+        <div className="arabesque-bg absolute inset-0 opacity-30" />
+        <div className="relative mx-auto dq-container">
           <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
             <div className="text-center lg:text-left">
               <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
