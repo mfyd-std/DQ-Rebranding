@@ -255,7 +255,7 @@ function ProgramAdvantages({ program }: { program: Program }) {
 
 export default function ProgramPage() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-x-clip">
       <section className="arabesque-bg bg-dq-green pb-16 pt-32">
         <div className="mx-auto dq-container max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
@@ -314,7 +314,7 @@ export default function ProgramPage() {
         <section
           key={program.id}
           id={program.id}
-          className={`scroll-mt-28 py-20 lg:py-28 ${program.id === "excellent" ? "bg-white" : "bg-dq-ivory"}`}
+          className={`scroll-mt-[7.5rem] lg:scroll-mt-[9rem] py-20 lg:py-28 ${program.id === "excellent" ? "bg-white" : "bg-dq-ivory"}`}
         >
           <div className="mx-auto dq-container">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -349,7 +349,7 @@ export default function ProgramPage() {
         </section>
       ))}
 
-      <section id="dq3" className="arabesque-bg bg-dq-green py-16">
+      <section id="dq3" className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] arabesque-bg bg-dq-green py-16">
         <div className="mx-auto dq-container">
           <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
             <div className="text-center lg:text-left">
@@ -391,7 +391,7 @@ export default function ProgramPage() {
         <section
           key={program.id}
           id={program.id}
-          className={`scroll-mt-28 py-20 lg:py-28 ${program.id === "excellent" ? "bg-white" : "bg-dq-ivory"}`}
+          className={`scroll-mt-[7.5rem] lg:scroll-mt-[9rem] py-20 lg:py-28 ${program.id === "excellent" ? "bg-white" : "bg-dq-ivory"}`}
         >
           <div className="mx-auto dq-container">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">

@@ -88,7 +88,7 @@ const milestones = [
 
 export default function TentangPage() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-x-clip">
       <section className="arabesque-bg bg-dq-green pb-16 pt-32 text-center">
         <div className="mx-auto dq-container max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
@@ -107,7 +107,7 @@ export default function TentangPage() {
         </div>
       </section>
 
-      <div className="sticky top-0 z-30 border-b border-dq-green/10 bg-white shadow-sm">
+      <div className="sub-nav-sticky sticky z-30 border-b border-dq-green/10 bg-white shadow-sm">
         <div className="mx-auto dq-container">
           <nav
             className="flex gap-1 overflow-x-auto py-3"
@@ -126,7 +126,7 @@ export default function TentangPage() {
         </div>
       </div>
 
-      <section id="profil" className="scroll-mt-16 bg-dq-ivory py-20 lg:py-28">
+      <section id="profil" className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] bg-dq-ivory py-20 lg:py-28">
         <div className="mx-auto dq-container">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <div className="reveal">
@@ -215,7 +215,7 @@ export default function TentangPage() {
 
       <section
         id="visi"
-        className="scroll-mt-16 arabesque-bg bg-dq-green py-20 lg:py-28"
+        className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] arabesque-bg bg-dq-green py-20 lg:py-28"
       >
         <div className="mx-auto max-w-5xl">
           <SectionHeading eyebrow="Landasan" title="Visi & Misi" light />
@@ -290,7 +290,7 @@ export default function TentangPage() {
 
       <section
         id="pimpinan"
-        className="scroll-mt-16 bg-dq-ivory py-20 lg:py-28"
+        className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] bg-dq-ivory py-20 lg:py-28"
       >
         <div className="mx-auto dq-container">
           <div className="reveal mb-12 text-center">
@@ -332,7 +332,7 @@ export default function TentangPage() {
         </div>
       </section>
 
-      <section id="sejarah" className="scroll-mt-16 bg-white py-20 lg:py-28">
+      <section id="sejarah" className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-4xl">
           <SectionHeading
             eyebrow="Perjalanan"
