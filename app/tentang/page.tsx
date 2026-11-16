@@ -7,6 +7,7 @@ import {
   EyeIcon,
 } from "@heroicons/react/24/outline";
 import { SectionHeading } from "@/components/SectionHeading";
+import { StatCounter } from "@/components/StatCounter";
 
 export const metadata: Metadata = {
   title: "Tentang Daar el-Qolam | Profil, Sejarah, Visi & Misi",
@@ -155,16 +156,24 @@ export default function TentangPage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  ["1968", "Tahun Berdiri"],
-                  ["4", "Kampus Terintegrasi"],
-                  ["5K+", "Santri Aktif"],
-                  ["30K+", "Alumni"],
-                ].map(([value, label]) => (
-                  <div key={label} className="stat-box text-center">
-                    <p className="font-serif text-4xl font-bold text-dq-green">
-                      {value}
+                  { value: "1968", label: "Tahun Berdiri" },
+                  { value: 4, label: "Kampus Terintegrasi" },
+                  { value: 5000, suffix: "+", label: "Santri Aktif" },
+                  { value: 30000, suffix: "+", label: "Alumni" },
+                ].map((stat) => (
+                  <div key={stat.label} className="stat-box text-center">
+                    <p className="font-serif text-3xl font-bold text-dq-green sm:text-4xl">
+                      {typeof stat.value === "number" ? (
+                        <StatCounter
+                          value={stat.value}
+                          suffix={stat.suffix}
+                          className="tabular-nums whitespace-nowrap"
+                        />
+                      ) : (
+                        stat.value
+                      )}
                     </p>
-                    <p className="mt-1 text-xs text-dq-warm-gray">{label}</p>
+                    <p className="mt-1 text-xs text-dq-warm-gray">{stat.label}</p>
                   </div>
                 ))}
               </div>
