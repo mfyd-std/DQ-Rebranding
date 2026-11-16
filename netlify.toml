@@ -5,7 +5,9 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Netlify automatically provisions its Next.js runtime for this build.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 # Preserve public legacy URLs after replacing the HTML site.
 [[redirects]]
   from = "/index.html"
