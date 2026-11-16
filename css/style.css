@@ -235,6 +235,40 @@
   display: none;
 }
 
+/* Dark mode: the overlay background flips to #1A2422 but the label colours
+   above are light-mode values, so group labels landed as #333333 on a dark
+   panel (1.26:1 contrast). Restate every menu colour here. */
+html.dark .mobile-menu .mm-link,
+html.dark .mobile-menu .mm-sub {
+  color: #E5E7EB;
+}
+html.dark .mobile-menu .mm-sub {
+  color: #B4BCC2;
+}
+html.dark .mobile-menu .mm-link:hover,
+html.dark .mobile-menu .mm-link.active,
+html.dark .mobile-menu .mm-sub:hover,
+html.dark .mobile-menu .mm-sub.active {
+  color: #2CB58E;
+}
+html.dark .mobile-menu .mm-chevron {
+  color: #B4BCC2;
+}
+html.dark .mobile-menu .mm-chevron:hover,
+html.dark .mobile-menu .mm-chevron:focus-visible {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #2CB58E;
+}
+html.dark .mobile-menu .mm-row {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+html.dark .mobile-menu .mm-panel {
+  border-left-color: rgba(44, 181, 142, 0.35);
+}
+html.dark .mobile-menu .mm-section-title {
+  color: #C9A227;
+}
+
 /* ─── Stats container (boxed) ─── */
 .stat-box {
   background: #ffffff;
