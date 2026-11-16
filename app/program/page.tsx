@@ -176,8 +176,6 @@ function ProgramDetails({ program }: { program: Program }) {
       <p className="mb-6 leading-relaxed text-dq-warm-gray">
         {program.description}
       </p>
-      ಂ=functions.patch#output text for clarity: tool is already executed; no
-      further call required.
       <div className="mb-8 grid gap-4 sm:grid-cols-2">
         {program.facts.map((fact) => (
           <div
@@ -257,7 +255,7 @@ function ProgramAdvantages({ program }: { program: Program }) {
 
 export default function ProgramPage() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-x-clip">
       <section className="arabesque-bg bg-dq-green pb-16 pt-32">
         <div className="mx-auto dq-container max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
@@ -316,7 +314,7 @@ export default function ProgramPage() {
         <section
           key={program.id}
           id={program.id}
-          className={`scroll-mt-28 py-20 lg:py-28 ${program.id === "excellent" ? "bg-white" : "bg-dq-ivory"}`}
+          className={`scroll-mt-[7.5rem] lg:scroll-mt-[9rem] py-20 lg:py-28 ${program.id === "excellent" ? "bg-white" : "bg-dq-ivory"}`}
         >
           <div className="mx-auto dq-container">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -351,8 +349,9 @@ export default function ProgramPage() {
         </section>
       ))}
 
-      <section id="dq3" className="arabesque-bg bg-dq-green py-16">
-        <div className="mx-auto dq-container">
+      <section id="dq3" className="dq3-gradient relative scroll-mt-[7.5rem] overflow-hidden py-16 lg:scroll-mt-[9rem]">
+        <div className="arabesque-bg absolute inset-0 opacity-30" />
+        <div className="relative mx-auto dq-container">
           <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
             <div className="text-center lg:text-left">
               <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
@@ -393,7 +392,7 @@ export default function ProgramPage() {
         <section
           key={program.id}
           id={program.id}
-          className={`scroll-mt-28 py-20 lg:py-28 ${program.id === "excellent" ? "bg-white" : "bg-dq-ivory"}`}
+          className={`scroll-mt-[7.5rem] lg:scroll-mt-[9rem] py-20 lg:py-28 ${program.id === "excellent" ? "bg-white" : "bg-dq-ivory"}`}
         >
           <div className="mx-auto dq-container">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -430,7 +429,7 @@ export default function ProgramPage() {
 
       <section className="bg-dq-ivory py-16">
         <div className="mx-auto dq-container">
-          <div className="arabesque-bg reveal flex flex-col items-center justify-between gap-6 rounded-2xl bg-dq-green p-8 text-white lg:flex-row lg:p-12">
+          <div className="arabesque-bg reveal flex flex-col items-center justify-between gap-6 rounded-none bg-dq-green p-8 text-white lg:flex-row lg:rounded-2xl lg:p-12">
             <div>
               <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-dq-gold">
                 Tahun Pelajaran 2026/2027
