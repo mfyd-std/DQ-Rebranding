@@ -125,25 +125,25 @@ function AdvantageIcon({ name }: { name: (typeof advantages)[number]["icon"] }) 
 
 export default function Dq3Page() {
   return (
-    <main className="overflow-hidden pt-16 lg:pt-20">
-      <section className="relative overflow-hidden bg-dq-green">
-        <div className="arabesque-bg absolute inset-0 opacity-30" />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-28">
+    <main className="overflow-hidden">
+      <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-dq-green pt-16">
+        <div className="arabesque-bg absolute inset-0 opacity-40" />
+        <div className="relative mx-auto w-full dq-container py-20 lg:py-28">
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
               <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-dq-gold" />
               <span className="text-xs font-semibold uppercase tracking-wide text-dq-gold">Daar el-Qolam 3 · Kampus Dza&apos;Izza</span>
             </div>
-            <h1 className="font-serif text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="mb-4 font-serif text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
               Pesantren
               <br />
               <span className="italic text-dq-gold">Beyond Pesantren</span>
             </h1>
-            <p className="mt-5 text-lg font-medium text-white/90 lg:text-xl">Go Global, Be a Global Player</p>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75">
-              Daar el-Qolam 3 Kampus Dza&apos;Izza mempersiapkan santri menjadi pemimpin global, dengan kurikulum bilingual, kerjasama internasional, dan pondasi Islam yang kokoh.
+            <p className="mb-4 text-lg font-medium text-white/80 lg:text-xl">Go Global, Be a Global Player</p>
+            <p className="mb-8 max-w-xl text-base leading-relaxed text-white/70">
+              Daar el-Qolam 3 Kampus Dza&apos;Izza mempersiapkan santri menjadi pemimpin global — dengan kurikulum bilingual, kerjasama internasional, dan pondasi Islam yang kokoh.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="flex flex-col gap-3 sm:flex-row">
               <a href="https://psb.daarelqolam3.sch.id/" target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-dq-gold px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-yellow-600 hover:shadow-card-lg">
                 Daftar PSB DQ3 <ArrowIcon />
               </a>
@@ -152,18 +152,18 @@ export default function Dq3Page() {
               </a>
             </div>
           </div>
-          <div className="relative hidden min-h-[420px] lg:block">
-            <Image src="/images/BP3A8871trans.webp" alt="Kampus DQ3 Dza'Izza" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-contain object-bottom" priority />
-          </div>
+        </div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 lg:block">
+          <Image src="/images/BP3A8871trans.webp" alt="Kampus DQ3 Dza'Izza" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain object-bottom" priority />
         </div>
       </section>
 
-      <section className="bg-dq-ivory px-6 py-20 lg:px-8 lg:py-28">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-dq-ivory py-20 lg:py-28">
+        <div className="mx-auto dq-container">
           <SectionHeading eyebrow="Mengapa DQ3" title="Keunggulan" emphasis="Kampus Dza'Izza" description="Program internasional yang memadukan kedalaman ilmu agama dengan kecakapan global." />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {advantages.map((advantage) => (
-              <article key={advantage.title} className="rounded-2xl border border-dq-green/10 bg-white p-6 shadow-card transition-shadow hover:shadow-card-lg">
+              <article key={advantage.title} style={{ transitionDelay: `${advantages.indexOf(advantage) * 0.1}s` }} className="reveal card-interactive rounded-2xl border border-dq-green/10 bg-white p-6 shadow-card transition-shadow hover:shadow-card-lg">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-dq-green-light">
                   <AdvantageIcon name={advantage.icon} />
                 </div>
@@ -175,12 +175,12 @@ export default function Dq3Page() {
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20 lg:px-8 lg:py-28">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white py-20 lg:py-28">
+        <div className="mx-auto dq-container">
           <SectionHeading eyebrow="Program" title="Dua Jalur Program" emphasis="di DQ3" />
           <div className="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-2">
             {programs.map((program) => (
-              <article key={program.title} className={`relative rounded-2xl p-8 ${program.featured ? "overflow-hidden bg-dq-green text-white" : "border border-dq-green/10 bg-dq-ivory"}`}>
+              <article key={program.title} style={{ transitionDelay: `${programs.indexOf(program) * 0.1}s` }} className={`reveal card-interactive relative rounded-2xl p-8 ${program.featured ? "overflow-hidden bg-dq-green text-white" : "border border-dq-green/10 bg-dq-ivory"}`}>
                 {program.featured && <div className="absolute right-3 top-3 rounded-full bg-dq-gold px-2.5 py-1 text-[9px] font-bold uppercase tracking-wide text-white">Unggulan</div>}
                 <div className={`mb-5 flex h-12 w-12 items-center justify-center rounded-xl ${program.featured ? "bg-white/20" : "bg-dq-green"}`}>
                   <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -200,12 +200,12 @@ export default function Dq3Page() {
         </div>
       </section>
 
-      <section className="bg-dq-ivory px-6 py-20 lg:px-8 lg:py-28">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-dq-ivory py-20 lg:py-28">
+        <div className="mx-auto dq-container">
           <SectionHeading eyebrow="Galeri" title="Kehidupan di" emphasis="Kampus Dza'Izza" />
           <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-3">
             {gallery.map((image) => (
-              <div key={image.file} className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
+              <div key={image.file} style={{ transitionDelay: `${gallery.indexOf(image) * 0.1}s` }} className="reveal relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
                 <Image src={`/images/${image.file}`} alt={image.alt} fill sizes="(min-width: 1024px) 33vw, 50vw" className="object-cover transition-transform duration-500 hover:scale-105" />
               </div>
             ))}
@@ -213,16 +213,16 @@ export default function Dq3Page() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-dq-green px-6 py-20 lg:px-8 lg:py-28">
+      <section className="relative overflow-hidden bg-dq-green py-20 lg:py-28">
         <div className="arabesque-bg absolute inset-0 opacity-30" />
         <div className="relative mx-auto max-w-4xl text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
+          <div className="reveal mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
             <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-dq-gold" />
             <span className="text-xs font-semibold uppercase tracking-wide text-dq-gold">PSB DQ3 Dibuka</span>
           </div>
-          <h2 className="font-serif text-4xl font-semibold text-white lg:text-5xl">Bergabunglah dengan<br /><span className="italic text-dq-gold">Keluarga Besar DQ3</span></h2>
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/75 lg:text-lg">Jadikan Kampus Dza&apos;Izza sebagai batu loncatan putra-putri Anda menuju panggung dunia, dengan bekal iman, ilmu, dan akhlak.</p>
-          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+          <h2 className="reveal font-serif text-4xl font-semibold text-white lg:text-5xl">Bergabunglah dengan<br /><span className="italic text-dq-gold">Keluarga Besar DQ3</span></h2>
+          <p className="reveal mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/75 lg:text-lg">Jadikan Kampus Dza&apos;Izza sebagai batu loncatan putra-putri Anda menuju panggung dunia, dengan bekal iman, ilmu, dan akhlak.</p>
+          <div className="reveal mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a href="https://psb.daarelqolam3.sch.id/" target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-dq-gold px-8 py-4 text-sm font-semibold text-white transition hover:bg-yellow-600 hover:shadow-card-lg">Daftar PSB DQ3 Sekarang <ArrowIcon /></a>
             <a href="https://www.daarelqolam3.sch.id/" target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border-2 border-white/40 px-8 py-4 text-sm font-semibold text-white transition hover:border-white">Website Resmi DQ3 <ExternalIcon /></a>
           </div>

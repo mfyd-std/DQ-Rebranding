@@ -4,6 +4,7 @@ type SectionHeadingProps = {
   emphasis?: string;
   description?: string;
   light?: boolean;
+  reveal?: boolean;
 };
 
 export function SectionHeading({
@@ -12,9 +13,10 @@ export function SectionHeading({
   emphasis,
   description,
   light = false,
+  reveal = true,
 }: SectionHeadingProps) {
   return (
-    <div className="mx-auto max-w-3xl text-center">
+    <div className={`${reveal ? "reveal " : ""}mx-auto max-w-3xl text-center`}>
       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-dq-gold">
         {eyebrow}
       </p>

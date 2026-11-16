@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { ArrowRightIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline";
-import { SectionHeading } from "@/components/SectionHeading";
 import { registrationUrl } from "@/components/site-navigation";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { ContactForm } from "./ContactForm";
@@ -52,7 +51,7 @@ function MailIcon() {
 export default function ContactPage() {
   return (
     <main className="overflow-hidden pt-16 lg:pt-20">
-      <section className="arabesque-bg bg-dq-green px-6 py-16 text-center lg:px-8 lg:py-20">
+      <section className="arabesque-bg bg-dq-green pb-16 pt-32 text-center">
         <div className="mx-auto max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
             <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-dq-gold" />
@@ -67,11 +66,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-dq-ivory px-6 py-20 lg:px-8 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:gap-20">
-          <div>
-            <SectionHeading eyebrow="Informasi Kontak" title="Cara Menghubungi" emphasis="Pesantren" />
-            <div className="mt-8 space-y-5">
+      <section className="bg-dq-ivory py-20 lg:py-28">
+        <div className="mx-auto grid dq-container gap-12 lg:grid-cols-2 lg:gap-20">
+          <div className="reveal">
+            <span className="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-dq-gold"><span className="h-px w-12 bg-dq-gold" aria-hidden="true" />Informasi Kontak<span className="h-px w-12 bg-dq-gold" aria-hidden="true" /></span>
+            <h2 className="mb-8 mt-4 font-serif text-4xl font-semibold text-dq-charcoal lg:text-5xl">Cara Menghubungi<br /><span className="italic text-dq-green">Pesantren</span></h2>
+            <div className="space-y-5">
               <ContactCard title="Alamat" icon={<PinIcon />}>
                 <p className="text-sm text-dq-warm-gray">Jl. Pesantren No. 1, Jayanti, Kabupaten Tangerang, Banten 15610</p>
                 <a href={mapUrl} target="_blank" rel="noreferrer" className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-dq-green hover:text-dq-green-dark">Buka di Google Maps <ArrowRightIcon className="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" /></a>
@@ -92,21 +92,21 @@ export default function ContactPage() {
             <div className="mt-8 rounded-2xl bg-dq-green p-6">
               <h2 className="mb-4 font-serif text-lg font-semibold text-white">Jam Kunjungan Santri</h2>
               <div className="space-y-2">
-                <div className="flex flex-col gap-1 text-sm sm:flex-row sm:justify-between"><span className="text-white/80">Hari Kunjungan</span><span className="font-semibold text-white">Jum&apos;at, Sabtu, Ahad</span></div>
-                <div className="flex flex-col gap-1 text-sm sm:flex-row sm:justify-between"><span className="text-white/80">Jam Kunjungan</span><span className="font-semibold text-white">07:00 – 17:00 WIB</span></div>
-                <div className="flex flex-col gap-1 text-sm sm:flex-row sm:justify-between"><span className="text-white/80">Hari Terbaik</span><span className="font-semibold text-white">Jum&apos;at (direkomendasikan)</span></div>
+                <div className="flex justify-between text-sm"><span className="text-white/80">Hari Kunjungan</span><span className="font-semibold text-white">Jum&apos;at, Sabtu, Ahad</span></div>
+                <div className="flex justify-between text-sm"><span className="text-white/80">Jam Kunjungan</span><span className="font-semibold text-white">07:00 – 17:00 WIB</span></div>
+                <div className="flex justify-between text-sm"><span className="text-white/80">Hari Terbaik</span><span className="font-semibold text-white">Jum&apos;at (direkomendasikan)</span></div>
               </div>
             </div>
           </div>
 
-          <ContactForm />
+          <div className="reveal"><ContactForm /></div>
         </div>
       </section>
 
-      <section className="bg-dq-ivory px-6 pb-20 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="overflow-hidden rounded-2xl shadow-card-lg">
-            <iframe src={mapEmbedUrl} title="Peta Lokasi Pondok Pesantren Daar el-Qolam" className="h-[320px] w-full border-0 sm:h-[400px]" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+      <section className="bg-dq-ivory pb-20 ">
+        <div className="mx-auto dq-container">
+          <div className="reveal overflow-hidden rounded-2xl shadow-card-lg">
+            <iframe src={mapEmbedUrl} title="Peta Lokasi Pondok Pesantren Daar el-Qolam" className="h-[400px] w-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
           </div>
           <div className="mt-4 flex justify-center">
             <a href={mapUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-dq-green px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-dq-green-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dq-green-dark">
@@ -117,8 +117,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-white px-6 py-16 lg:px-8">
-        <div className="arabesque-bg mx-auto flex max-w-7xl flex-col justify-between gap-6 rounded-2xl bg-dq-green p-8 text-white lg:flex-row lg:items-center lg:p-12">
+      <section className="bg-white py-16 ">
+        <div className="arabesque-bg reveal mx-auto flex dq-container flex-col justify-between gap-6 rounded-2xl bg-dq-green p-8 text-white lg:flex-row lg:items-center lg:p-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-dq-gold">Tahun Pelajaran 2026/2027</p>
             <h2 className="mt-2 font-serif text-2xl font-semibold lg:text-3xl">Siap Mendaftarkan Putra-Putri Anda?</h2>
