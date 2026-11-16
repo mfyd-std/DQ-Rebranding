@@ -30,3 +30,6 @@ desktop.ini
 # logs
 *.log
 npm-debug.log*
+
+# local QA evidence (screenshots, ~104 MB, not part of the build)
+docs/QA/legacy-revision-evidence/

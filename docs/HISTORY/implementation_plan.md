@@ -92,7 +92,7 @@ graph TD
 
 ```mermaid
 graph TD
-    A["1. 🏠 Hero Section<br/>Headline Center + Arabic + Bento Collage"] 
+    A["1. 🏠 Hero Section<br/>Headline Center + Arabic + Bento Collage"]
     --> B["2. 🎬 Video Profile<br/>YouTube Autoplay Muted Loop"]
     B --> C["3. 📖 Brand Moto<br/>QS. Adz-Dzariyat: 56"]
     C --> D["4. 📊 Trust & Stats<br/>5.000+ Santri · 56 Tahun · 30.000+ Alumni"]
