@@ -428,7 +428,7 @@ export default function ProgramPage() {
 
       <section className="bg-dq-ivory py-16">
         <div className="mx-auto dq-container">
-          <div className="arabesque-bg reveal flex flex-col items-center justify-between gap-6 rounded-2xl bg-dq-green p-8 text-white lg:flex-row lg:p-12">
+          <div className="arabesque-bg reveal flex flex-col items-center justify-between gap-6 rounded-none bg-dq-green p-8 text-white lg:flex-row lg:rounded-2xl lg:p-12">
             <div>
               <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-dq-gold">
                 Tahun Pelajaran 2026/2027
