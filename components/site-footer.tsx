@@ -11,9 +11,9 @@ import { InstagramIcon, TikTokIcon, YouTubeIcon } from "@/components/BrandIcons"
 
 function FooterLink({ href, label }: { href: string; label: string }) {
   return href.startsWith("http") ? (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="hover:text-white">{label}</a>
+    <a href={href} target="_blank" rel="noopener noreferrer" className="inline-block py-1.5 hover:text-white">{label}</a>
   ) : (
-    <Link href={href} className="hover:text-white">{label}</Link>
+    <Link href={href} className="inline-block py-1.5 hover:text-white">{label}</Link>
   );
 }
 
@@ -31,7 +31,7 @@ export function SiteFooter() {
             <div className="mt-3 flex flex-col gap-2 text-sm text-white/70">
               {siteSocialLinks.map((link) => {
                 const Icon = link.label.startsWith("YouTube") ? YouTubeIcon : link.label.startsWith("Instagram") ? InstagramIcon : TikTokIcon;
-                return <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2"><Icon />{link.label}</a>;
+                return <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 py-1.5"><Icon />{link.label}</a>;
               })}
             </div>
           </div>
@@ -46,16 +46,16 @@ export function SiteFooter() {
           <div>
             <p className="text-sm font-bold">Navigasi</p>
             <ul className="mt-3 space-y-2.5 text-sm text-white/70">
-              {siteFooterNavigationLinks.map((link) => <li key={link.label}><Link href={link.href}>{link.label}</Link></li>)}
+              {siteFooterNavigationLinks.map((link) => <li key={link.label}><Link href={link.href} className="inline-block py-1.5">{link.label}</Link></li>)}
             </ul>
           </div>
           <div>
             <p className="text-sm font-bold">Kontak</p>
             <ul className="mt-3 space-y-2.5 text-sm text-white/70">
               <li>Jayanti, Kab. Tangerang</li>
-              <li><a href="tel:+622159576882">+62 21 5957 6882</a></li>
-              <li><a href="https://wa.me/6281319789000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-              <li><a href="mailto:info@daarelqolam.ac.id">info@daarelqolam.ac.id</a></li>
+              <li><a href="tel:+622159576882" className="inline-block py-1.5">+62 21 5957 6882</a></li>
+              <li><a href="https://wa.me/6281319789000" target="_blank" rel="noopener noreferrer" className="inline-block py-1.5">WhatsApp</a></li>
+              <li><a href="mailto:info@daarelqolam.ac.id" className="inline-block py-1.5">info@daarelqolam.ac.id</a></li>
             </ul>
 
           </div>
@@ -63,9 +63,9 @@ export function SiteFooter() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-sm text-white/40">© 2026 Pondok Pesantren Daar el-Qolam. Hak cipta dilindungi.</p>
           <div className="flex gap-4 text-xs text-white/40">
-            <Link href="/tentang">Tentang DQ</Link>
-            <Link href="/kontak">Kontak</Link>
-            <Link href="/tentang#profil">Profil pesantren</Link>
+            <Link href="/tentang" className="inline-block py-2.5">Tentang DQ</Link>
+            <Link href="/kontak" className="inline-block py-2.5">Kontak</Link>
+            <Link href="/tentang#profil" className="inline-block py-2.5">Profil pesantren</Link>
           </div>
         </div>
       </div>

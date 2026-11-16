@@ -138,7 +138,7 @@ function CheckIcon() {
 
 export default function ExplorePage() {
   return (
-    <main className="overflow-hidden bg-dq-ivory">
+    <main className="overflow-x-clip bg-dq-ivory">
       <section className="arabesque-bg bg-dq-green pb-16 pt-32">
         <div className="mx-auto dq-container max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
@@ -161,7 +161,7 @@ export default function ExplorePage() {
       </section>
 
       <nav
-        className="sticky top-16 z-30 border-b border-dq-green/10 bg-white shadow-sm lg:top-20"
+        className="sub-nav-sticky sticky z-30 border-b border-dq-green/10 bg-white shadow-sm"
         aria-label="Bagian halaman Jelajahi"
       >
         <div className="mx-auto dq-container overflow-x-auto">
@@ -181,7 +181,7 @@ export default function ExplorePage() {
 
       <section
         id="fasilitas"
-        className="scroll-mt-28 bg-dq-ivory py-20 lg:py-28"
+        className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] bg-dq-ivory py-20 lg:py-28"
       >
         <div className="mx-auto dq-container">
           <div className="reveal mb-12 text-center">
@@ -229,7 +229,7 @@ export default function ExplorePage() {
         </div>
       </section>
 
-      <section id="kehidupan" className="scroll-mt-28 bg-white py-20 lg:py-28">
+      <section id="kehidupan" className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] bg-white py-20 lg:py-28">
         <div className="mx-auto dq-container">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <div className="reveal">
@@ -312,7 +312,7 @@ export default function ExplorePage() {
         </div>
       </section>
 
-      <section id="ekskul" className="scroll-mt-28 bg-dq-ivory py-20 lg:py-28">
+      <section id="ekskul" className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] bg-dq-ivory py-20 lg:py-28">
         <div className="mx-auto dq-container">
           <div className="reveal mb-12 text-center">
             <span className="gold-line text-xs font-semibold uppercase tracking-widest text-dq-gold">
@@ -356,7 +356,7 @@ export default function ExplorePage() {
         </div>
       </section>
 
-      <section id="asrama" className="scroll-mt-28 bg-white py-20 lg:py-28">
+      <section id="asrama" className="scroll-mt-[7.5rem] lg:scroll-mt-[9rem] bg-white py-20 lg:py-28">
         <div className="mx-auto dq-container">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <div className="reveal relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card-lg">

@@ -89,7 +89,7 @@ export default function ContactPage() {
               </ContactCard>
             </div>
 
-            <div className="mt-8 rounded-2xl bg-dq-green p-6">
+            <div className="mt-8 rounded-none bg-dq-green p-6 lg:rounded-2xl">
               <h2 className="mb-4 font-serif text-lg font-semibold text-white">Jam Kunjungan Santri</h2>
               <div className="space-y-2">
                 <div className="flex justify-between text-sm"><span className="text-white/80">Hari Kunjungan</span><span className="font-semibold text-white">Jum&apos;at, Sabtu, Ahad</span></div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
       </section>
 
       <section className="bg-white py-16 ">
-        <div className="arabesque-bg reveal mx-auto flex dq-container flex-col justify-between gap-6 rounded-2xl bg-dq-green p-8 text-white lg:flex-row lg:items-center lg:p-12">
+        <div className="arabesque-bg reveal mx-auto flex dq-container flex-col justify-between gap-6 rounded-none bg-dq-green p-8 text-white lg:flex-row lg:items-center lg:rounded-2xl lg:p-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-dq-gold">Tahun Pelajaran 2026/2027</p>
             <h2 className="mt-2 font-serif text-2xl font-semibold lg:text-3xl">Siap Mendaftarkan Putra-Putri Anda?</h2>
