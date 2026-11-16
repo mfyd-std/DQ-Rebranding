@@ -185,6 +185,30 @@
   color: #006C55;
   transform: translateX(4px);
 }
+/* Accordion: the group label is the page link, the chevron is the disclosure
+   button. Two hit targets in one row, so the group name is never rendered twice. */
+.mobile-menu .mm-row {
+  border-bottom: 1px solid rgba(0, 108, 85, 0.06);
+}
+.mobile-menu .mm-chevron {
+  color: #6B6B6B;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.mobile-menu .mm-chevron:hover,
+.mobile-menu .mm-chevron:focus-visible {
+  background-color: #E6F2EF;
+  color: #006C55;
+}
+.mobile-menu .mm-panel {
+  display: block;
+  margin: 0.15rem 0 0.6rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid rgba(0, 108, 85, 0.14);
+}
+.mobile-menu .mm-panel[hidden] {
+  display: none;
+}
 
 /* ─── Stats container (boxed) ─── */
 .stat-box {
