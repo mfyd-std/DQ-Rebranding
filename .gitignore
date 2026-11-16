@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+
+# build output
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# tooling state
+.codegraph/
+.hermes/
+
+# next.js
+next-env.d.ts.bak
+
+# env
+.env
+.env.local
+.env.*.local
+.env*
+!.env.example
+
+# os
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# logs
+*.log
+npm-debug.log*

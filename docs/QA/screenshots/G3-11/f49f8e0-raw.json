@@ -1,0 +1,1058 @@
+[
+  {
+    "url": "http://127.0.0.1:3188/index.html",
+    "width": 1440,
+    "clientWidth": 1440,
+    "dpr": 1,
+    "theme": "light",
+    "sections": [
+      {
+        "index": 1,
+        "id": "",
+        "heading": "Tempat TerbaikMembangun Generasi\n          \n            Berakhlak\n            Berilmu\n            Be",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1548
+      },
+      {
+        "index": 2,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 1548,
+        "width": 1440,
+        "height": 456
+      },
+      {
+        "index": 3,
+        "id": "",
+        "heading": "Mengenal Daar el-Qolam Lebih Dekat",
+        "x": 0,
+        "y": 2004,
+        "width": 1440,
+        "height": 1103.5
+      },
+      {
+        "index": 4,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3107.5,
+        "width": 1440,
+        "height": 352
+      },
+      {
+        "index": 5,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3459.5,
+        "width": 1440,
+        "height": 350
+      },
+      {
+        "index": 6,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3809.5,
+        "width": 1440,
+        "height": 480
+      },
+      {
+        "index": 7,
+        "id": "program",
+        "heading": "Pilih Jalur Pendidikanyang Tepat untuk Putra-Putri Anda",
+        "x": 0,
+        "y": 4289.5,
+        "width": 1440,
+        "height": 801.25
+      },
+      {
+        "index": 8,
+        "id": "",
+        "heading": "Kampus Dza'IzzaPesantren Beyond Pesantren",
+        "x": 0,
+        "y": 5090.75,
+        "width": 1440,
+        "height": 731
+      },
+      {
+        "index": 9,
+        "id": "",
+        "heading": "Kehidupan di Daar el-Qolam",
+        "x": 0,
+        "y": 5821.75,
+        "width": 1440,
+        "height": 732
+      },
+      {
+        "index": 10,
+        "id": "",
+        "heading": "Apa Kata Wali Santri & Alumni",
+        "x": 0,
+        "y": 6553.75,
+        "width": 1440,
+        "height": 605
+      },
+      {
+        "index": 11,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 7158.75,
+        "width": 1440,
+        "height": 340
+      },
+      {
+        "index": 12,
+        "id": "",
+        "heading": "Kabar Terbaru dari Daar el-Qolam",
+        "x": 0,
+        "y": 7498.75,
+        "width": 1440,
+        "height": 755
+      },
+      {
+        "index": 13,
+        "id": "faq",
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "x": 0,
+        "y": 8253.75,
+        "width": 1440,
+        "height": 2054
+      }
+    ],
+    "image": {
+      "width": 1440,
+      "height": 10843,
+      "colors": ">=3"
+    },
+    "path": "D:\\Zaky Data\\Document\\01_Project\\001_DQ Rebranding-G3-11\\docs\\QA\\screenshots\\G3-11\\f49f8e0-legacy-1440x900-light-full.png"
+  },
+  {
+    "url": "http://127.0.0.1:3189/",
+    "width": 1440,
+    "clientWidth": 1440,
+    "dpr": 1,
+    "theme": "light",
+    "sections": [
+      {
+        "index": 1,
+        "id": "hero",
+        "heading": "Tempat TerbaikMembangun GenerasiBerilmu",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1548.9375
+      },
+      {
+        "index": 2,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 1548.9375,
+        "width": 1440,
+        "height": 453.5
+      },
+      {
+        "index": 3,
+        "id": "",
+        "heading": "Mengenal Daar el-Qolam Lebih Dekat",
+        "x": 0,
+        "y": 2002.4375,
+        "width": 1440,
+        "height": 1102
+      },
+      {
+        "index": 4,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3104.4375,
+        "width": 1440,
+        "height": 354.5
+      },
+      {
+        "index": 5,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3458.9375,
+        "width": 1440,
+        "height": 350
+      },
+      {
+        "index": 6,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3808.9375,
+        "width": 1440,
+        "height": 480
+      },
+      {
+        "index": 7,
+        "id": "program",
+        "heading": "Pilih Jalur Pendidikan yang Tepat untuk Putra-Putri Anda",
+        "x": 0,
+        "y": 4288.9375,
+        "width": 1440,
+        "height": 802.25
+      },
+      {
+        "index": 8,
+        "id": "dq3",
+        "heading": "Kampus Dza'IzzaPesantren Beyond Pesantren",
+        "x": 0,
+        "y": 5091.1875,
+        "width": 1440,
+        "height": 726.84375
+      },
+      {
+        "index": 9,
+        "id": "jelajahi",
+        "heading": "Kehidupan di Daar el-Qolam",
+        "x": 0,
+        "y": 5818.03125,
+        "width": 1440,
+        "height": 732.5
+      },
+      {
+        "index": 10,
+        "id": "",
+        "heading": "Apa Kata Wali Santri & Alumni",
+        "x": 0,
+        "y": 6550.53125,
+        "width": 1440,
+        "height": 605
+      },
+      {
+        "index": 11,
+        "id": "",
+        "heading": "Segera Daftarkan Putra-Putri Anda",
+        "x": 0,
+        "y": 7155.53125,
+        "width": 1440,
+        "height": 344
+      },
+      {
+        "index": 12,
+        "id": "berita",
+        "heading": "Kabar Terbaru dari Daar el-Qolam",
+        "x": 0,
+        "y": 7499.53125,
+        "width": 1440,
+        "height": 754.75
+      },
+      {
+        "index": 13,
+        "id": "faq",
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "x": 0,
+        "y": 8254.28125,
+        "width": 1440,
+        "height": 2054
+      }
+    ],
+    "image": {
+      "width": 1440,
+      "height": 10813,
+      "colors": ">=3"
+    },
+    "path": "D:\\Zaky Data\\Document\\01_Project\\001_DQ Rebranding-G3-11\\docs\\QA\\screenshots\\G3-11\\f49f8e0-next-1440x900-light-full.png"
+  },
+  {
+    "url": "http://127.0.0.1:3188/index.html",
+    "width": 1440,
+    "clientWidth": 1440,
+    "dpr": 1,
+    "theme": "dark",
+    "sections": [
+      {
+        "index": 1,
+        "id": "",
+        "heading": "Tempat TerbaikMembangun Generasi\n          \n            Berakhlak\n            Berilmu\n            Be",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1548
+      },
+      {
+        "index": 2,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 1548,
+        "width": 1440,
+        "height": 456
+      },
+      {
+        "index": 3,
+        "id": "",
+        "heading": "Mengenal Daar el-Qolam Lebih Dekat",
+        "x": 0,
+        "y": 2004,
+        "width": 1440,
+        "height": 1103.5
+      },
+      {
+        "index": 4,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3107.5,
+        "width": 1440,
+        "height": 352
+      },
+      {
+        "index": 5,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3459.5,
+        "width": 1440,
+        "height": 350
+      },
+      {
+        "index": 6,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3809.5,
+        "width": 1440,
+        "height": 480
+      },
+      {
+        "index": 7,
+        "id": "program",
+        "heading": "Pilih Jalur Pendidikanyang Tepat untuk Putra-Putri Anda",
+        "x": 0,
+        "y": 4289.5,
+        "width": 1440,
+        "height": 801.25
+      },
+      {
+        "index": 8,
+        "id": "",
+        "heading": "Kampus Dza'IzzaPesantren Beyond Pesantren",
+        "x": 0,
+        "y": 5090.75,
+        "width": 1440,
+        "height": 731
+      },
+      {
+        "index": 9,
+        "id": "",
+        "heading": "Kehidupan di Daar el-Qolam",
+        "x": 0,
+        "y": 5821.75,
+        "width": 1440,
+        "height": 732
+      },
+      {
+        "index": 10,
+        "id": "",
+        "heading": "Apa Kata Wali Santri & Alumni",
+        "x": 0,
+        "y": 6553.75,
+        "width": 1440,
+        "height": 605
+      },
+      {
+        "index": 11,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 7158.75,
+        "width": 1440,
+        "height": 340
+      },
+      {
+        "index": 12,
+        "id": "",
+        "heading": "Kabar Terbaru dari Daar el-Qolam",
+        "x": 0,
+        "y": 7498.75,
+        "width": 1440,
+        "height": 755
+      },
+      {
+        "index": 13,
+        "id": "faq",
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "x": 0,
+        "y": 8253.75,
+        "width": 1440,
+        "height": 2054
+      }
+    ],
+    "image": {
+      "width": 1440,
+      "height": 10843,
+      "colors": ">=3"
+    },
+    "path": "D:\\Zaky Data\\Document\\01_Project\\001_DQ Rebranding-G3-11\\docs\\QA\\screenshots\\G3-11\\f49f8e0-legacy-1440x900-dark-full.png"
+  },
+  {
+    "url": "http://127.0.0.1:3189/",
+    "width": 1440,
+    "clientWidth": 1440,
+    "dpr": 1,
+    "theme": "dark",
+    "sections": [
+      {
+        "index": 1,
+        "id": "hero",
+        "heading": "Tempat TerbaikMembangun GenerasiBerilmu",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1548.9375
+      },
+      {
+        "index": 2,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 1548.9375,
+        "width": 1440,
+        "height": 453.5
+      },
+      {
+        "index": 3,
+        "id": "",
+        "heading": "Mengenal Daar el-Qolam Lebih Dekat",
+        "x": 0,
+        "y": 2002.4375,
+        "width": 1440,
+        "height": 1102
+      },
+      {
+        "index": 4,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3104.4375,
+        "width": 1440,
+        "height": 354.5
+      },
+      {
+        "index": 5,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3458.9375,
+        "width": 1440,
+        "height": 350
+      },
+      {
+        "index": 6,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3808.9375,
+        "width": 1440,
+        "height": 480
+      },
+      {
+        "index": 7,
+        "id": "program",
+        "heading": "Pilih Jalur Pendidikan yang Tepat untuk Putra-Putri Anda",
+        "x": 0,
+        "y": 4288.9375,
+        "width": 1440,
+        "height": 802.25
+      },
+      {
+        "index": 8,
+        "id": "dq3",
+        "heading": "Kampus Dza'IzzaPesantren Beyond Pesantren",
+        "x": 0,
+        "y": 5091.1875,
+        "width": 1440,
+        "height": 726.84375
+      },
+      {
+        "index": 9,
+        "id": "jelajahi",
+        "heading": "Kehidupan di Daar el-Qolam",
+        "x": 0,
+        "y": 5818.03125,
+        "width": 1440,
+        "height": 732.5
+      },
+      {
+        "index": 10,
+        "id": "",
+        "heading": "Apa Kata Wali Santri & Alumni",
+        "x": 0,
+        "y": 6550.53125,
+        "width": 1440,
+        "height": 605
+      },
+      {
+        "index": 11,
+        "id": "",
+        "heading": "Segera Daftarkan Putra-Putri Anda",
+        "x": 0,
+        "y": 7155.53125,
+        "width": 1440,
+        "height": 344
+      },
+      {
+        "index": 12,
+        "id": "berita",
+        "heading": "Kabar Terbaru dari Daar el-Qolam",
+        "x": 0,
+        "y": 7499.53125,
+        "width": 1440,
+        "height": 754.75
+      },
+      {
+        "index": 13,
+        "id": "faq",
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "x": 0,
+        "y": 8254.28125,
+        "width": 1440,
+        "height": 2054
+      }
+    ],
+    "image": {
+      "width": 1440,
+      "height": 10813,
+      "colors": ">=3"
+    },
+    "path": "D:\\Zaky Data\\Document\\01_Project\\001_DQ Rebranding-G3-11\\docs\\QA\\screenshots\\G3-11\\f49f8e0-next-1440x900-dark-full.png"
+  },
+  {
+    "url": "http://127.0.0.1:3188/index.html",
+    "width": 390,
+    "clientWidth": 390,
+    "dpr": 1,
+    "theme": "light",
+    "sections": [
+      {
+        "index": 1,
+        "id": "",
+        "heading": "Tempat TerbaikMembangun Generasi\n          \n            Berakhlak\n            Berilmu\n            Be",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1395.3125
+      },
+      {
+        "index": 2,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 1395.3125,
+        "width": 390,
+        "height": 382.5
+      },
+      {
+        "index": 3,
+        "id": "",
+        "heading": "Mengenal Daar el-Qolam Lebih Dekat",
+        "x": 0,
+        "y": 1777.8125,
+        "width": 390,
+        "height": 480.875
+      },
+      {
+        "index": 4,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 2258.6875,
+        "width": 390,
+        "height": 441.5
+      },
+      {
+        "index": 5,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 2700.1875,
+        "width": 390,
+        "height": 448
+      },
+      {
+        "index": 6,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3148.1875,
+        "width": 390,
+        "height": 320
+      },
+      {
+        "index": 7,
+        "id": "program",
+        "heading": "Pilih Jalur Pendidikanyang Tepat untuk Putra-Putri Anda",
+        "x": 0,
+        "y": 3468.1875,
+        "width": 390,
+        "height": 1642.25
+      },
+      {
+        "index": 8,
+        "id": "",
+        "heading": "Kampus Dza'IzzaPesantren Beyond Pesantren",
+        "x": 0,
+        "y": 5110.4375,
+        "width": 390,
+        "height": 999
+      },
+      {
+        "index": 9,
+        "id": "",
+        "heading": "Kehidupan di Daar el-Qolam",
+        "x": 0,
+        "y": 6109.4375,
+        "width": 390,
+        "height": 1700
+      },
+      {
+        "index": 10,
+        "id": "",
+        "heading": "Apa Kata Wali Santri & Alumni",
+        "x": 0,
+        "y": 7809.4375,
+        "width": 390,
+        "height": 1116.5
+      },
+      {
+        "index": 11,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 8925.9375,
+        "width": 390,
+        "height": 452
+      },
+      {
+        "index": 12,
+        "id": "",
+        "heading": "Kabar Terbaru dari Daar el-Qolam",
+        "x": 0,
+        "y": 9377.9375,
+        "width": 390,
+        "height": 1611
+      },
+      {
+        "index": 13,
+        "id": "faq",
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "x": 0,
+        "y": 10988.9375,
+        "width": 390,
+        "height": 2462
+      }
+    ],
+    "image": {
+      "width": 390,
+      "height": 14557,
+      "colors": ">=3"
+    },
+    "path": "D:\\Zaky Data\\Document\\01_Project\\001_DQ Rebranding-G3-11\\docs\\QA\\screenshots\\G3-11\\f49f8e0-legacy-390x844-light-full.png"
+  },
+  {
+    "url": "http://127.0.0.1:3189/",
+    "width": 390,
+    "clientWidth": 390,
+    "dpr": 1,
+    "theme": "light",
+    "sections": [
+      {
+        "index": 1,
+        "id": "hero",
+        "heading": "Tempat TerbaikMembangun GenerasiBerakhlak",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1395.3125
+      },
+      {
+        "index": 2,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 1395.3125,
+        "width": 390,
+        "height": 382.5
+      },
+      {
+        "index": 3,
+        "id": "",
+        "heading": "Mengenal Daar el-Qolam Lebih Dekat",
+        "x": 0,
+        "y": 1777.8125,
+        "width": 390,
+        "height": 486.375
+      },
+      {
+        "index": 4,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 2264.1875,
+        "width": 390,
+        "height": 433.5
+      },
+      {
+        "index": 5,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 2697.6875,
+        "width": 390,
+        "height": 444
+      },
+      {
+        "index": 6,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3141.6875,
+        "width": 390,
+        "height": 320
+      },
+      {
+        "index": 7,
+        "id": "program",
+        "heading": "Pilih Jalur Pendidikan yang Tepat untuk Putra-Putri Anda",
+        "x": 0,
+        "y": 3461.6875,
+        "width": 390,
+        "height": 1623.3125
+      },
+      {
+        "index": 8,
+        "id": "dq3",
+        "heading": "Kampus Dza'IzzaPesantren Beyond Pesantren",
+        "x": 0,
+        "y": 5085,
+        "width": 390,
+        "height": 1003
+      },
+      {
+        "index": 9,
+        "id": "jelajahi",
+        "heading": "Kehidupan di Daar el-Qolam",
+        "x": 0,
+        "y": 6088,
+        "width": 390,
+        "height": 1696.75
+      },
+      {
+        "index": 10,
+        "id": "",
+        "heading": "Apa Kata Wali Santri & Alumni",
+        "x": 0,
+        "y": 7784.75,
+        "width": 390,
+        "height": 1120
+      },
+      {
+        "index": 11,
+        "id": "",
+        "heading": "Segera Daftarkan Putra-Putri Anda",
+        "x": 0,
+        "y": 8904.75,
+        "width": 390,
+        "height": 456
+      },
+      {
+        "index": 12,
+        "id": "berita",
+        "heading": "Kabar Terbaru dari Daar el-Qolam",
+        "x": 0,
+        "y": 9360.75,
+        "width": 390,
+        "height": 1642.90625
+      },
+      {
+        "index": 13,
+        "id": "faq",
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "x": 0,
+        "y": 11003.65625,
+        "width": 390,
+        "height": 2490
+      }
+    ],
+    "image": {
+      "width": 390,
+      "height": 14542,
+      "colors": ">=3"
+    },
+    "path": "D:\\Zaky Data\\Document\\01_Project\\001_DQ Rebranding-G3-11\\docs\\QA\\screenshots\\G3-11\\f49f8e0-next-390x844-light-full.png"
+  },
+  {
+    "url": "http://127.0.0.1:3188/index.html",
+    "width": 390,
+    "clientWidth": 390,
+    "dpr": 1,
+    "theme": "dark",
+    "sections": [
+      {
+        "index": 1,
+        "id": "",
+        "heading": "Tempat TerbaikMembangun Generasi\n          \n            Berakhlak\n            Berilmu\n            Be",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1395.3125
+      },
+      {
+        "index": 2,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 1395.3125,
+        "width": 390,
+        "height": 382.5
+      },
+      {
+        "index": 3,
+        "id": "",
+        "heading": "Mengenal Daar el-Qolam Lebih Dekat",
+        "x": 0,
+        "y": 1777.8125,
+        "width": 390,
+        "height": 480.875
+      },
+      {
+        "index": 4,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 2258.6875,
+        "width": 390,
+        "height": 441.5
+      },
+      {
+        "index": 5,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 2700.1875,
+        "width": 390,
+        "height": 448
+      },
+      {
+        "index": 6,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3148.1875,
+        "width": 390,
+        "height": 320
+      },
+      {
+        "index": 7,
+        "id": "program",
+        "heading": "Pilih Jalur Pendidikanyang Tepat untuk Putra-Putri Anda",
+        "x": 0,
+        "y": 3468.1875,
+        "width": 390,
+        "height": 1642.25
+      },
+      {
+        "index": 8,
+        "id": "",
+        "heading": "Kampus Dza'IzzaPesantren Beyond Pesantren",
+        "x": 0,
+        "y": 5110.4375,
+        "width": 390,
+        "height": 999
+      },
+      {
+        "index": 9,
+        "id": "",
+        "heading": "Kehidupan di Daar el-Qolam",
+        "x": 0,
+        "y": 6109.4375,
+        "width": 390,
+        "height": 1700
+      },
+      {
+        "index": 10,
+        "id": "",
+        "heading": "Apa Kata Wali Santri & Alumni",
+        "x": 0,
+        "y": 7809.4375,
+        "width": 390,
+        "height": 1116.5
+      },
+      {
+        "index": 11,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 8925.9375,
+        "width": 390,
+        "height": 452
+      },
+      {
+        "index": 12,
+        "id": "",
+        "heading": "Kabar Terbaru dari Daar el-Qolam",
+        "x": 0,
+        "y": 9377.9375,
+        "width": 390,
+        "height": 1611
+      },
+      {
+        "index": 13,
+        "id": "faq",
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "x": 0,
+        "y": 10988.9375,
+        "width": 390,
+        "height": 2462
+      }
+    ],
+    "image": {
+      "width": 390,
+      "height": 14557,
+      "colors": ">=3"
+    },
+    "path": "D:\\Zaky Data\\Document\\01_Project\\001_DQ Rebranding-G3-11\\docs\\QA\\screenshots\\G3-11\\f49f8e0-legacy-390x844-dark-full.png"
+  },
+  {
+    "url": "http://127.0.0.1:3189/",
+    "width": 390,
+    "clientWidth": 390,
+    "dpr": 1,
+    "theme": "dark",
+    "sections": [
+      {
+        "index": 1,
+        "id": "hero",
+        "heading": "Tempat TerbaikMembangun GenerasiBerilmu",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1395.3125
+      },
+      {
+        "index": 2,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 1395.3125,
+        "width": 390,
+        "height": 382.5
+      },
+      {
+        "index": 3,
+        "id": "",
+        "heading": "Mengenal Daar el-Qolam Lebih Dekat",
+        "x": 0,
+        "y": 1777.8125,
+        "width": 390,
+        "height": 486.375
+      },
+      {
+        "index": 4,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 2264.1875,
+        "width": 390,
+        "height": 433.5
+      },
+      {
+        "index": 5,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 2697.6875,
+        "width": 390,
+        "height": 444
+      },
+      {
+        "index": 6,
+        "id": "",
+        "heading": "",
+        "x": 0,
+        "y": 3141.6875,
+        "width": 390,
+        "height": 320
+      },
+      {
+        "index": 7,
+        "id": "program",
+        "heading": "Pilih Jalur Pendidikan yang Tepat untuk Putra-Putri Anda",
+        "x": 0,
+        "y": 3461.6875,
+        "width": 390,
+        "height": 1623.3125
+      },
+      {
+        "index": 8,
+        "id": "dq3",
+        "heading": "Kampus Dza'IzzaPesantren Beyond Pesantren",
+        "x": 0,
+        "y": 5085,
+        "width": 390,
+        "height": 1003
+      },
+      {
+        "index": 9,
+        "id": "jelajahi",
+        "heading": "Kehidupan di Daar el-Qolam",
+        "x": 0,
+        "y": 6088,
+        "width": 390,
+        "height": 1696.75
+      },
+      {
+        "index": 10,
+        "id": "",
+        "heading": "Apa Kata Wali Santri & Alumni",
+        "x": 0,
+        "y": 7784.75,
+        "width": 390,
+        "height": 1120
+      },
+      {
+        "index": 11,
+        "id": "",
+        "heading": "Segera Daftarkan Putra-Putri Anda",
+        "x": 0,
+        "y": 8904.75,
+        "width": 390,
+        "height": 456
+      },
+      {
+        "index": 12,
+        "id": "berita",
+        "heading": "Kabar Terbaru dari Daar el-Qolam",
+        "x": 0,
+        "y": 9360.75,
+        "width": 390,
+        "height": 1642.90625
+      },
+      {
+        "index": 13,
+        "id": "faq",
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "x": 0,
+        "y": 11003.65625,
+        "width": 390,
+        "height": 2490
+      }
+    ],
+    "image": {
+      "width": 390,
+      "height": 14542,
+      "colors": ">=3"
+    },
+    "path": "D:\\Zaky Data\\Document\\01_Project\\001_DQ Rebranding-G3-11\\docs\\QA\\screenshots\\G3-11\\f49f8e0-next-390x844-dark-full.png"
+  }
+]

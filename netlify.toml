@@ -1,0 +1,60 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Preserve public legacy URLs after replacing the HTML site.
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/program.html"
+  to = "/program"
+  status = 301
+
+[[redirects]]
+  from = "/tentang.html"
+  to = "/tentang"
+  status = 301
+
+[[redirects]]
+  from = "/jelajahi.html"
+  to = "/jelajahi"
+  status = 301
+
+[[redirects]]
+  from = "/dq3.html"
+  to = "/dq3"
+  status = 301
+
+[[redirects]]
+  from = "/kontak.html"
+  to = "/kontak"
+  status = 301
+
+[[redirects]]
+  from = "/berita.html"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/berita-perpustakaan.html"
+  to = "/blog/kolaborasi-literasi-dzaizza"
+  status = 301
+
+[[redirects]]
+  from = "/berita-paskibraka.html"
+  to = "/blog/seleksi-paskibraka-tangerang"
+  status = 301
+
+[[redirects]]
+  from = "/berita-opsi.html"
+  to = "/blog/seleksi-nasional-opsi-2026"
+  status = 301
