@@ -14,6 +14,10 @@ too much for a git history that mostly contains text.
 - Contents: 359 files, uncompressed 143.6 MB, paths preserved under `screenshots/`
 - SHA-256: `5693cbe1ab454ecd539b731f7136351dbd6ac528e91387fa2916441e671b210b`
 
+The screenshots were also purged from the git history on 16 November 2026;
+`docs/HISTORY/sha-remap-2026-11-16.md` records that rewrite and maps old
+commit SHAs to new ones.
+
 Documents in this folder still refer to those paths. The references are
 historical: they point at the archive above, not at this tree.
 

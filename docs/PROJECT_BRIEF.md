@@ -97,8 +97,9 @@ by `prefers-color-scheme`.
 
 - Dark-mode text contrast has been audited on the header and the mobile menu
   only. Card and body copy on the secondary pages is not audited yet.
-- The repository history still contains the 92 MB of camera originals deleted in
-  this cleanup. `.git` is around 528 MB because of them; shrinking it needs a
-  history rewrite, which has not been done.
+- The history was rewritten on 16 November 2026 to drop the large binaries it
+  used to carry. `.git` went from 528 MB to about 117 MB and every commit SHA
+  changed. `docs/HISTORY/sha-remap-2026-11-16.md` maps old SHAs to new ones and
+  records where the removed files are archived.
 - Mobile parity work is iterative and driven by review on real devices, not by an
   automated visual regression suite.
