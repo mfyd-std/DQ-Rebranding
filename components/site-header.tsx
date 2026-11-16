@@ -95,10 +95,10 @@ export function SiteHeader() {
         </nav>
         <div className="flex items-center gap-2">
           <span className="hidden items-center gap-1.5 rounded-full border border-dq-gold/30 bg-dq-gold-light px-3 py-1 text-xs font-semibold text-dq-gold md:inline-flex"><span className="pulse-dot h-1.5 w-1.5 rounded-full bg-dq-gold" />Pendaftaran Dibuka</span>
-          <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className={isExplore ? "rounded-lg bg-dq-green px-3 py-2 text-xs font-semibold text-white hover:bg-dq-green-dark lg:px-4 lg:text-sm" : "hidden rounded-lg bg-dq-green px-4 py-2 text-sm font-semibold text-white lg:inline-flex"}>{isExplore ? <><span className="lg:hidden">Ayo Mondok!</span><span className="hidden lg:inline">Daftar Sekarang</span></> : "Daftar Sekarang"}</a>
-          {!isExplore && <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="rounded-md bg-dq-green px-3 py-1.5 text-xs font-semibold text-white lg:hidden">Ayo Mondok!</a>}
+          <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className={isExplore ? "inline-flex min-h-11 items-center justify-center rounded-lg bg-dq-green px-3 text-xs font-semibold text-white hover:bg-dq-green-dark lg:px-4 lg:text-sm" : "hidden min-h-11 items-center justify-center rounded-lg bg-dq-green px-4 text-sm font-semibold text-white lg:inline-flex"}>{isExplore ? <><span className="lg:hidden">Ayo Mondok!</span><span className="hidden lg:inline">Daftar Sekarang</span></> : "Daftar Sekarang"}</a>
+          {!isExplore && <a href={registrationUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-md bg-dq-green px-3.5 text-xs font-semibold text-white lg:hidden">Ayo Mondok!</a>}
           <button type="button" className="theme-toggle" onClick={() => setDarkMode((value) => !value)} aria-label={darkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap"} aria-pressed={darkMode}><MoonIcon className="icon-moon h-5 w-5 shrink-0" aria-hidden="true" focusable="false" /><SunIcon className="icon-sun h-5 w-5 shrink-0" aria-hidden="true" focusable="false" /></button>
-          <button ref={hamburgerRef} type="button" onClick={() => setMenuOpen(true)} className="rounded-md p-2 lg:hidden" aria-label="Buka menu" aria-expanded={menuOpen}><Bars3Icon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" /></button>
+          <button ref={hamburgerRef} type="button" onClick={() => setMenuOpen(true)} className="grid min-h-11 min-w-11 place-items-center rounded-md lg:hidden" aria-label="Buka menu" aria-expanded={menuOpen}><Bars3Icon className="h-6 w-6 shrink-0" aria-hidden="true" focusable="false" /></button>
         </div>
       </div>
     </header>
