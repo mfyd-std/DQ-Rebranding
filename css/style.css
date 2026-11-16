@@ -105,21 +105,29 @@
 }
 
 /* ─── Glassmorphism Navbar ─── */
-/* NOTE: Lightning CSS (Tailwind v4 pipeline) rewrites the declarations below
-   into -webkit-backdrop-filter only for this rule, and Chrome does not support
-   the -webkit- alias (CSS.supports('-webkit-backdrop-filter') === false), so the
-   glass effect silently disappears in production. The effective blur is applied
-   by the backdrop-blur-[18px] / backdrop-saturate-150 utilities on the <header>
-   element in components/site-header.tsx. Keep both in sync. */
+/* The blur lives on a ::before layer, not on <header> itself. Two reasons:
+   1. Lightning CSS (Tailwind v4 pipeline) keeps only the LAST declaration of a
+      prefixed/unprefixed pair, so the unprefixed property must come last.
+      Chrome rejects the -webkit- alias, so a wrong order silently kills the
+      glass effect in production while Safari keeps working.
+   2. backdrop-filter on the header makes it a containing block for
+      position: fixed descendants (that collapses the mobile menu overlay to the
+      header's 64px box) and triggers the iOS Safari bug where taps on the
+      header's children miss their target. The pseudo-element owns the filter
+      with pointer-events: none, so neither problem can reappear. */
 .navbar-glass {
   background: rgba(250, 250, 248, 0.55);
-  /* Order matters: Lightning CSS keeps only the LAST declaration of a
-     prefixed/unprefixed pair for this rule. Chrome does not support the
-     -webkit- alias, so the unprefixed property must come last. */
-  -webkit-backdrop-filter: saturate(160%) blur(18px);
-  backdrop-filter: saturate(160%) blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 1px 0 rgba(0, 108, 85, 0.04);
+}
+.navbar-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-backdrop-filter: saturate(160%) blur(18px);
+  backdrop-filter: saturate(160%) blur(18px);
 }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   .navbar-glass {
@@ -337,8 +345,8 @@ html.dark .text-dq-warm-gray { color: #9CA3AF !important; }
 html.dark .border-dq-green\/10 { border-color: rgba(0, 108, 85, 0.35) !important; }
 html.dark .border-gray-100,
 html.dark .border-gray-200 { border-color: rgba(255, 255, 255, 0.08) !important; }
-html.dark .bg-dq-green-lt { background-color: rgba(0, 108, 85, 0.22) !important; }
-html.dark .bg-dq-gold-lt { background-color: rgba(201, 162, 39, 0.22) !important; }
+html.dark .bg-dq-green-light { background-color: rgba(0, 108, 85, 0.22) !important; }
+html.dark .bg-dq-gold-light { background-color: rgba(201, 162, 39, 0.22) !important; }
 html.dark .nav-dropdown,
 html.dark .mobile-menu { background: #1A2422 !important; }
 html.dark .mobile-menu { background-color: rgba(15, 23, 20, 0.97) !important; }
@@ -347,12 +355,26 @@ html.dark .program-card,
 html.dark .news-card,
 html.dark [class*="bg-dq-ivory"]:not(section):not(body) { background-color: #1A2422 !important; }
 
+/* Dark mode: the header surfaces are dark, so every control inside needs an
+   explicit light treatment. Without it the CTA keeps a dark label on a dark bar
+   and reads as a missing button. */
+html.dark .navbar-glass,
+html.dark .navbar-glass a,
+html.dark .navbar-glass button {
+  color: #E5E7EB;
+}
+html.dark .navbar-glass a[href^="https://daftar"],
+html.dark .navbar-glass a[href^="https://psb"] {
+  background-color: #006C55 !important;
+  color: #FFFFFF !important;
+}
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 9999px;
   background: transparent;
   color: inherit;
