@@ -8,19 +8,41 @@ dist/
 build/
 *.tsbuildinfo
 
-# tooling state
-.codegraph/
-.hermes/
-
-# next.js
-next-env.d.ts.bak
-
-# env
+# env: never commit real values, only the example
 .env
 .env.local
 .env.*.local
 .env*
 !.env.example
+
+# tooling and editor state
+.codegraph/
+.hermes/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.cursor/
+.claude/
+
+# credentials and keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+.npmrc
+.yarnrc
+.npm-token
+.netrc
+credentials.json
+credentials*.json
+service-account*
+*serviceaccount*
+secrets/
+.netlify/
+.vercel/
 
 # os
 Thumbs.db
@@ -31,6 +53,9 @@ desktop.ini
 *.log
 npm-debug.log*
 
-# local QA evidence (screenshots, ~104 MB, not part of the build)
+# local archives and backups (never part of the build)
+_arsip/
+*.bundle
+*.zip
 docs/QA/legacy-revision-evidence/
 docs/QA/screenshots/

@@ -55,6 +55,18 @@ npm run lint         # eslint, zero warnings tolerated
 npm run build        # must pass before any commit that touches UI
 ```
 
+## Environment and secrets
+
+The site needs no environment variables: nothing in the code reads `process.env`,
+every page is prerendered, and a clean clone builds without an `.env` file.
+`.env.example` records that, plus the rule for adding a variable later.
+
+Real values never go in git. `.env*` is gitignored except `.env.example`, and the
+history was audited on 16 November 2026 with no credential found in any commit.
+
+`CONTRIBUTING.md` covers setup, the two gates, the branch and preview flow, and
+the secret policy in full.
+
 ## Conventions
 
 - One commit per revision item, conventional commit prefixes (`feat:`, `fix:`, `style:`, `docs:`, `chore:`).
