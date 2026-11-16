@@ -13,8 +13,6 @@ Nothing here is built, served, or imported by the running application.
 |---|---|
 | `html/` | The eleven original pages, including the hero prototype |
 | `js/main.js` | Legacy UI script: scroll state, counters, mobile menu, lightbox |
-| `assets/legacy/images/` | Original camera files (JPG/PNG) that the webp assets were derived from |
-| `assets/legacy/docs/` | Brochure PDF, served from `public/assets/legacy/docs/` |
 
 ## Path mapping after the reorganisation
 
@@ -24,14 +22,24 @@ Nothing here is built, served, or imported by the running application.
 | `berita.html`, `berita-opsi.html`, `berita-paskibraka.html`, `berita-perpustakaan.html` | `legacy/html/<same name>` |
 | `DQ_Landing_Hero_Prototype.html` | `legacy/html/DQ_Landing_Hero_Prototype.html` |
 | `js/main.js` | `legacy/js/main.js` |
-| `assets/legacy/**` | `legacy/assets/legacy/**` |
 | `css/style.css` | `app/styles/legacy.css` (still imported by `app/globals.css`) |
+| `assets/legacy/images/**`, `assets/legacy/docs/**` | removed from the repository |
 
 `css/style.css` is the one file that did not become inert: the Next app imports
 it as the base stylesheet, so it moved into `app/styles/` instead of here.
+
+## Camera originals were removed on purpose
+
+The 21 unreferenced camera files (JPG/PNG, about 92 MB) were deleted on the
+owner's instruction; the served site only ever used the optimised webp versions
+in `public/images/`. The brochure PDF that used to sit in `assets/legacy/docs/`
+is still published, from `public/assets/legacy/docs/brosur_sanbar_2025.pdf`.
+
+Historical QA reports in `docs/QA/` still mention the deleted paths. Those are
+records of past runs and were deliberately left as written.
 
 ## Public URLs
 
 Old inbound URLs such as `/index.html` or `/berita.html` are redirected to the
 Next routes by `netlify.toml`. Those redirects are path rules and do not depend
-on the files above, so moving them does not break anything.
+on the files above, so moving or deleting them does not break anything.
