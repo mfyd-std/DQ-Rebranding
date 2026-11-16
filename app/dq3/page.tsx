@@ -126,8 +126,8 @@ function AdvantageIcon({ name }: { name: (typeof advantages)[number]["icon"] }) 
 export default function Dq3Page() {
   return (
     <main className="overflow-hidden">
-      <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-dq-green pt-16">
-        <div className="arabesque-bg absolute inset-0 opacity-40" />
+      <section className="dq3-gradient relative flex min-h-[70vh] items-center overflow-hidden pt-16">
+        <div className="arabesque-bg absolute inset-0 opacity-30" />
         <div className="relative mx-auto w-full dq-container py-20 lg:py-28">
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
@@ -153,7 +153,7 @@ export default function Dq3Page() {
             </div>
           </div>
         </div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 lg:block">
+        <div className="pointer-events-none absolute bottom-0 right-0 top-16 hidden w-1/2 lg:top-20 lg:block">
           <Image src="/images/BP3A8871trans.webp" alt="Kampus DQ3 Dza'Izza" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain object-bottom" priority />
         </div>
       </section>
